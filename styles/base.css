@@ -1,0 +1,131 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300; 
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: white;
+  height: 100%;
+}
+
+[data-reach-dialog-overlay] {
+  background: none;
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+
+[data-reach-dialog-content] {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+dl {
+  margin: 0;
+}
+dt,
+dd {
+  margin-left: 0;
+}
+
+i {
+  font-style: normal;
+}
+button {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #dcdcdc;
+  padding: 0;
+  overflow: visible;
+}
+
+/*
+Don't remove this class, 
+if you remove it the scroll animations (Waypoint) won't work
+*/
+.tl-edges {
+  overflow-x: initial;
+}
+
+
+
+
