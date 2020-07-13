@@ -1,51 +1,25 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { MDXProvider } from "@mdx-js/react"
+import Navigation from "./navigation"
+import MdxLink from "./mdxLink"
 
-import Header from "./header"
-import "./layout.css"
+const LocaleContext = React.createContext()
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+// Use the built-in Context API to make the "locale" available to every component in the tree
+// This e.g. enables the LocalizedLink to function correctly
+// As this component wraps every page (due to the wrapPageElement API) we can be sure to have
+// the locale available everywhere!
+const Layout = ({ children, pageContext: { locale } }) => (
+  <LocaleContext.Provider value={{ locale }}>
+    <div className="global-wrapper">
+      <header className="global-header">
+        <Navigation />
+      </header>
+      <MDXProvider components={{ a: MdxLink }}>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+      </MDXProvider>
+    </div>
+  </LocaleContext.Provider>
+)
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+export { Layout, LocaleContext }

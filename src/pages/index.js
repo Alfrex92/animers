@@ -1,18 +1,56 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import LocalizedLink from "../components/localizedLink"
+import useTranslations from "../components/useTranslations"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const Index = ({ data: { allMdx } }) => {
+  // useTranslations is aware of the global context (and therefore also "locale")
+  // so it'll automatically give back the right translations
+  const { hello, subline } = useTranslations()
+  console.log("allMdx", allMdx)
+  return (
+    <>
+      <h1>{hello}</h1>
+      <p>{subline}</p>
+      <hr style={{ margin: `2rem 0` }} />
+      <ul className="post-list">
+        {allMdx.edges.map(({ node: post }) => (
+          <li key={`${post.frontmatter.title}-${post.fields.locale}`}>
+            <LocalizedLink to={`/${post.parent.relativeDirectory}`}>
+              {post.frontmatter.title}
+            </LocalizedLink>
+            <div>{post.frontmatter.date}</div>
+          </li>
+        ))}
+      </ul>
+    </>
+  )
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-  </Layout>
-)
+export default Index
 
-export default IndexPage
+export const query = graphql`
+  query Index($locale: String!, $dateFormat: String!) {
+    allMdx(
+      filter: { fields: { locale: { eq: $locale } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: $dateFormat)
+          }
+          fields {
+            locale
+          }
+          parent {
+            ... on File {
+              relativeDirectory
+            }
+          }
+        }
+      }
+    }
+  }
+`
