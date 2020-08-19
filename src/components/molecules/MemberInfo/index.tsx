@@ -18,6 +18,8 @@ interface MemberInfoInterface {
 const MemberInfo: React.FC<MemberInfoInterface> = (
   props: MemberInfoInterface
 ) => {
+  console.log("image", props.image)
+
   return (
     <StyleMemberInfo>
       <StyleName>{props.name}</StyleName>

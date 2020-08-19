@@ -4,14 +4,17 @@ import { withKnobs, text } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
 
 import MemberInfo from "./index"
+import { domainUrl } from "../../../constants/others"
 
-const story = storiesOf("Components|MemberInfo", module)
+const memberImg = `${domainUrl}alfred.jpg`
+
+const story = storiesOf("Molecules|MemberInfo", module)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
 // imagesbutton
-story.add("hEY Component", () => (
+story.add("Component", () => (
   <MemberInfo
-    image={text("Image", "")}
+    image={text("Image", memberImg)}
     name={text("Name", "Alfredo")}
     description={text("Description", "Lorem Ipsum")}
     role={text("Role", "Co-organizer")}
