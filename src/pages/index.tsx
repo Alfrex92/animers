@@ -10,7 +10,6 @@ const Index = ({ data: { allMdx } }) => {
   console.log("allMdx", allMdx)
   return (
     <>
-      <img src="./alfred.jpg" alt="" />
       <h1>{hello}</h1>
       <p>{subline}</p>
       <hr style={{ margin: `2rem 0` }} />

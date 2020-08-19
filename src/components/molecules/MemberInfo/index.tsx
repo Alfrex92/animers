@@ -5,6 +5,7 @@ import {
   StyleName,
   StyleIconContainer,
   StyleDescription,
+  StyleImg,
 } from "./styles"
 interface MemberInfoInterface {
   image: string
@@ -22,6 +23,7 @@ const MemberInfo: React.FC<MemberInfoInterface> = (
 
   return (
     <StyleMemberInfo>
+      <StyleImg src={props.image} />
       <StyleName>{props.name}</StyleName>
       <StyleRole>{props.role}</StyleRole>
       <StyleIconContainer>

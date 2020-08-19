@@ -1,5 +1,111 @@
 {
   "hello": "Hello and welcome to this i18n example site!",
   "subline": "You can read some of my cool articles I wrote!",
-  "backToHome": "Back to home"
+  "backToHome": "Back to home",
+  "menu": [
+    {
+      "id": "shdlfkjdsf",
+      "title": "Events"
+    },
+    {
+      "id": "hslkfdj",
+      "title": "About Us"
+    },
+    {
+      "id": "asdsadd",
+      "title": "FAQ's"
+    },
+    {
+      "id": "sdasddasdas2",
+      "title": "Code of Conduct"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "1213dad",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-0.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "vcjdjk",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-1.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "skfkl",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-2.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "masdallsa",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-3.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "jaksdjklkj",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-4.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "zcxzcjcz.,",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-5.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    }
+  ],
+  "project": {
+    "advantages": [
+      {
+        "id": "asdasd333",
+        "title": "People that work in the anime industry usually come to the event"
+      },
+      {
+        "id": "asdasdddas2",
+        "title": "Meet Other Anime & Manga Fans"
+      },
+      {
+        "id": "sadasd",
+        "title": "Practice your English and/or Japanese skills"
+      },
+      {
+        "id": "fgfgggll",
+        "title": " Everyone in the Community is Very Welcoming"
+      },
+      {
+        "id": "ascvcvvvbvbv",
+        "title": "Make Japanese or Foreign Friends"
+      }
+    ],
+    "about": {
+      "title": "About Animers",
+      "description": "Animers is a bi-monthly, bilingual (English & Japanese) event for anime & manga fans in Tokyo. Our creed is to create community where everyone can have a sense of belonging and respected."
+    },
+    "creed": {
+      "title": "Animers Creed",
+      "description": "A community where everyone can have a sense of belonging and respected."
+    }
+  },
+  "team": [
+    {
+      "id": "member1yuka12pi3",
+      "name": "Yuka",
+      "role": "Founder & Co-organizer",
+      "sns": [
+        {
+          "instagram": "instagram.com/"
+        }
+      ],
+      "description": "lorem ipsum"
+    },
+    {
+      "id": "member2alfred1231",
+      "name": "Alfred",
+      "role": "Co-organizer",
+      "sns": [
+        {
+          "twitter": "https://twitter.com/alfred_toh_"
+        }
+      ],
+      "description": "lorem ipsum"
+    }
+  ]
 }
