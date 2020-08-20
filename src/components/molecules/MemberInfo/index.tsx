@@ -19,11 +19,9 @@ interface MemberInfoInterface {
 const MemberInfo: React.FC<MemberInfoInterface> = (
   props: MemberInfoInterface
 ) => {
-  console.log("image", props.image)
-
   return (
     <StyleMemberInfo>
-      <StyleImg src={props.image} />
+      <StyleImg width={128} height={128} applyAspectRatio src={props.image} />
       <StyleName>{props.name}</StyleName>
       <StyleRole>{props.role}</StyleRole>
       <StyleIconContainer>

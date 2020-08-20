@@ -1,4 +1,6 @@
 import React from "react"
+import "../../src/styles/base.css"
+import "../../src/styles/normalize.css"
 
 const GlobalStyleDecorator = storyFn => (
   <>

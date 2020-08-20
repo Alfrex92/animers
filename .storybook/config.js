@@ -1,5 +1,6 @@
 import { addDecorator, configure } from "@storybook/react"
 import { withOptions } from "@storybook/addon-options"
+import GlobalStyleDecorator from "./components/GlobalStyleDecorator"
 
 const req = require.context("../src", true, /.story.tsx$/)
 
@@ -17,5 +18,6 @@ addDecorator(
     hierarchyRootSeparator: /\|/,
   })
 )
+addDecorator(GlobalStyleDecorator)
 
 configure(loadStories, module)

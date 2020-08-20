@@ -13,12 +13,14 @@ const story = storiesOf("Molecules|MemberInfo", module)
   .addDecorator(withKnobs)
 // imagesbutton
 story.add("Component", () => (
-  <MemberInfo
-    image={text("Image", memberImg)}
-    name={text("Name", "Alfredo")}
-    description={text("Description", "Lorem Ipsum")}
-    role={text("Role", "Co-organizer")}
-    icon={"INSTAGRAM"}
-    snsLink={text("SNS Link", "https://twitter.com/alfred_toh_")}
-  />
+  <div style={{ maxWidth: "500px" }}>
+    <MemberInfo
+      image={text("Image", memberImg)}
+      name={text("Name", "Alfredo")}
+      description={text("Description", "Lorem Ipsum")}
+      role={text("Role", "Co-organizer")}
+      icon={"INSTAGRAM"}
+      snsLink={text("SNS Link", "https://twitter.com/alfred_toh_")}
+    />
+  </div>
 ))
