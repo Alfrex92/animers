@@ -11,4 +11,10 @@ export const StyleIconContainer = styled.div``
 
 export const StyleDescription = styled.p``
 
-export const StyleImg = styled(SimpleImg)``
+export const StyleImg = styled(SimpleImg)`
+  img {
+    /*
+  Here you give styles to the image
+   */
+  }
+`
