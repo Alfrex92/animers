@@ -1,10 +1,18 @@
 import styled from "styled-components"
 
 import { SimpleImg } from "react-simple-img"
+import { media } from "../../../styles/breakpoints"
+import { space } from "../../../styles/vars"
 
 export const StyleMemberInfo = styled.div``
 
-export const StyleRole = styled.p``
+export const StyleRole = styled.p`
+  ${media.med`
+  margin-top: ${space.m};
+  margin-bottom: ${space.m};
+
+  `}
+`
 
 export const StyleName = styled.p`
   font-size: 18px;
