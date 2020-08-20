@@ -4,20 +4,19 @@
   "backToHome": "Back to home",
   "menu": [
     {
-      "id": "shdlfkjdsf",
-      "title": "Events"
-    },
-    {
       "id": "hslkfdj",
-      "title": "About Us"
+      "title": "About Us",
+      "slug": "about"
     },
     {
       "id": "asdsadd",
-      "title": "FAQ's"
+      "title": "FAQ's",
+      "slug": "faq"
     },
     {
       "id": "sdasddasdas2",
-      "title": "Code of Conduct"
+      "title": "Code of Conduct",
+      "slug": "code-of-conduct"
     }
   ],
   "gallery": [
