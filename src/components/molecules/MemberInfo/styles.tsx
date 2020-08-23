@@ -10,7 +10,6 @@ export const StyleRole = styled.p`
   ${media.med`
   margin-top: ${space.m};
   margin-bottom: ${space.m};
-
   `}
 `
 

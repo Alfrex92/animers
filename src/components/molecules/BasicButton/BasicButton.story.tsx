@@ -1,0 +1,24 @@
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { withKnobs, text } from "@storybook/addon-knobs"
+import { withInfo } from "@storybook/addon-info"
+
+import BasicButton from "./index"
+
+const story = storiesOf("Molecules | BasicButton", module)
+    .addDecorator(withInfo)
+    .addDecorator(withKnobs)
+
+// Basic button
+story.add("Red-White", () => (
+    <BasicButton buttonColor={"basic"} buttonText={text("Message", "Join Us")} />
+
+))
+
+story.add("White-Red", () => (
+    <BasicButton buttonColor={"whiteRed"} buttonText={text("Message", "Join Us")} />
+))
+
+story.add("White-Aqua", () => (
+    <BasicButton buttonColor={"whiteBlue"} buttonText={text("Message", "Join Us")} />
+))
