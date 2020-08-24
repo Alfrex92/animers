@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { StyleLogoContainer, StyleLogo } from "./styles"
 
-const AnimersLogo: React.FC = () => {
+const Logo: React.FC = () => {
     return (
         <StyleLogoContainer>
             <StyleLogo>animers</StyleLogo>
@@ -9,4 +9,4 @@ const AnimersLogo: React.FC = () => {
     )
 }
 
-export default AnimersLogo
+export default Logo

@@ -2,11 +2,11 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { withKnobs, text } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
-import translationsEn from "../../../../config/translations/en.json"
+import data from "../../../../config/translations/en.json"
 
 import Copyright from "./index"
 
-const footerContent = translationsEn.copyrightContent;
+const footerContent = data.copyrightContent;
 
 const story = storiesOf("Atoms | Copyright", module)
     .addDecorator(withInfo)

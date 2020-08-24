@@ -16,10 +16,10 @@ export const StyleSocialIconCircle = styled.div`
 `;
 
 export const StyleSocialIconContent = styled.a`
-    color: #fff;
+    color: ${colors.white.normal};
     font-size: ${fsize.normal};
 
     &:active, &:hover {
-        color: #fff;
+        color: ${colors.white.normal};
     }
 `;

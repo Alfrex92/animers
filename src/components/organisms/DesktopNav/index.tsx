@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleDesktopNavWrapper } from "./styles"
 
-import AnimersLogo from "../../atoms/AnimersLogo"
+import AnimersLogo from "../../atoms/Logo"
 import NavMenu from "../../molecules/NavMenu"
 import BasicButton from "../../molecules/BasicButton"
 import LanguageOption from "../../atoms/LanguageOption"

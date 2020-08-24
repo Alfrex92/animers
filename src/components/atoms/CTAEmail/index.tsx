@@ -12,7 +12,7 @@ const CTAEmail: React.FC<CTAEmailInterface> = (
     return (
         <StyleCTAEmailWrapper>
             <StyleCTAEmailMessage>{props.message}</StyleCTAEmailMessage>
-            <StyleCTAEmailAddress>{props.address}</StyleCTAEmailAddress>
+            <StyleCTAEmailAddress href="mailto:hello@animers.io?subject=Question from Animers Website" target="_blank" rel="noopener noreferrer">{props.address}</StyleCTAEmailAddress>
         </StyleCTAEmailWrapper>
     )
 }

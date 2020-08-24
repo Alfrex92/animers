@@ -1,27 +1,17 @@
 import React from 'react'
-import { StyleBasicButton, StyleWhiteRedButton, StyleWhiteBlueButton } from "./styles"
+import { StyleBasicButton } from "./styles"
+import { colors, fsize, fweight } from "../../../styles/vars"
 
 interface BasicButtonInterface {
-    buttonText: string,
+    children: any,
     buttonColor: string
-}
-
-function getButtonColor(buttonColor: string, buttonText: string) {
-    switch (buttonColor) {
-        case "basic":
-            return <StyleBasicButton>{buttonText}</StyleBasicButton>
-        case "whiteRed":
-            return <StyleWhiteRedButton>{buttonText}</StyleWhiteRedButton>
-        case "whiteBlue":
-            return <StyleWhiteBlueButton>{buttonText}</StyleWhiteBlueButton>
-    }
 }
 
 const BasicButton: React.FC<BasicButtonInterface> = (
     props: BasicButtonInterface
 ) => {
     return (
-        <div>{getButtonColor(props.buttonColor, props.buttonText)}</div>
+        <StyleBasicButton color={props.buttonColor}>{props.children}</StyleBasicButton>
     )
 }
 

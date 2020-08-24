@@ -11,14 +11,14 @@ const story = storiesOf("Molecules | BasicButton", module)
 
 // Basic button
 story.add("Red-White", () => (
-    <BasicButton buttonColor={"basic"} buttonText={text("Message", "Join Us")} />
+    <BasicButton buttonColor={"basic"} children={text("Message", "Join Us")} />
 
 ))
 
 story.add("White-Red", () => (
-    <BasicButton buttonColor={"whiteRed"} buttonText={text("Message", "Join Us")} />
+    <BasicButton buttonColor={"whiteRed"} children={text("Message", "Join Us")} />
 ))
 
 story.add("White-Aqua", () => (
-    <BasicButton buttonColor={"whiteBlue"} buttonText={text("Message", "Join Us")} />
+    <BasicButton buttonColor={"whiteBlue"} children={text("Message", "Join Us")} />
 ))

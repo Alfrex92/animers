@@ -10,7 +10,7 @@ export const StyleCTAEmailMessage = styled.span`
     font-size: ${fsize.normal};
     font-weight: ${fweight.w7};
 `;
-export const StyleCTAEmailAddress = styled.span`
+export const StyleCTAEmailAddress = styled.a`
     color: ${colors.gray.dark};
     font-size: ${fsize.normal};
 `;

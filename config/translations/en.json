@@ -3,13 +3,11 @@
   "subline": "You can read some of my cool articles I wrote!",
   "backToHome": "Back to home",
   "copyrightContent": "Animers © 2020. Built by Karl Bruder &amp; Mipon",
-  "contact": [
-    {
-      "id": "001email",
-      "type": "email",
-      "address": "hello@animers.io"
-    }
-  ],
+  "contact": {
+    "id": "001email",
+    "type": "email",
+    "address": "hello@animers.io"
+  },
   "menu": [
     {
       "id": "heocp3j",

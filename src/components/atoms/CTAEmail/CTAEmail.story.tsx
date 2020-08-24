@@ -2,11 +2,11 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { withKnobs, text } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
-import translationsEn from "../../../../config/translations/en.json"
+import data from "../../../../config/translations/en.json"
 
 import CTAEmail from "./index"
 
-const emailAddress = translationsEn.contact[0].address
+const emailAddress = data.contact?.address
 
 const story = storiesOf("Molecules | CTAEmail", module)
     .addDecorator(withInfo)
