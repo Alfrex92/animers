@@ -2,7 +2,18 @@
   "hello": "Hello and welcome to this i18n example site!",
   "subline": "You can read some of my cool articles I wrote!",
   "backToHome": "Back to home",
+  "copyrightContent": "Animers © 2020. Built by Karl Bruder &amp; Mipon",
+  "contact": {
+    "id": "001email",
+    "type": "email",
+    "address": "hello@animers.io"
+  },
   "menu": [
+    {
+      "id": "heocp3j",
+      "title": "Events",
+      "slug": "events"
+    },
     {
       "id": "hslkfdj",
       "title": "About Us",
@@ -105,6 +116,23 @@
         }
       ],
       "description": "lorem ipsum"
+    }
+  ],
+  "social": [
+    {
+      "id": "001facebook",
+      "service": "Facebook",
+      "link": "https://www.facebook.com"
+    },
+    {
+      "id": "002instagram",
+      "service": "Instagram",
+      "link": "https://www.instagram.com"
+    },
+    {
+      "id": "003meetup",
+      "service": "Meetup",
+      "link": "https://www.meetup.com"
     }
   ]
 }
