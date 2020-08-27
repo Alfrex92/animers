@@ -5,6 +5,8 @@ import { colors, space, fsize } from "../../../styles/vars"
 export const StyleNavMenuLink = styled.div`
     align-items: center;
     display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
     min-height: 100px;
     text-align: center;
 
@@ -13,8 +15,10 @@ export const StyleNavMenuLink = styled.div`
     }
 `;
 
-export const StyleLinkName = styled.p`
-    color: ${colors.gray.dark};
-    font-size: ${fsize.normal};
+export const StyleLinkName = styled.span`
+    color: ${colors.gray.darker};
+    font-size: ${fsize.bigger};
     margin: auto;
+    text-align: center;
+    text-decoration: none;  
 `;

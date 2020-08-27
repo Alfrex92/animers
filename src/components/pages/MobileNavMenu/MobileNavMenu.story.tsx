@@ -15,6 +15,7 @@ const story = storiesOf("Pages | MobileNavMenu", module)
 // Mobile navigation menu
 story.add("Component", () => (
     <MobileNavMenu
+        open={false}
         emailMessage={"Get in Touch "}
         emailAddress={siteEmailAddress}
         socialMessage={"Follow Us"}

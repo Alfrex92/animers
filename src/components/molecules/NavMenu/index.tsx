@@ -9,8 +9,8 @@ const links = data.menu;
 const NavMenu: React.FC = () => {
     return (
         <StyleMenuLinkContainer>
-            {links.map(link => (
-                <MenuLink linkName={link.title} />
+            {links.map((link, key) => (
+                <MenuLink linkName={link.title} key={link.title} />
             ))}
         </StyleMenuLinkContainer>
     )

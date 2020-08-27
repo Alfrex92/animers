@@ -12,9 +12,7 @@ const MenuLink: React.FC<MenuLinkInterface> = (
 ) => {
     return (
         <StyleNavMenuLink>
-            <StyleLinkName>
-                <Link to={`./${props.linkName}`}>{props.linkName}</Link>
-            </StyleLinkName>
+            <Link to={`./${props.linkName}`} style={{ textDecoration: "none" }}><StyleLinkName>{props.linkName}</StyleLinkName></Link>
         </StyleNavMenuLink>
     )
 }
