@@ -14,5 +14,5 @@ export const StyleMobileNavMenuWrapper = styled.div<{ open: boolean }>`
     top: 0;
     transform: ${props => props.open ? 'translateX(0)' : 'translateX(-110%)'};
     transition: transform 0.5s ease-in-out;
-    z-index: ${zindex.overlay}
+    z-index: ${zindex.menu}
 `;

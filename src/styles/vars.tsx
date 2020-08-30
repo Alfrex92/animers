@@ -50,7 +50,9 @@ export const space = {
   s: '12px',
   m: '24px',
   l: '30px',
-  xl: '36px'
+  xl: '36px',
+  xxl: '42px',
+  xl3: '48px',
 }
 
 export const fsize = {
@@ -82,6 +84,8 @@ export const zindex = {
   alpha: 100,
   beta: 500,
   ganma: 700,
+  menu: 750,
+  menuclose: 775,
   overlay: 800,
   offmenu: 900,
   offcanvas: 1000,

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors, zindex } from "../../../styles/vars"
+import { colors, zindex, space } from "../../../styles/vars"
 import { media } from "../../../styles/breakpoints"
 
 export const StyleBurger = styled.button<{ open: boolean }>`
@@ -8,12 +8,12 @@ export const StyleBurger = styled.button<{ open: boolean }>`
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 2rem;
+  height: ${space.xl};
   justify-content: space-around;
-  margin: 0 3rem 0 1rem;
+  margin: 0 ${space.xl3} 0 ${space.m};
   padding: 0;
-  width: 2rem;
-  z-index: 999;
+  width: ${space.xl3};
+  z-index: ${zindex.menuclose};
   
   &:focus {
     outline: none;
@@ -27,7 +27,7 @@ export const StyleBurger = styled.button<{ open: boolean }>`
 export const StyleDiv = styled.div<{ open: boolean }> `
     background: ${colors.red.normal};
     border-radius: 10px;
-    height: 0.25rem;
+    height: ${space.xs};
     position: relative;
     transition: all 0.3s linear;
     transform-origin: 1px;
@@ -35,7 +35,7 @@ export const StyleDiv = styled.div<{ open: boolean }> `
 
     :first-child {
       transform: ${props => props.open ? 'rotate(45deg)' : 'rotate(0)'};
-      width: ${props => props.open ? '2rem' : '1.6rem'};
+      width: ${props => props.open ? '2.2rem' : '1.75rem'};
     }
 
     :nth-child(2) {
@@ -46,6 +46,6 @@ export const StyleDiv = styled.div<{ open: boolean }> `
 
     :nth-child(3) {
       transform: ${props => props.open ? 'rotate(-45deg)' : 'rotate(0)'};
-      width: ${props => props.open ? '2rem' : '1.5rem'};
+      width: ${props => props.open ? '2.2rem' : '1.5rem'};
     }
 `;

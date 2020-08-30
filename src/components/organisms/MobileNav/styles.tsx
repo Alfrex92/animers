@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../../styles/vars"
+import { colors, space, zindex } from "../../../styles/vars"
 
 export const StyleMobileNavWrapper = styled.div`
     align-items: center;
@@ -7,9 +7,8 @@ export const StyleMobileNavWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 2rem;
+    min-height: ${space.xl3};
     width: 100vw;
-    z-index: 999;
 `;
 
 export const StyleLanguageBurgerWrapper = styled.div`
