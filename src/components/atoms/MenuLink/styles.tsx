@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { media } from "../../../styles/breakpoints"
-import { colors, space, fsize } from "../../../styles/vars"
+import { Link } from "gatsby"
+import { colors, fsize } from "../../../styles/vars"
 
 export const StyleNavMenuLink = styled.div`
     align-items: center;
@@ -15,10 +15,13 @@ export const StyleNavMenuLink = styled.div`
     }
 `;
 
+export const StyleLink = styled(Link)`
+    text-decoration: none;  
+`;
+
 export const StyleLinkName = styled.span`
     color: ${colors.gray.darker};
     font-size: ${fsize.bigger};
     margin: auto;
     text-align: center;
-    text-decoration: none;  
 `;
