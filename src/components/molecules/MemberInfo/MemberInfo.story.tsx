@@ -19,8 +19,11 @@ story.add("Component", () => (
       name={text("Name", "Alfredo")}
       description={text("Description", "Lorem Ipsum")}
       role={text("Role", "Co-organizer")}
-      icon={"INSTAGRAM"}
-      snsLink={text("SNS Link", "https://twitter.com/alfred_toh_")}
+      sns={[
+        {
+          instagram: "instagram.com/",
+        },
+      ]}
     />
   </div>
 ))
