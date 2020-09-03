@@ -2,12 +2,12 @@ import React from "react"
 import { StyleMembers } from "./styles"
 import MemberInfo, { MemberInfoInterface } from "../../molecules/MemberInfo"
 
-interface Members extends MemberInfoInterface {
+interface MembersListInterface extends MemberInfoInterface {
   id: string
 }
 
 interface MembersInterface {
-  membersList: Members[]
+  membersList: MembersListInterface[]
 }
 
 const Members: React.FC<MembersInterface> = (props: MembersInterface) => {
