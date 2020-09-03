@@ -23,7 +23,7 @@ export interface MemberInfoInterface {
 const MemberInfo: React.FC<MemberInfoInterface> = (
   props: MemberInfoInterface
 ) => {
-  // add the icons
+  //TODO: add the icons
   return (
     <StyleMemberInfo>
       <StyleImg width={128} height={128} applyAspectRatio src={props.image} />
