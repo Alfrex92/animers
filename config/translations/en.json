@@ -99,9 +99,13 @@
       "id": "member1yuka12pi3",
       "name": "Yuka",
       "role": "Founder & Co-organizer",
+      "image": "https://eloquent-franklin-f9ee3f.netlify.app/yuka.jpg",
       "sns": [
         {
           "instagram": "instagram.com/"
+        },
+        {
+          "facebook": "facebook.com/"
         }
       ],
       "description": "lorem ipsum"
@@ -110,6 +114,7 @@
       "id": "member2alfred1231",
       "name": "Alfred",
       "role": "Co-organizer",
+      "image": "https://eloquent-franklin-f9ee3f.netlify.app/alfred.jpg",
       "sns": [
         {
           "twitter": "https://twitter.com/alfred_toh_"
