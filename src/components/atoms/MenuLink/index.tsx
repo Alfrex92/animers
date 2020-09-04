@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Link } from "gatsby"
 import { StyleNavMenuLink, StyleLink, StyleLinkName } from "./styles"
 
 
