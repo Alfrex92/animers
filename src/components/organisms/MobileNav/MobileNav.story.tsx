@@ -15,6 +15,6 @@ const story = storiesOf("Organisms | MobileNav", module)
     .addDecorator(withKnobs)
 // Mobile navigation menu
 story.add("Component", () => (
-    <MobileNav language={select(label, languageOptions, defaultValue, groupId)} />
+    <MobileNav language={select(label, languageOptions, defaultValue, groupId)} emailCTA={data.emailCTA} emailAddress={data.contact.address} socialCTA={data.socialCTA} copyrightContent={data.copyrightContent} />
 )
 )
