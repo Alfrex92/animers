@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { StyleBurger, StyleDiv } from "./styles"
 
 interface BurgerInterface {
     open: boolean;
+    setOpen: () => void;
 }
 
-const BurgerIcon: React.FC<BurgerInterface> = (props) => {
+const BurgerIcon: React.FC<BurgerInterface> = (props: BurgerInterface) => {
+    console.log(props.open)
     return (
-        <StyleBurger open={props.open} onClick={() => setOpen(oldProps => !oldProps)}>
+        <StyleBurger open={props.open} onClick={props.setOpen}>
             <StyleDiv open={props.open} />
             <StyleDiv open={props.open} />
             <StyleDiv open={props.open} />
