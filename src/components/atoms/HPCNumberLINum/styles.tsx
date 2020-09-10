@@ -7,9 +7,9 @@ export const StyleHPCNumberLINumWrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
 `;
-// @@@ Make Number align with top
 export const StyleHPCNumberLINum = styled.p`
     color: ${colors.red.normal};
     font-size: 40px;
     font-weight: ${fweight.w8};
+    padding-top: ${space.xs};
 `;

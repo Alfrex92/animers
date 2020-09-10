@@ -95,6 +95,26 @@
       "description": "A community where everyone can have a sense of belonging and respected."
     }
   },
+  "signupSteps": [
+    {
+      "id": "step001",
+      "stepNum": "1",
+      "title": "Register on Meetup",
+      "subtitle": "And join our community"
+    },
+    {
+      "id": "step002",
+      "stepNum": "2",
+      "title": "Sign up for an upcoming event",
+      "subtitle": "We hold events twice a month (biweekly)"
+    },
+    {
+      "id": "step003",
+      "stepNum": "3",
+      "title": "Attend and have fun!",
+      "subtitle": "Hang out and make new friends"
+    }
+  ],
   "socialCTA": "Follow Us",
   "team": [
     {
