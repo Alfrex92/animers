@@ -8,6 +8,7 @@
     "type": "email",
     "address": "hello@animers.io"
   },
+  "emailCTA": "Get in Touch",
   "menu": [
     {
       "id": "heocp3j",
@@ -94,6 +95,7 @@
       "description": "A community where everyone can have a sense of belonging and respected."
     }
   },
+  "socialCTA": "Follow Us",
   "team": [
     {
       "id": "member1yuka12pi3",

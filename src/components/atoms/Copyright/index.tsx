@@ -8,6 +8,7 @@ interface CopyrightInterface {
 const Copyright: React.FC<CopyrightInterface> = (
     props: CopyrightInterface
 ) => {
+    console.log(props.content)
     return (
         <StyleCopyrightWrapper>
             <StyleCopyrightContent>{props.content}</StyleCopyrightContent>

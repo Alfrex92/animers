@@ -3,17 +3,21 @@ import { space } from "../../../styles/vars"
 import { media } from "../../../styles/breakpoints"
 
 export const StyleMenuLinkContainer = styled.div`
-    height: 50vh;
-    margin: ${space.l};
-    min-height: 375px;
+    background: white;
+    padding-top: 10rem;
+    width: 100%;
 
     ${media.med`
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
         min-height: 10vh;
         min-width: 40%;
     `};
+
+    ${media.large`
+        display: none;
+    `}
 
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { colors, fsize, fweight } from "../../../styles/vars"
 
 export const StyleCTASocialWrapper = styled.div`
+    height: 1.5rem;
     width: 100%;
 `;
 

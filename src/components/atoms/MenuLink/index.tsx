@@ -1,6 +1,5 @@
 import * as React from 'react'
-import { Link } from "gatsby"
-import { StyleNavMenuLink, StyleLinkName } from "./styles"
+import { StyleNavMenuLink, StyleLink, StyleLinkName } from "./styles"
 
 
 interface MenuLinkInterface {
@@ -12,9 +11,7 @@ const MenuLink: React.FC<MenuLinkInterface> = (
 ) => {
     return (
         <StyleNavMenuLink>
-            <StyleLinkName>
-                <Link to={`./${props.linkName}`}>{props.linkName}</Link>
-            </StyleLinkName>
+            <StyleLink to={`./${props.linkName}`}><StyleLinkName>{props.linkName}</StyleLinkName></StyleLink>
         </StyleNavMenuLink>
     )
 }
