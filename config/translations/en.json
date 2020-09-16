@@ -95,6 +95,28 @@
       "description": "A community where everyone can have a sense of belonging and respected."
     }
   },
+  "sellingPoints": [
+    {
+      "id": "point001",
+      "content": "Regularly attended by anime industry insiders"
+    },
+    {
+      "id": "point002",
+      "content": "Meet other anime and manga fans"
+    },
+    {
+      "id": "point003",
+      "content": "Practicte your English and/or Japanese skills"
+    },
+    {
+      "id": "point004",
+      "content": "A friendly and welcoming community"
+    },
+    {
+      "id": "point005",
+      "content": "Make friends from around the world"
+    }
+  ],
   "signupSteps": [
     {
       "id": "step001",
