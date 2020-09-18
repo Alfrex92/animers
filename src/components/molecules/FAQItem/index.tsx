@@ -4,8 +4,6 @@ import { StyleFAQItemWrapper, StyleFAQQuestion, StyleFAQAnswer } from "./styles"
 interface FAQItemInterface {
     question: string;
     answer: string;
-    open: boolean;
-    setOpen: Function;
 }
 
 const FAQItem: React.FC<FAQItemInterface> = (
