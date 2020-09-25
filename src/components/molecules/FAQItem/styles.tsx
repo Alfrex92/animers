@@ -16,7 +16,6 @@ export const StyleFAQAnswer = styled(StyleFAQQuestion) <{ open: boolean }>`
     opacity: ${props => props.open ? '1' : '0'};
     transform: ${props => props.open ? 'translateY(20px)' : 'translateY(0)'};
     transition: height 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    width: 600px;
 `;
 export const StyleFAQItemWrapper = styled.div`
     border: 2px solid ${colors.green.light};
