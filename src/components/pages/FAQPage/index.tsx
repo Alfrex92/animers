@@ -7,18 +7,18 @@ import FAQItemBlock from "../../organisms/FAQItemBlock"
 import Footer from "../../organisms/Footer"
 
 interface FAQPageInterface {
-    blockLabelList: FAQItemList["blockLabelContent"];
     emailMessage: string;
     emailAddress: string;
     socialMessage: string;
     copyrightContent: string;
-    faqBlockList: FAQItemList;
+    faqList: FAQItemBlockInterface[];
     sectionTitle: string;
 }
 
-interface FAQItemList {
-    itemList: FAQItemInterface[];
-    blockLabelContent: string;
+interface FAQItemBlockInterface {
+    section: string;
+    sectionID: string;
+    questions: FAQItemInterface[];
 }
 
 interface FAQItemInterface {
@@ -35,8 +35,8 @@ const FAQPage: React.FC<FAQPageInterface> = (
             <NavMenu />
             <DesktopSectionTitle title={props.sectionTitle} />
             <StyleFAQSection>
-                {props.faqBlockList.map((block) => (
-                    <FAQItemBlock blockLabelContent={block.blockLabelContent} faqItemList={block.itemList} />
+                {props.faqList.map((block) => (
+                    <FAQItemBlock section={block.section} sectionID={block.sectionID} questions={block.questions} />
                 ))}
             </StyleFAQSection>
             <Footer emailMessage={props.emailMessage} emailAddress={props.emailAddress} socialMessage={props.socialMessage} copyrightContent={props.copyrightContent} />

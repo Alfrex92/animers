@@ -32,64 +32,74 @@
   ],
   "faqs": [
     {
-      "id": "e001",
-      "category": "events",
-      "question": "When's the next event?",
-      "answer": "The next event is on MM/DD at TT:TT"
+      "section": "About Events",
+      "sectionID": "sec001",
+      "questions": [
+        {
+          "id": "e001",
+          "question": "When's the next event?",
+          "answer": "The next event is on MM/DD at TT:TT"
+        },
+        {
+          "id": "e002",
+          "question": "Where is the next event being held?",
+          "answer": "The next event will be held at @@@"
+        },
+        {
+          "id": "e003",
+          "question": "How do I register for events?",
+          "answer": "You can sign up on our Meetup page: www.aaa.com"
+        },
+        {
+          "id": "e004",
+          "question": "I can't speak Japanese/English. Can I still join?",
+          "answer": "Sure! Many members can speak both, so you'll be able to enjoy the event."
+        },
+        {
+          "id": "e005",
+          "question": "Can I show up without registering?",
+          "answer": "Sorry, but please register in advance, as there is limited space."
+        },
+        {
+          "id": "e006",
+          "question": "Is this event exclusive to Tokyo residents?",
+          "answer": "No. Anyone is free to join."
+        }
+      ]
     },
     {
-      "id": "e002",
-      "category": "events",
-      "question": "Where is the next event being held?",
-      "answer": "The next event will be held at @@@"
+      "section": "About COVID-19",
+      "sectionID": "sec002",
+      "questions": [
+        {
+          "id": "cov001",
+          "question": "Are you holding events during the pandemic?",
+          "answer": "Not currently, but we are planning safe, outdoor events. Stay tuned!"
+        },
+        {
+          "id": "cov002",
+          "question": "How many people do you allow at events?",
+          "answer": "Right now, we limit events to 8 people."
+        }
+      ]
     },
     {
-      "id": "e003",
-      "category": "events",
-      "question": "How do I register for events?",
-      "answer": "You can sign up on our Meetup page: www.aaa.com"
-    },
-    {
-      "id": "e004",
-      "category": "events",
-      "question": "I can't speak Japanese/English. Can I still join?",
-      "answer": "Sure! Many members can speak both, so you'll be able to enjoy the event."
-    },
-    {
-      "id": "e005",
-      "category": "events",
-      "question": "Can I show up without registering?",
-      "answer": "Sorry, but please register in advance, as there is limited space."
-    },
-    {
-      "id": "e006",
-      "category": "events",
-      "question": "Is this event exclusive to Tokyo residents?",
-      "answer": "No. Anyone is free to join."
-    },
-    {
-      "id": "cov001",
-      "category": "covid19",
-      "question": "Are you holding events during the pandemic?",
-      "answer": "Not currently, but we are planning safe, outdoor events. Stay tuned!"
-    },
-    {
-      "id": "cov002",
-      "category": "covid19",
-      "question": "How many people do you allow at events?",
-      "answer": "Right now, we limit events to 8 people."
-    },
-    {
-      "id": "drink001",
-      "category": "drinks",
-      "question": "I don't drink alcohol. Can I still join?",
-      "answer": "Sure! The all-you-can-drink service is optional."
-    },
-    {
-      "id": "drink002",
-      "category": "drinks",
-      "question": "Do I have to pay full price if I don't drink alcohol?",
-      "answer": "No, we will deduct @@@ yen from your admission price."
+      "section": "About Drinks",
+      "sectionID": "sec003",
+      "questions": [
+        {
+          "id": "drink001",
+          "category": "drinks",
+          "question": "I don't drink alcohol. Can I still join?",
+          "answer": "Sure! The all-you-can-drink service is optional."
+        },
+        {
+          "id": "drink002",
+          "category": "drinks",
+          "question": "Do I have to pay full price if I don't drink alcohol?",
+          "answer": "No, we will deduct @@@ yen from your admission price."
+        }
+      ]
     }
   ],
   "gallery": [

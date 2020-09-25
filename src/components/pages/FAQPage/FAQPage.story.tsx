@@ -5,10 +5,9 @@ import { withInfo } from "@storybook/addon-info"
 
 import data from "../../../../config/translations/en.json";
 
-const eventFAQs = data.faqs.filter(item => item.category === "events");
-const covidFAQs = data.faqs.filter(item => item.category === "covid19");
-const drinkFAQs = data.faqs.filter(item => item.category === "drinks");
-const blockLabelList = ["About Events", "About COVID-19", "About Drinks"];
+const eventFAQs = data.faqs[0];
+const covidFAQs = data.faqs[1];
+const drinkFAQs = data.faqs[2];
 const FAQBlockList = [eventFAQs, covidFAQs, drinkFAQs];
 
 import FAQPage from "./index"
@@ -19,13 +18,12 @@ const story = storiesOf("Pages | FAQPage", module)
 // Mobile navigation menu
 story.add("Component", () => (
     <FAQPage
-        blockLabelList={blockLabelList}
         emailAddress={data.contact.address}
         emailMessage={text("Email Message", "Get in Touch")}
         socialMessage={text("Social Message", "Follow Us")}
         copyrightContent={data.copyrightContent}
         sectionTitle={text("Section title", "FAQs")}
-        faqBlockList={FAQBlockList}
+        faqList={FAQBlockList}
     />
 )
 )
