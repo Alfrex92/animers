@@ -8,12 +8,12 @@ export const StyleFAQSection = styled.div`
     flex-direction: column;
     justify-content: space-between;
     margin: ${space.m} auto;
-    width: 90vw;
     
 
     ${media.med`
-        height: 40vh;
+        height: 70vh;
         flex-wrap: wrap;
+        align-content: center;
         width: 60vw;
     `}
 `;

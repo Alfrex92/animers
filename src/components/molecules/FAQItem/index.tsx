@@ -11,7 +11,7 @@ const FAQItem: React.FC<FAQItemInterface> = (
 ) => {
     const [open, setOpen] = useState(false);
     return (
-        <StyleFAQItemWrapper onClick={() => setOpen(!open)}>
+        <StyleFAQItemWrapper onClick={() => setOpen(!open)} open={open}>
             <StyleFAQQuestion>{props.question}</StyleFAQQuestion>
             <StyleFAQAnswer open={open}><span>{props.answer}</span></StyleFAQAnswer>
         </StyleFAQItemWrapper>

@@ -31,8 +31,7 @@ const FAQPage: React.FC<FAQPageInterface> = (
     props: FAQPageInterface
 ) => {
     return (
-        <div>
-            <NavMenu />
+        <div style={{ margin: 0 }}>
             <DesktopSectionTitle title={props.sectionTitle} />
             <StyleFAQSection>
                 {props.faqList.map((block) => (
