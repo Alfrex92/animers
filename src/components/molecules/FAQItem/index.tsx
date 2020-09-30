@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { StyleFAQItemWrapper, StyleFAQQuestion, StyleFAQAnswer } from "./styles"
 
 interface FAQItemInterface {
@@ -9,9 +9,9 @@ interface FAQItemInterface {
 const FAQItem: React.FC<FAQItemInterface> = (
     props: FAQItemInterface
 ) => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = React.useState(false);
     return (
-        <StyleFAQItemWrapper onClick={() => setOpen(!open)} open={open}>
+        <StyleFAQItemWrapper onClick={() => setOpen((oldProps) => !oldProps)} open={open}>
             <StyleFAQQuestion>{props.question}</StyleFAQQuestion>
             <StyleFAQAnswer open={open}><span>{props.answer}</span></StyleFAQAnswer>
         </StyleFAQItemWrapper>

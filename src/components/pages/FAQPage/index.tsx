@@ -35,7 +35,7 @@ const FAQPage: React.FC<FAQPageInterface> = (
             <DesktopSectionTitle title={props.sectionTitle} />
             <StyleFAQSection>
                 {props.faqList.map((block) => (
-                    <FAQItemBlock section={block.section} sectionID={block.sectionID} questions={block.questions} />
+                    <FAQItemBlock section={block.section} sectionID={block.sectionID} questions={block.questions} key={block.sectionID} />
                 ))}
             </StyleFAQSection>
             <Footer emailMessage={props.emailMessage} emailAddress={props.emailAddress} socialMessage={props.socialMessage} copyrightContent={props.copyrightContent} />

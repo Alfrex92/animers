@@ -11,9 +11,9 @@ export const StyleFAQSection = styled.div`
     
 
     ${media.med`
-        height: 70vh;
-        flex-wrap: wrap;
         align-content: center;
+        flex-wrap: wrap;
+        max-height: 70vh;
         width: 60vw;
     `}
 `;

@@ -18,10 +18,10 @@ const story = storiesOf("Pages | FAQPage", module)
 // Mobile navigation menu
 story.add("Component", () => (
     <FAQPage
-        emailAddress={data.contact.address}
+        emailAddress={text("Email address", "x@x.com")}
         emailMessage={text("Email Message", "Get in Touch")}
         socialMessage={text("Social Message", "Follow Us")}
-        copyrightContent={data.copyrightContent}
+        copyrightContent={text("Copyright content", "Copyright blablabla")}
         sectionTitle={text("Section title", "FAQs")}
         faqList={FAQBlockList}
     />

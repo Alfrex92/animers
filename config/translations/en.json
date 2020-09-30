@@ -2,6 +2,107 @@
   "hello": "Hello and welcome to this i18n example site!",
   "subline": "You can read some of my cool articles I wrote!",
   "backToHome": "Back to home",
+  "codeOfConduct": {
+    "disclaimer": "Animers reserve the right to modify and/or update this policy at any time in their sole discretion and without prior notice.",
+    "greeting": "Hey everybody!",
+    "introduction": [
+      {
+        "parID": "coc-intro-1",
+        "content": "Animers is a public community in the form of offline & online events, forums, online chats, and anything else that comes up where we all interact with each other. Everyone is welcome to participate here regardless of race, religion, gender, sexual orientation, appearance, age, or anything else that makes up a person. Not only is everyone welcome, but we also want everyone to feel comfortable and feel safe."
+      },
+      {
+        "parID": "coc-intro-2",
+        "content": "Everyone who participates in an Animers platform (online and offline) must adhere to the following Code of Conduct. Organizers monitor members’ comments and behavior, and those who violate the code of conduct may be asked to leave the group."
+      }
+    ],
+    "sections": [
+      {
+        "sectionID": "coc-sec-001",
+        "sectionTitle": "Age Restrictions",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-001-001",
+            "type": "paragraph",
+            "content": "Some content at Animers may not be suitable for children & teenagers. In addition, events are often held at locations serving alcohol. Therefore, members must be at least 20 years or older."
+          },
+          {
+            "subsectionID": "coc-sec-001-002",
+            "type": "paragraph-bold",
+            "content": "Examples of behavior that contributes to creating a positive environment include:"
+          },
+          {
+            "subsectionID": "coc-sec-001-003",
+            "type": "unordered-list",
+            "listItems": [
+              {
+                "listItemID": "coc-sec-001-003-001",
+                "content": "Behaving professionally"
+              },
+              {
+                "listItemID": "coc-sec-001-003-002",
+                "content": "Using welcoming and inclusive language"
+              },
+              {
+                "listItemID": "coc-sec-001-003-003",
+                "content": "Being respectful of differing viewpoints and experiences"
+              },
+              {
+                "listItemID": "coc-sec-001-003-004",
+                "content": "Accepting constructive criticism graciously"
+              },
+              {
+                "listItemID": "coc-sec-001-003-005",
+                "content": "Being kind to others"
+              },
+              {
+                "listItemID": "coc-sec-001-003-006",
+                "content": "Respect anyone's taste in Anime, Manga, Video Games, etc."
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-001-003",
+            "type": "paragraph-bold",
+            "content": "Examples of unacceptable behavior by participants include:"
+          },
+          {
+            "subsectionID": "coc-sec-001-004",
+            "type": "unordered-list",
+            "listItems": [
+              {
+                "listItemID": "coc-sec-001-004-001",
+                "content": "Sexual language and imagery in any event venue, including online chat"
+              },
+              {
+                "listItemID": "coc-sec-001-004-002",
+                "content": "Promoting your own business or service"
+              },
+              {
+                "listItemID": "coc-sec-001-004-003",
+                "content": "Contact directly any of the members of the community and promote your business or service"
+              },
+              {
+                "listItemID": "coc-sec-001-004-004",
+                "content": "Wearing inappropriate clothing (determined by the sole discretion of Animers)."
+              },
+              {
+                "listItemID": "coc-sec-001-004-005",
+                "content": "Violent threats or language directed against another person"
+              },
+              {
+                "listItemID": "coc-sec-001-004-006",
+                "content": "Deliberate intimidation, stalking or following"
+              },
+              {
+                "listItemID": "coc-sec-001-004-007",
+                "content": "Insults or put-downs"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "copyrightContent": "Animers © 2020. Built by Karl Bruder &amp; Mipon",
   "contact": {
     "id": "001email",

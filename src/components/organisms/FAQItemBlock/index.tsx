@@ -20,7 +20,7 @@ const FAQItemBlock: React.FC<FAQItemBlockInterface> = (props: FAQItemBlockInterf
         <StyleFAQBlock>
             <FAQCategoryLabel content={props.section} />
             {props.questions.map(item => (
-                <FAQItem question={item.question} answer={item.answer} />
+                <FAQItem question={item.question} answer={item.answer} key={item.id} />
             ))}
         </StyleFAQBlock>
     )
