@@ -1,18 +1,18 @@
-import React from 'react'
+import React from "react"
 import { StyleCoCGreetingWrapper, StyleCoCGreetingContent } from "./styles"
 
 interface CoCGreetingInterface {
-    content: string;
+  greetingContent: string
 }
 
 const CoCGreeting: React.FC<CoCGreetingInterface> = (
-    props: CoCGreetingInterface
+  props: CoCGreetingInterface
 ) => {
-    return (
-        <StyleCoCGreetingWrapper>
-            <StyleCoCGreetingContent>{props.content}</StyleCoCGreetingContent>
-        </StyleCoCGreetingWrapper>
-    )
+  return (
+    <StyleCoCGreetingWrapper>
+      <StyleCoCGreetingContent>{props.greetingContent}</StyleCoCGreetingContent>
+    </StyleCoCGreetingWrapper>
+  )
 }
 
 export default CoCGreeting

@@ -22,17 +22,20 @@
         "subsections": [
           {
             "subsectionID": "coc-sec-001-001",
-            "type": "paragraph",
-            "content": "Some content at Animers may not be suitable for children & teenagers. In addition, events are often held at locations serving alcohol. Therefore, members must be at least 20 years or older."
+            "type": "p",
+            "content": "Some content at Animers may not be suitable for children & teenagers. In addition, events are often held at locations serving alcohol. Therefore, members must be at least 20 years or older.",
+            "listItems": null
           },
           {
             "subsectionID": "coc-sec-001-002",
-            "type": "paragraph-bold",
-            "content": "Examples of behavior that contributes to creating a positive environment include:"
+            "type": "COCBoldSubtitle",
+            "content": "Examples of behavior that contributes to creating a positive environment include:",
+            "listItems": null
           },
           {
             "subsectionID": "coc-sec-001-003",
-            "type": "unordered-list",
+            "type": "ul",
+            "content": null,
             "listItems": [
               {
                 "listItemID": "coc-sec-001-003-001",
@@ -62,12 +65,14 @@
           },
           {
             "subsectionID": "coc-sec-001-003",
-            "type": "paragraph-bold",
-            "content": "Examples of unacceptable behavior by participants include:"
+            "type": "COCBoldSubtitle",
+            "content": "Examples of unacceptable behavior by participants include:",
+            "listItems": null
           },
           {
             "subsectionID": "coc-sec-001-004",
-            "type": "unordered-list",
+            "type": "ul",
+            "content": null,
             "listItems": [
               {
                 "listItemID": "coc-sec-001-004-001",

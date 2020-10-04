@@ -1,18 +1,18 @@
-import React from 'react'
+import React from "react"
 import { StyleDisclaimerWrapper, StyleDisclaimerContent } from "./styles"
 
 interface CoCDisclaimerInterface {
-    content: string;
+  disclaimerContent: string
 }
 
 const CoCDisclaimer: React.FC<CoCDisclaimerInterface> = (
-    props: CoCDisclaimerInterface
+  props: CoCDisclaimerInterface
 ) => {
-    return (
-        <StyleDisclaimerWrapper>
-            <StyleDisclaimerContent>{props.content}</StyleDisclaimerContent>
-        </StyleDisclaimerWrapper>
-    )
+  return (
+    <StyleDisclaimerWrapper>
+      <StyleDisclaimerContent>{props.disclaimerContent}</StyleDisclaimerContent>
+    </StyleDisclaimerWrapper>
+  )
 }
 
 export default CoCDisclaimer

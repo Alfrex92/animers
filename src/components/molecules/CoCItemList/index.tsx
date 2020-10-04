@@ -2,7 +2,7 @@ import React from "react"
 import { StyleItemListWrapper, StyleItemList, StyleItem } from "./styles"
 
 interface CoCItemListInterface {
-  itemList: COCItemInterface[]
+  itemList: COCItemInterface[] | null
 }
 
 interface COCItemInterface {

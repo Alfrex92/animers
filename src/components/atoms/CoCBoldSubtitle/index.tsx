@@ -2,7 +2,7 @@ import React from "react"
 import { StyleSubtitleWrapper, StyleSubtitleContent } from "./styles"
 
 interface CoCBoldSubtitleInterface {
-  content: string
+  content: string | null
 }
 
 const CoCBoldSubtitle: React.FC<CoCBoldSubtitleInterface> = (
