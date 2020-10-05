@@ -4,6 +4,8 @@ import { media } from "../../../styles/breakpoints"
 
 export const StyleCoCContentWrapper = styled.div`
   margin: ${space.l} auto;
-  max-height: 100vh;
-  max-width: 100vw;
+`
+
+export const StyleCoCCenteredText = styled.p`
+  text-align: center;
 `

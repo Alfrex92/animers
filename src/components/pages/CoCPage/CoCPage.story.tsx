@@ -5,24 +5,21 @@ import { withInfo } from "@storybook/addon-info"
 
 import data from "../../../../config/translations/en.json"
 
-const eventFAQs = data.faqs[0]
-const covidFAQs = data.faqs[1]
-const drinkFAQs = data.faqs[2]
-const FAQBlockList = [eventFAQs, covidFAQs, drinkFAQs]
+import CoCPage from "./index"
 
-import FAQPage from "./index"
-
-const story = storiesOf("Pages | FAQPage", module)
+const story = storiesOf("Pages | CoCPage", module)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-// FAQ Page
+// Code of Conduct Page
 story.add("Component", () => (
-  <FAQPage
+  <CoCPage
     emailAddress={text("Email address", "x@x.com")}
     emailMessage={text("Email Message", "Get in Touch")}
     socialMessage={text("Social Message", "Follow Us")}
     copyrightContent={text("Copyright content", "Copyright blablabla")}
-    sectionTitle={text("Section title", "FAQs")}
-    faqList={FAQBlockList}
+    disclaimer={data.codeOfConduct.disclaimer}
+    greeting={data.codeOfConduct.greeting}
+    introduction={data.codeOfConduct.introduction}
+    sections={data.codeOfConduct.sections}
   />
 ))

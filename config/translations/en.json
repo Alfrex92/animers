@@ -12,7 +12,7 @@
       },
       {
         "parID": "coc-intro-2",
-        "content": "Everyone who participates in an Animers platform (online and offline) must adhere to the following Code of Conduct. Organizers monitor members’ comments and behavior, and those who violate the code of conduct may be asked to leave the group."
+        "content": "Everyone who participates in an Animers event (online and offline) must adhere to the following Code of Conduct. Organizers monitor members’ comments and behavior, and those who violate the code of conduct may be asked to leave the group."
       }
     ],
     "sections": [
@@ -103,6 +103,210 @@
                 "content": "Insults or put-downs"
               }
             ]
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-002",
+        "sectionTitle": "Self Promotion",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-002-001",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-002-001-001",
+                "content": "Self-promotion is not allowed. If you run a website, YouTube channel, SNS page, publication, blog, app, or other project and would like to promote it on Animers, please ask an organizer beforehand."
+              },
+              {
+                "listItemID": "coc-sec-002-001-002",
+                "content": "You should never ask any of the members of Animers to promote your service or product inside the community."
+              },
+              {
+                "listItemID": "coc-sec-002-001-003",
+                "content": "You should not spam in any way, especially through private messages. You should not hide your affiliation to your project or site, or lie about who you are or why you’re promoting something."
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-002-002",
+            "type": "p",
+            "content": "Why? Because Animers is a community, not a platform for self-promotion.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-002-003",
+            "type": "p-centered",
+            "content": "Note: If you have a product, service, event, etc. that you would like to promote, please contact any of the organizers. We are more than happy to conduct a cross-promotion.",
+            "listItems": null
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-003",
+        "sectionTitle": "Online Community",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-003-001",
+            "type": "p",
+            "content": "Besides our offline meetup, Animers also has an online community.  Keep the following rules in mind while participating in our online chat:",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-003-002",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-003-002-001",
+                "content": "Manga, web novel, and light novel spoilers are prohibited."
+              },
+              {
+                "listItemID": "coc-sec-003-002-002",
+                "content": "At the moment Hentai/explicit sexual content is not allowed but we’re planning to create a channel called “nsfw” where hentai or ecchi content will be allowed."
+              },
+              {
+                "listItemID": "coc-sec-003-002-003",
+                "content": "Any content that promotes hate is not allowed."
+              },
+              {
+                "listItemID": "coc-sec-003-002-004",
+                "content": "Self-promotion is prohibited unless with the prior authorization of any of the organizers."
+              },
+              {
+                "listItemID": "coc-sec-003-002-005",
+                "content": "We generally  prefer to only add people to the chat who have already participated in an offline event at least one time."
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-003-003",
+            "type": "p",
+            "content": "If you violate the code of conduct we’ll ask you first to erase your comment. If you don’t erase the message in less than 30 minutes you’ll be removed from the community. Depending on the nature of the violation, you might also be banned from offline events.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-003-004",
+            "type": "p",
+            "content": "The bans from the online and offline community will be at least 6 months. The duration of the ban may be longer depending on the organizers’ criteria.",
+            "listItems": null
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-004",
+        "sectionTitle": "Prohibited Items",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-004-001",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-004-001-001",
+                "content": "Firearms, fireworks, flammable liquids or aerosol products, knives, daggers, swords, katana, clubs, maces, other crushing or edged weapons, projectiles, air guns, longbows, crossbows are strictly prohibited. Or, any other weapon-related item."
+              },
+              {
+                "listItemID": "coc-sec-004-001-002",
+                "content": "Stilts"
+              },
+              {
+                "listItemID": "coc-sec-004-001-003",
+                "content": "Illegal Substances like drugs"
+              },
+              {
+                "listItemID": "coc-sec-004-001-004",
+                "content": "Animals – we might make an exception for a living Dinosaur."
+              },
+              {
+                "listItemID": "coc-sec-004-001-005",
+                "content": " Lasers or similar items"
+              },
+              {
+                "listItemID": "coc-sec-004-001-006",
+                "content": "Flammable Liquids"
+              },
+              {
+                "listItemID": "coc-sec-004-001-007",
+                "content": "Fire, lighters (used at the meetup) or open flames"
+              },
+              {
+                "listItemID": "coc-sec-004-001-008",
+                "content": "Any other item that may put someone in danger"
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-004-002",
+            "type": "p",
+            "content": "This Code of Conduct isn’t a complete list. It’s so you understand the vibe here. You know what being a jerk is; don’t be one. The community we’re going for here is helpful, accepting, friendly, accommodating, and aware of the fact that the web, and the world, is a big place with room for all of us.",
+            "listItems": null
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-005",
+        "sectionTitle": "Agreement",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-005-001",
+            "type": "p",
+            "content": "You must comply with this Code of Conduct in order to attend to any of our events and/or be of our community.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-005-002",
+            "type": "p",
+            "content": "If a participant engages in behavior that violates this Code of Conduct, the meetup organizers will take appropriate action. This may include:",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-005-003",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-005-003-001",
+                "content": "Verbal warning"
+              },
+              {
+                "listItemID": "coc-sec-005-003-002",
+                "content": "Removal from the event"
+              },
+              {
+                "listItemID": "coc-sec-005-003-003",
+                "content": "Disinvitation from future events"
+              },
+              {
+                "listItemID": "coc-sec-005-003-004",
+                "content": "Banning from the online community"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-006",
+        "sectionTitle": "Contact Information",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-006-001",
+            "type": "p",
+            "content": "If you witness or experience any activity that puts someone's safety or enjoyment of the group at risk, or if you notice anything else concerning or suspicious, please inform the Animers organizers.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-006-002",
+            "type": "p",
+            "content": "Also, If you believe that someone is violating the Code of Conduct, or have any other concerns, please contact an organizer immediately.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-006-003",
+            "type": "p",
+            "content": "We have escalation procedures in place to handle these kinds of situations, and we can take the appropriate action from there in order to ensure the event provides a safe, enjoyable, and welcoming environment for everyone.",
+            "listItems": null
           }
         ]
       }

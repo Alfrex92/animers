@@ -1,7 +1,8 @@
 import React from "react"
-import { StyleCoCContentWrapper } from "./styles"
+import { StyleCoCContentWrapper, StyleCoCCenteredText } from "./styles"
 import CoCDisclaimer from "../../atoms/CoCDisclaimer"
 import CoCGreeting from "../../atoms/CoCGreeting"
+import CoCSectionTitle from "../../atoms/CoCSectionTitle"
 import CoCBoldSubtitle from "../../atoms/CoCBoldSubtitle"
 import CoCItemList from "../../molecules/CoCItemList"
 
@@ -35,12 +36,6 @@ interface ListItemsInterface {
   content: string
 }
 
-const returnElement = element => {
-  if (element.type === "p") {
-    return <p>{element.content}</p>
-  }
-}
-
 const CoCContent: React.FC<CoCContentInterface> = (
   props: CoCContentInterface
 ) => {
@@ -59,22 +54,22 @@ const CoCContent: React.FC<CoCContentInterface> = (
       <div>
         {props.sections.map(section => (
           <div key={section.sectionID}>
-            <h3>{section.sectionTitle}</h3>
+            <CoCSectionTitle content={section.sectionTitle}></CoCSectionTitle>
             {section.subsections.map(subsection => (
               <div key={subsection.subsectionID}>
                 <div>
-                  {subsection.type === "COCBoldSubtitle" ? (
-                    <CoCBoldSubtitle
-                      content={subsection.content}
-                    ></CoCBoldSubtitle>
-                  ) : (
-                    <p>{subsection.content}</p>
+                  {subsection.type === "COCBoldSubtitle" && (
+                    <CoCBoldSubtitle content={subsection.content} />
                   )}
-                </div>
-                <div>
-                  {subsection.listItems ? (
+                  {subsection.type === "p" && <p>{subsection.content}</p>}
+                  {subsection.type === "p-centered" && (
+                    <StyleCoCCenteredText>
+                      {subsection.content}
+                    </StyleCoCCenteredText>
+                  )}
+                  {subsection.listItems && (
                     <CoCItemList itemList={subsection.listItems} />
-                  ) : null}
+                  )}
                 </div>
               </div>
             ))}
