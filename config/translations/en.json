@@ -2,6 +2,91 @@
   "hello": "Hello and welcome to this i18n example site!",
   "subline": "You can read some of my cool articles I wrote!",
   "backToHome": "Back to home",
+  "aboutUs": [
+    {
+      "sectionID": "about-001",
+      "sectionTitle": "About Animers",
+      "content": "Animers is a bi-monthly, bilingual (English & Japanese) event for anime & manga fans in Tokyo. Our creed is to create community where everyone can have a sense of belonging and respected."
+    },
+    {
+      "sectionID": "about-002",
+      "sectionTitle": "Animers Creed",
+      "content": "A community where everyone can have a sense of belonging and is respected."
+    }
+  ],
+  "aboutUsStoryTitle": "Our Story",
+  "aboutUsStory": [
+    {
+      "parID": "about-003-par-001",
+      "content": "It all began on May 25, 2018. Animers held its very first event. At the start, the group only had a handful of members, and when I held the first official group event, only one other person showed up! But even having that one person come to the event made me incredibly happy. On the day of the event, I was super nervous, and I kept wondering “Would anyone really come all the way out to this bar in Ikebukuro?” Even today, I still remember how anxious I felt! But once she finally arrived, I was absolutely ecstatic.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-002",
+      "content": "Ever since I was a child, I’ve loved manga and anime, and I’ve also enjoyed meeting people from different countries and cultures. Once I became a working adult, my job gave me many chances to work with people from all over the world. Through these interactions, I realized that there were a lot of people outside Japan who also loved anime and manga.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-003",
+      "content": "Many of the people I met would often ask me “How do I make friends with Japanese people? I’ve tried going to ‘international exchange’ events, but I don’t really feel comfortable with that kind of thing.” I could only imagine how difficult a dilemma it must have been for them. After all, there are lots of Japanese people who want to make international friends too!",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-004",
+      "content": "These feelings became my inspiration to create this group.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-005",
+      "content": "I imagined how wonderful it would be to have a community where Japanese people and people from around the world could be brought together through a shared love of anime and manga! My motivation came from this simple but sincere wish.",
+      "isFeaturedQuote": true
+    },
+    {
+      "parID": "about-003-par-006",
+      "content": "When I set about starting the group, there were plenty of anime fan communities among Japanese people, but I couldn’t find any international groups for fans from other countries. So I decided right then and there to start such a group myself that very day.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-007",
+      "content": "Now, of course, I’m always excited to meet and chat with people of all kinds; not just anime and manga fans. Still, I’m filled with an incredible joy when I see how our group members have so much fun talking to one another.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-008",
+      "content": "From just a few members, we’ve now grown to more than 800! If there’s one thing I can say for sure, it’s that Animers is full of absolutely wonderful people. Just join us for one of our events and you’ll see what I mean!",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-009",
+      "content": " Everyone is super friendly and welcoming. For that reason, I consider Animers to be a very fortunate group.",
+      "isFeaturedQuote": true
+    },
+    {
+      "parID": "about-003-par-010",
+      "content": "One of the best parts of Animers is that we’re completely “borderless.” The age range of our members range from teenagers to people in their 60’s (even my own mom has joined an event or two! LOL), and of course, we come from countries all over the world. Everyone has their own interests and tastes in anime, manga and games, but no matter what, we take care to respect each other’s opinions and points of view.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-012",
+      "content": "Our common interests bring us together and form friendships.",
+      "isFeaturedQuote": true
+    },
+    {
+      "parID": "about-003-par-013",
+      "content": "I truly love the Animers community, and I hope you do too. Even if you consider it something like your friendly local cafe where you can pop in anytime you feel like it. As we continue to gain more members, I think there is lots more we can do to make the group even better, and make sure it stays a pleasant and relaxing community. I hope that you, our members and Alfredo, my talented and tireless co-organizer, can help support Animers for a long time to come.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-014",
+      "content": "Yuuka",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-015",
+      "content": "Founder and Organizer",
+      "isFeaturedQuote": false
+    }
+  ],
   "codeOfConduct": {
     "disclaimer": "Animers reserve the right to modify and/or update this policy at any time in their sole discretion and without prior notice.",
     "greeting": "Hey everybody!",
