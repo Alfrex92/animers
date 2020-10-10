@@ -12,7 +12,7 @@ export const StyleSectionContainer = styled.div`
 `
 
 export const StyleSectionContent = styled.p`
-  color: ${colors.gray.darker};
+  color: ${colors.black.normal};
   font-size: ${fsize.bigger};
-  font-weight: ${fweight.w7};
+  font-weight: ${fweight.w8};
 `

@@ -2,8 +2,10 @@ import React from "react"
 import {
   StyleAboutUsStoryWrapper,
   StyleBasicParagraph,
+  StyleFeatureQuote,
   StyleFeatureQuotePink,
 } from "./styles"
+import AboutSectionTitle from "../../atoms/AboutSectionTitle"
 
 interface AboutUsStoryInterface {
   aboutUsStoryTitle: string
@@ -21,18 +23,18 @@ const AboutUsStory: React.FC<AboutUsStoryInterface> = (
 ) => {
   return (
     <StyleAboutUsStoryWrapper>
-      <h3>{props.aboutUsStoryTitle}</h3>
-      {props.paragraphs?.map(paragraph =>
-        paragraph.isFeaturedQuote === false ? (
-          <StyleBasicParagraph key={paragraph.parID}>
-            {paragraph.content}
-          </StyleBasicParagraph>
-        ) : (
-          <StyleFeatureQuotePink key={paragraph.parID}>
-            {paragraph.content}
-          </StyleFeatureQuotePink>
-        )
-      )}
+      <AboutSectionTitle content={props.aboutUsStoryTitle} />
+      {props.paragraphs?.map(paragraph => {
+        if (paragraph.parID === "about-003-par-005") {
+          return (
+            <StyleFeatureQuotePink>{paragraph.content}</StyleFeatureQuotePink>
+          )
+        } else if (paragraph.isFeaturedQuote === true) {
+          return <StyleFeatureQuote>{paragraph.content}</StyleFeatureQuote>
+        } else {
+          return <StyleBasicParagraph>{paragraph.content}</StyleBasicParagraph>
+        }
+      })}
     </StyleAboutUsStoryWrapper>
   )
 }

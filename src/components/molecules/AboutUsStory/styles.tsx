@@ -10,9 +10,14 @@ export const StyleBasicParagraph = styled.p`
   text-align: left;
 `
 
-export const StyleFeatureQuotePink = styled.div`
-  background-color: #fbf5f5;
+export const StyleFeatureQuote = styled.div`
+  font-style: italic;
   font-size: ${fsize.big};
   font-weight: ${fweight.w3};
   text-align: center;
+`
+
+export const StyleFeatureQuotePink = styled(StyleFeatureQuote)`
+  background-color: #fbf5f5;
+  font-style: normal;
 `

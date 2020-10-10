@@ -2,6 +2,7 @@ import React from "react"
 import { StyleAboutUsOrganismWrapper } from "./styles"
 import AboutSectionBlock from "../../molecules/AboutSectionBlock"
 import AboutUsStory from "../../molecules/AboutUsStory"
+import AboutSectionTitle from "../../atoms/AboutSectionTitle"
 
 interface AboutUsContentInterface {
   aboutUsSections: AboutSectionBlockInterface[]
@@ -30,7 +31,7 @@ const AboutUsContent: React.FC<AboutUsContentInterface> = (
         text={props.aboutUsSections[0].content}
       />
       <div>
-        <h3>The Team</h3>
+        <AboutSectionTitle content={"The Team"} />
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
           deleniti nam debitis esse minus commodi eum, sed, ipsa ipsum,
