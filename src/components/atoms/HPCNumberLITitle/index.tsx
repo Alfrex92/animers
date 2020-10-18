@@ -8,7 +8,6 @@ interface HPCNumberListTitleInterface {
 const HPCNumberListTitle: React.FC<HPCNumberListTitleInterface> = (
     props: HPCNumberListTitleInterface
 ) => {
-    console.log(props.title)
     return (
         <StyleHPCNumberLITitleWrapper>
             <StyleHPCNumberLITitle>{props.title}</StyleHPCNumberLITitle>

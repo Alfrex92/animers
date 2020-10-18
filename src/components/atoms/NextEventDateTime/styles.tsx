@@ -10,7 +10,7 @@ export const StyleDateTimeWrapper = styled.div `
 `;
 
 export const StyleDateTime = styled.p `
-    color: ${colors.black.normal};
+    color: ${colors.white.normal};
     font-size: ${fsize.small};
     font-weight: ${fweight.w1};
 `;

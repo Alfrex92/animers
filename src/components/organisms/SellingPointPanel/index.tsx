@@ -14,6 +14,12 @@ interface SellingPointPanelInterface {
   textColor: string
   hasBorder: boolean
   children: any
+  bulletPoints: BulletPointInterface[]
+}
+
+interface BulletPointInterface {
+  id: string;
+  content: string;
 }
 
 const SalesPointPanel: React.FC<SellingPointPanelInterface> = (
@@ -23,7 +29,7 @@ const SalesPointPanel: React.FC<SellingPointPanelInterface> = (
     <StyleSellingPointPanelWrapper>
       <HPCBlockTitle title={props.blockTitle} />
       <StyleSellingPointContentWrapper>
-        <BulletPointList />
+        <BulletPointList bulletPoints={props.bulletPoints}/>
       </StyleSellingPointContentWrapper>
       <BasicButton
         buttonColor={props.buttonColor}

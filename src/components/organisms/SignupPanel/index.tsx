@@ -1,5 +1,4 @@
 import React from "react"
-import data from "../../../../config/translations/en.json"
 import HPCBlockTitle from "../../atoms/HPCBlockTitle"
 import BasicButton from "../../molecules/BasicButton"
 import HPCNumberListItem from "../../molecules/HPCNumberListItem"
@@ -12,9 +11,15 @@ interface SignupPanelInterface {
   textColor: string
   hasBorder: boolean
   children: any
+  signUpSteps: SignupStepInterface[]
 }
 
-const listItems = data.signupSteps
+interface SignupStepInterface {
+  id: string;
+  stepNum: string;
+  title: string;
+  subtitle: string;
+}
 
 const SignupPanel: React.FC<SignupPanelInterface> = (
   props: SignupPanelInterface
@@ -23,7 +28,7 @@ const SignupPanel: React.FC<SignupPanelInterface> = (
     <StyleSignupPanelWrapper>
       <HPCBlockTitle title={props.blockTitle} />
       <StyleContentWrapper>
-        {listItems.map(item => (
+        {props.signUpSteps.map(item => (
           <HPCNumberListItem
             numContent={item.stepNum}
             liTitle={item.title}
