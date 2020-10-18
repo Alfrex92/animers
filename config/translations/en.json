@@ -9,6 +9,15 @@
     "address": "hello@animers.io"
   },
   "emailCTA": "Get in Touch",
+  "events": [
+    {
+      "eventID": "event001",
+      "title": "☆Anime Meetup in Tokyo☆ アニメマンガ好き集まれ！",
+      "date": "Sun, July 5, 2020",
+      "time": "8 p.m. (JST)",
+      "location": "Shinjuku"
+    }
+  ],
   "menu": [
     {
       "id": "heocp3j",
@@ -167,6 +176,48 @@
       "description": "A community where everyone can have a sense of belonging and respected."
     }
   },
+  "sellingPoints": [
+    {
+      "id": "point001",
+      "content": "Regularly attended by anime industry insiders"
+    },
+    {
+      "id": "point002",
+      "content": "Meet other anime and manga fans"
+    },
+    {
+      "id": "point003",
+      "content": "Practicte your English and/or Japanese skills"
+    },
+    {
+      "id": "point004",
+      "content": "A friendly and welcoming community"
+    },
+    {
+      "id": "point005",
+      "content": "Make friends from around the world"
+    }
+  ],
+  "signupSteps": [
+    {
+      "id": "step001",
+      "stepNum": "1",
+      "title": "Register on Meetup",
+      "subtitle": "And join our community"
+    },
+    {
+      "id": "step002",
+      "stepNum": "2",
+      "title": "Sign up for an upcoming event",
+      "subtitle": "We hold events twice a month (biweekly)"
+    },
+    {
+      "id": "step003",
+      "stepNum": "3",
+      "title": "Attend and have fun!",
+      "subtitle": "Hang out and make new friends"
+    }
+  ],
   "socialCTA": "Follow Us",
   "team": [
     {
