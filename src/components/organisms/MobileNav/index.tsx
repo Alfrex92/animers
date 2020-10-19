@@ -6,13 +6,6 @@ import BurgerIcon from "../../atoms/Burger"
 import MobileNavMenu from "../../pages/MobileNavMenu"
 import { StyleMobileNavWrapper, StyleLanguageBurgerWrapper } from "./styles"
 
-// const importedProps = {
-//     emailMessage: data.emailCTA,
-//     emailAddress: data.contact.address,
-//     socialMessage: data.socialCTA,
-//     copyrightContent: data.copyrightContent
-// }
-
 interface MobileNavInterFace {
     language: String
 }

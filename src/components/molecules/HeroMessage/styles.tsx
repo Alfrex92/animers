@@ -8,6 +8,9 @@ export const StyleHeroMessageWrapper = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    max-width: 400px;
+    padding: ${space.m};
+    text-align: center;
 
     ${media.med `
         position: absolute;
@@ -23,6 +26,11 @@ export const StyleHeroMessage = styled.p `
 
     ${media.med `
     font-size: ${fsize.bigger};
-    font-weight: ${fweight.w7};
+    font-weight: ${fweight.w8};
     `}
+`;
+
+export const StyleButtonContainer = styled.div `
+    margin: auto;
+    max-width: 40%;
 `;

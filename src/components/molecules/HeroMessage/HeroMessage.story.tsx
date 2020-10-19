@@ -5,6 +5,7 @@ import { withInfo } from "@storybook/addon-info"
 import data from "../../../../config/translations/en.json"
 import HeroMessage from "./index"
 
+const aaa = data.heroMessage
 
 const story = storiesOf("Molecules | HeroMessage", module)
     .addDecorator(withInfo)
@@ -14,7 +15,7 @@ story.add("Component", () => (
     <div>
         <HeroMessage
             textContent={text("Hero message", `${data.heroMessage}`)}
-            buttonProps={{buttonColor: color("Button color", "#ffffff"), textColor: color("Text color", "#f92b00"), children: text("Message", "Attend"), hasBorder: boolean("Border?", false)}}
+            buttonProps={{buttonColor: color("Button color", "#ffffff"), textColor: color("Text color", "#f92b00"), children: text("Message", "Join Now"), hasBorder: boolean("Border?", false)}}
         />
     </div>
 ))
