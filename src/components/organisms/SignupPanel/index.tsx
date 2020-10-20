@@ -7,10 +7,7 @@ import { StyleSignupPanelWrapper, StyleContentWrapper } from "./styles"
 
 interface SignupPanelInterface {
   blockTitle: string
-  buttonColor: string
-  textColor: string
-  hasBorder: boolean
-  children: any
+  buttonProps: BasicButtonInterface
   signUpSteps: SignupStepInterface[]
 }
 
@@ -38,10 +35,10 @@ const SignupPanel: React.FC<SignupPanelInterface> = (
         ))}
       </StyleContentWrapper>
       <BasicButton
-        buttonColor={props.buttonColor}
-        textColor={props.textColor}
-        children={props.children}
-        hasBorder={props.hasBorder}
+        buttonColor={props.buttonProps.buttonColor}
+        textColor={props.buttonProps.textColor}
+        children={props.buttonProps.children}
+        hasBorder={props.buttonProps.hasBorder}
       />
     </StyleSignupPanelWrapper>
   )

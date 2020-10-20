@@ -14,10 +14,10 @@ const story = storiesOf("Organisms | SellingPointPanel", module)
 story.add("Component", () => (
     <SellingPointPanel
         blockTitle={text("Block title", "The Best Part of Animers")}
-        buttonColor={color("Button color", "#f92b00")}
-        textColor={color("Text color", "#ffffff")}
-        hasBorder={boolean("Button border?", false)}
-        children={text("Button message", "Join Now")}
+        buttonProps={{
+            buttonColor:color("Button color", "#f92b00"), textColor:color("Text color", "#ffffff"),
+            hasBorder: boolean("Button border?", false), children: text("Button message", "Join Now")
+        }}
         bulletPoints={data.sellingPoints}
     />
 )

@@ -13,10 +13,11 @@ const story = storiesOf("Organisms | SignupPanel", module)
 story.add("Component", () => (
   <SignupPanel
     blockTitle={text("Block title", "Your adventure starts here!")}
-    buttonColor={color("Button color", "#f92b00")}
-    hasBorder={boolean("Border?", false)}
-    textColor={color("Text color", "#fff")}
-    children={text("Button message", "Join Us")}
+    buttonProps={
+      {buttonColor: color("Button color", "#f92b00"), hasBorder: boolean("Border?", false),
+        textColor: color("Text color", "#fff"), children: text("Button message", "Join Us")
+      }
+    }
     signUpSteps={data.signupSteps}
   />
 ))

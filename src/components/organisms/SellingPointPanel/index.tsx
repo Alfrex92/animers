@@ -10,16 +10,20 @@ import {
 
 interface SellingPointPanelInterface {
   blockTitle: string
-  buttonColor: string
-  textColor: string
-  hasBorder: boolean
-  children: any
+  buttonProps: BasicButtonInterface
   bulletPoints: BulletPointInterface[]
 }
 
 interface BulletPointInterface {
   id: string;
   content: string;
+}
+
+interface BasicButtonInterface {
+  children: any;
+  buttonColor: string;
+  hasBorder: boolean;
+  textColor: string;
 }
 
 const SalesPointPanel: React.FC<SellingPointPanelInterface> = (
@@ -32,10 +36,10 @@ const SalesPointPanel: React.FC<SellingPointPanelInterface> = (
         <BulletPointList bulletPoints={props.bulletPoints}/>
       </StyleSellingPointContentWrapper>
       <BasicButton
-        buttonColor={props.buttonColor}
-        textColor={props.textColor}
-        hasBorder={props.hasBorder}
-        children={props.children}
+        buttonColor={props.buttonProps.buttonColor}
+        textColor={props.buttonProps.textColor}
+        hasBorder={props.buttonProps.hasBorder}
+        children={props.buttonProps.children}
       />
     </StyleSellingPointPanelWrapper>
   )

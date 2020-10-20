@@ -10,12 +10,21 @@ import MessagePanel from "../../organisms/MessagePanel"
 import Footer from "../../organisms/Footer"
 
 interface HomepageInterface {
-    textContent: string;
-    dateContent: string;
+    bannerProps: BannerInterface;
     buttonProps: BasicButtonInterface;
     upcomingEventBlock: UpcomingEvenBlockInterface;
     desktopBlockTitle: string;
     desktopCountdownContent: string;
+    signupPanelProps: SignupPanelInterface;
+    sellingPointPanelProps: SellingPointPanelInterface;
+    messagePanelProps: MessagePanelInterface;
+    footerProps: FooterInterface;
+}
+
+interface BannerInterface {
+    textContent: string;
+    dateContent: string;
+    buttonProps: BasicButtonInterface;
 }
 
 interface BasicButtonInterface {
@@ -38,12 +47,49 @@ interface EventDateTimeInterface {
     location: string;
 }
 
+interface SignupPanelInterface {
+    blockTitle: string
+    buttonProps: BasicButtonInterface
+    signUpSteps: SignupStepInterface[]
+}
+  
+interface SignupStepInterface {
+    id: string;
+    stepNum: string;
+    title: string;
+    subtitle: string;
+}
+
+interface SellingPointPanelInterface {
+    blockTitle: string
+    buttonProps: BasicButtonInterface
+    bulletPoints: BulletPointInterface[]
+}
+  
+  interface BulletPointInterface {
+    id: string;
+    content: string;
+}
+
+interface MessagePanelInterface {
+    blockTitle: string;
+    content: string;
+    buttonProps: BasicButtonInterface;
+}
+
+interface FooterInterface {
+    emailMessage: string,
+    emailAddress: string,
+    socialMessage: string,
+    copyrightContent: string
+}
+
 const Homepage: React.FC<HomepageInterface> = (
     props: HomepageInterface
 ) => {
     return (
         <StyleHomepageWrapper>
-            <NextEventBanner textContent={props.textContent} dateContent={props.dateContent} buttonProps={props.buttonProps}/>
+            <NextEventBanner textContent={props.bannerProps.textContent} dateContent={props.bannerProps.dateContent} buttonProps={props.bannerProps.buttonProps}/>
             {screenX > 400 ? (DesktopNav): (MobileNav)}
             <UpcomingEventPanel 
             desktopCountdownContent={props.desktopCountdownContent}
@@ -55,10 +101,10 @@ const Homepage: React.FC<HomepageInterface> = (
                 }, 
             }}
             />
-            <SignupPanel />
-            <SellingPointPanel />
-            <MessagePanel />
-            <Footer />
+            <SignupPanel blockTitle={props.signupPanelProps.blockTitle}  signUpSteps={props.signupPanelProps.signUpSteps} buttonProps={props.signupPanelProps.buttonProps}/>
+            <SellingPointPanel blockTitle={props.sellingPointPanelProps.blockTitle}  buttonProps={props.sellingPointPanelProps.buttonProps} bulletPoints={props.sellingPointPanelProps.bulletPoints}/>
+            <MessagePanel blockTitle={props.messagePanelProps.blockTitle} content={props.messagePanelProps.content} buttonProps={props.messagePanelProps.buttonProps}/>
+            <Footer emailAddress={props.footerProps.emailAddress} emailMessage={props.footerProps.emailMessage} socialMessage={props.footerProps.socialMessage} copyrightContent={props.footerProps.copyrightContent}/>
         </StyleHomepageWrapper>
     )
 }
