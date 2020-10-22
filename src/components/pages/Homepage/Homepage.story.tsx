@@ -1,11 +1,22 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { withKnobs, text, color, boolean } from "@storybook/addon-knobs"
+import { withKnobs, text, color, boolean, select } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
 
 import data from "../../../../config/translations/en.json";
 
 import Homepage from "./index"
+
+// Faq data shortcuts
+const eventFAQs = data.faqs[0];
+const covidFAQs = data.faqs[1];
+const drinkFAQs = data.faqs[2];
+
+// Mobile nav variables
+const label = "Language";
+const languageOptions = { ENG: "en", JP: "jp" };
+const defaultValue = 'en';
+const groupId = 'GROUP-ID1';
 
 const story = storiesOf("Pages | Homepage", module)
     .addDecorator(withInfo)
@@ -21,6 +32,14 @@ story.add("Component", () => (
 
         desktopBlockTitle={text("Desktop block title content", "Upcoming Event")} desktopCountdownContent={text("Countdown content", "in 5 days and 6 hours")}
 
+        desktopNavProps={{
+            languageOption: text("Desktop nav language option", "EN"),
+            buttonProps: {buttonColor: color("messagePanel Button color", "#f92b00"), textColor: color("desktopNav button text color", "#ffffff"), children: text("desktopNav button message", "Participate"), hasBorder: boolean("desktopNav button has border?",  false)},
+            navMenuProps: {links: data.menu}
+        }}
+
+        faqProps={{section: text("FAQ section title", "FAQs"), sectionID: "homepageFAQ001", questions: [eventFAQs.questions[0], covidFAQs.questions[0], drinkFAQs.questions[0]]}}
+
         footerProps={{
             emailMessage: "Get in Touch ",
             emailAddress: data.contact.address,
@@ -28,11 +47,19 @@ story.add("Component", () => (
             copyrightContent: data.copyrightContent
         }}
 
+        imageGalleryProps={{
+            images: data.gallery
+        }}
+
         messagePanelProps={{
             blockTitle: text("Message panel title", "Make Friends!"),
             buttonProps: {buttonColor: color("messagePanel Button color", "#f92b00"), textColor: color("messagePanel button text color", "#ffffff"), children: text("messagePanel button message", "Participate"), hasBorder: boolean("messagePanel button has border?",  false)},
             content: "Don't miss your chance to join the largest anime community in Tokyo"
         }}
+
+        mobileNavProps={{
+            language: select(label, languageOptions, defaultValue, groupId), emailCTA: data.emailCTA, emailAddress: data.contact.address, socialCTA: data.socialCTA, copyrightContent: data.copyrightContent}
+        }
 
         sellingPointPanelProps={{
             blockTitle: text("Selling point panel title", "The Best Part of Animers"),

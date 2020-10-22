@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleMobileNavMenuWrapper } from "./styles"
-import NavMenu from "../../molecules/NavMenu"
+import NavMenuMobile from "../../molecules/NavMenuMobile"
 import Footer from "../../organisms/Footer"
 
 interface MobileNavMenuInterface {
@@ -8,7 +8,17 @@ interface MobileNavMenuInterface {
     emailAddress: string,
     socialMessage: string,
     copyrightContent: string,
-    open: boolean
+    open: boolean,
+    navMenuProps: NavMenuInterface
+}
+
+interface NavMenuInterface {
+    mobileNavLinks: LinkInterface[]
+}
+
+interface LinkInterface {
+    title: string;
+    id: string;
 }
 
 const MobileNavMenu: React.FC<MobileNavMenuInterface> = (
@@ -16,7 +26,7 @@ const MobileNavMenu: React.FC<MobileNavMenuInterface> = (
 ) => {
     return (
         <StyleMobileNavMenuWrapper open={props.open}>
-            <NavMenu />
+            <NavMenuMobile menuLinks={props.navMenuProps.mobileNavLinks}/>
             <Footer emailMessage={props.emailMessage} emailAddress={props.emailAddress} socialMessage={props.socialMessage} copyrightContent={props.copyrightContent} />
         </StyleMobileNavMenuWrapper>
     )

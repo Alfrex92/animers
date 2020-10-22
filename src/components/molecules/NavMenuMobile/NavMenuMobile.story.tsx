@@ -3,13 +3,18 @@ import { storiesOf } from "@storybook/react"
 import { withKnobs } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
 import data from "../../../../config/translations/en.json"
-import ImageGallery from "./index"
 
+import NavMenuMobile from "./index"
 
-const story = storiesOf("Molecules | ImageGallery", module)
+console.log(data.menu)
+
+const story = storiesOf("Molecules | NavMenu", module)
     .addDecorator(withInfo)
     .addDecorator(withKnobs)
-//Gallery of multiple images
+// Mobile navigation menu
 story.add("Component", () => (
-    <ImageGallery images={data.gallery}/>
-))
+    <div style={{ maxWidth: "500px" }}>
+        <NavMenuMobile menuLinks={data.menu} />
+    </div>
+)
+)

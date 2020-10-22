@@ -4,7 +4,7 @@ import { StyleMenuLinkContainer } from "./styles"
 import MenuLink from "../../atoms/MenuLink/index"
 
 interface NavMenuInterface {
-    links: LinkInterface[]
+    menuLinks: LinkInterface[]
 }
 
 interface LinkInterface {
@@ -12,16 +12,16 @@ interface LinkInterface {
     id: string;
 }
 
-const NavMenu: React.FC<NavMenuInterface> = (
+const NavMenuMobile: React.FC<NavMenuInterface> = (
     props: NavMenuInterface
 ) => {
     return (
         <StyleMenuLinkContainer>
-            {props.links.map((navLink) => (
+            {props.menuLinks.map((navLink) => (
                 <MenuLink linkName={navLink.title} key={navLink.id} />
             ))}
         </StyleMenuLinkContainer>
     )
 }
 
-export default NavMenu
+export default NavMenuMobile

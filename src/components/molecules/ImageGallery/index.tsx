@@ -1,15 +1,28 @@
 import React from 'react'
-import { StyleHorizontalScrollWrapper } from "./styles"
+import { StyleImageGallery, StyleHorizontalScrollWrapper } from "./styles"
 import HorizontalScrollChild from "../../atoms/GalleryImage"
-import data from "../../../../config/translations/en.json"
 
-const ImageGallery = () => {
+interface ImageGalleryInterface {
+    images: GalleryImageInterface[]
+}
+
+interface GalleryImageInterface {
+    alt: string
+    url: string
+    id: string
+}
+
+const ImageGallery: React.FC<ImageGalleryInterface> = (
+    props: ImageGalleryInterface
+) => {
     return (
+        <StyleImageGallery>
         <StyleHorizontalScrollWrapper>
-            {data.gallery.map(galleryImage => (
+            {props.images.map(galleryImage => (
                 <HorizontalScrollChild image={galleryImage.url} alt={galleryImage.alt} key={galleryImage.id} />
             ))}
         </StyleHorizontalScrollWrapper>
+        </StyleImageGallery>
     )
 }
 

@@ -2,18 +2,12 @@ import styled from "styled-components"
 import { space } from "../../../styles/vars"
 
 export const StyleImageGallery = styled.div`
-    border: 2px solid red;
-    display: flex;
-    flex-direction: row;
-    height: 300px;
-    margin: ${space.l} 0 ${space.l} 0; 
-    overflow: hidden;
-    position: relative;
-    width: 1000px;
+    margin: 0 auto 0 150px;
 `;
 
 export const StyleHorizontalScrollWrapper = styled.div`
-    height: 100%;
+    height: 800px;
+    margin: ${space.l} auto -350px 0;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;

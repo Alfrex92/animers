@@ -9,11 +9,24 @@ import LanguageOption from "../../atoms/LanguageOption"
 
 interface DesktopNavInterface {
     languageOption: string,
-    buttonText: string,
-    buttonColor: string,
-    textColor: string,
-    hasBorder: boolean,
-    children: any
+    buttonProps: BasicButtonInterface,
+    navMenuProps: NavMenuInterface
+}
+
+interface BasicButtonInterface {
+    children: any;
+    buttonColor: string;
+    hasBorder: boolean;
+    textColor: string;
+}
+
+interface NavMenuInterface {
+    links: LinkInterface[]
+}
+
+interface LinkInterface {
+    title: string;
+    id: string;
 }
 
 const DesktopNav: React.FC<DesktopNavInterface> = (
@@ -22,10 +35,10 @@ const DesktopNav: React.FC<DesktopNavInterface> = (
     return (
         <StyleDesktopNavWrapper>
             <AnimersLogo />
-            <NavMenu />
+            <NavMenu links={props.navMenuProps.links}/>
             <div style={{ display: "flex", alignItems: "center" }}>
                 <LanguageOption language={props.languageOption} />
-                <BasicButton buttonColor={props.buttonColor} textColor={props.textColor} children={props.children} hasBorder={props.hasBorder}/>
+                <BasicButton buttonColor={props.buttonProps.buttonColor} textColor={props.buttonProps.textColor} children={props.buttonProps.children} hasBorder={props.buttonProps.hasBorder}/>
             </div>
         </StyleDesktopNavWrapper>
     )
