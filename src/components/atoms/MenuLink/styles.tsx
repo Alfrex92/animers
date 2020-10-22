@@ -22,4 +22,5 @@ export const StyleLink = styled(Link)`
 export const StyleLinkName = styled.span`
     color: ${colors.gray.darker};
     font-size: ${fsize.bigger};
+    text-align: center;
 `;
