@@ -8,14 +8,18 @@ export const StyleHeroMessageWrapper = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 400px;
+    max-width: 100%;
     padding: ${space.m};
+    position: relative;
     text-align: center;
 
     ${media.med `
         position: absolute;
         left: 0;
-        top: 50%;
+        min-height: 200px;
+        max-width: 350px;
+        top: 10%;
+        z-index: 999;
     `}
 `;
 

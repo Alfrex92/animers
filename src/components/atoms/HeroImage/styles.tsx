@@ -10,7 +10,10 @@ export const StyleImg = styled(SimpleImg)`
       padding: 0;
 
       ${media.med `
-        position: relative;
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        position: relative; 
       `}
   }
 `

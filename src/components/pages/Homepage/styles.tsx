@@ -5,3 +5,11 @@ export const StyleHomepageWrapper = styled.div `
     flex-direction: column;
     justify-self: center;
 `;
+
+export const StyleFAQBlockWrapper = styled.div`
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+`

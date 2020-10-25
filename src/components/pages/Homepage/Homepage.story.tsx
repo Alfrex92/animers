@@ -47,6 +47,16 @@ story.add("Component", () => (
             copyrightContent: data.copyrightContent
         }}
 
+        heroProps={{
+            image: text("Image", data.heroImages[1].src), alt: text("Alt", data.heroImages[1].alt),
+            heroMessageProps: {
+                textContent: text("Hero text content", "Meet Anime and Manga Fans Like You in Tokyo"),
+                buttonProps: {
+                    buttonColor: color("Button color", "#ffffff"), textColor: color("Text color", "#f92b00"), children: text("Message", "Attend"), hasBorder: boolean("Border?", false)
+                }
+            }
+        }}
+
         imageGalleryProps={{
             images: data.gallery
         }}
@@ -58,8 +68,9 @@ story.add("Component", () => (
         }}
 
         mobileNavProps={{
-            language: select(label, languageOptions, defaultValue, groupId), emailCTA: data.emailCTA, emailAddress: data.contact.address, socialCTA: data.socialCTA, copyrightContent: data.copyrightContent}
-        }
+            language: select(label, languageOptions, defaultValue, groupId), emailCTA: data.emailCTA, emailAddress: data.contact.address, socialCTA: data.socialCTA, copyrightContent: data.copyrightContent,
+            mobileNavLinks: data.menu
+        }}
 
         sellingPointPanelProps={{
             blockTitle: text("Selling point panel title", "The Best Part of Animers"),

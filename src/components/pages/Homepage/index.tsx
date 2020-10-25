@@ -1,6 +1,7 @@
 import React from 'react'
-import {StyleHomepageWrapper} from "./styles"
+import {StyleHomepageWrapper, StyleFAQBlockWrapper} from "./styles"
 import NextEventBanner from "../../molecules/NextEventBanner"
+import Hero from "../../organisms/Hero"
 import MobileNav from "../../organisms/MobileNav"
 import DesktopNav from "../../organisms/DesktopNav"
 import UpcomingEventPanel from "../../organisms/UpcomingEventPanel"
@@ -16,6 +17,7 @@ interface HomepageInterface {
     mobileNavProps: MobileNavInterFace;
     desktopNavProps: DesktopNavInterface;
     buttonProps: BasicButtonInterface;
+    heroProps: HeroInterface;
     upcomingEventBlock: UpcomingEvenBlockInterface;
     desktopBlockTitle: string;
     desktopCountdownContent: string;
@@ -53,7 +55,19 @@ interface MobileNavInterFace {
     emailAddress: string;
     socialCTA: string;
     copyrightContent: string;
+    mobileNavLinks: LinkInterface[]
 
+}
+
+interface HeroInterface {
+    image: string;
+    alt: string;
+    heroMessageProps: HeroMessageInterface
+}
+
+interface HeroMessageInterface {
+    textContent: string;
+    buttonProps: BasicButtonInterface;
 }
 
 interface BasicButtonInterface {
@@ -140,8 +154,9 @@ const Homepage: React.FC<HomepageInterface> = (
     return (
         <StyleHomepageWrapper>
             <NextEventBanner textContent={props.bannerProps.textContent} dateContent={props.bannerProps.dateContent} buttonProps={props.bannerProps.buttonProps}/>
-            {/* <MobileNav language={props.mobileNavProps.language} emailAddress={props.mobileNavProps.emailAddress} emailCTA={props.mobileNavProps.emailCTA} socialCTA={props.mobileNavProps.socialCTA} copyrightContent={props.mobileNavProps.copyrightContent}/> */}
+            <MobileNav navMenuProps={{mobileNavLinks: props.mobileNavProps.mobileNavLinks}} language={props.mobileNavProps.language} emailAddress={props.mobileNavProps.emailAddress} emailCTA={props.mobileNavProps.emailCTA} socialCTA={props.mobileNavProps.socialCTA} copyrightContent={props.mobileNavProps.copyrightContent}/>
             <DesktopNav languageOption={props.desktopNavProps.languageOption}  buttonProps={props.desktopNavProps.buttonProps} navMenuProps={{links: props.desktopNavProps.navMenuProps.links}}/>
+            <Hero image={props.heroProps.image} alt={props.heroProps.alt} heroMessageProps={props.heroProps.heroMessageProps}/>
             <UpcomingEventPanel 
             desktopCountdownContent={props.desktopCountdownContent}
             desktopBlockTitle={props.desktopBlockTitle}
@@ -154,7 +169,9 @@ const Homepage: React.FC<HomepageInterface> = (
             />
             <SignupPanel blockTitle={props.signupPanelProps.blockTitle}  signUpSteps={props.signupPanelProps.signUpSteps} buttonProps={props.signupPanelProps.buttonProps}/>
             <SellingPointPanel blockTitle={props.sellingPointPanelProps.blockTitle}  buttonProps={props.sellingPointPanelProps.buttonProps} bulletPoints={props.sellingPointPanelProps.bulletPoints}/>
-            <FAQItemBlock section={props.faqProps.section} sectionID={props.faqProps.sectionID} questions={props.faqProps.questions}/>
+            <StyleFAQBlockWrapper>
+                <FAQItemBlock section={props.faqProps.section} sectionID={props.faqProps.sectionID} questions={props.faqProps.questions}/>
+            </StyleFAQBlockWrapper>
             <MessagePanel blockTitle={props.messagePanelProps.blockTitle} content={props.messagePanelProps.content} buttonProps={props.messagePanelProps.buttonProps}/>
             <ImageGallery images={props.imageGalleryProps.images}/>
             <Footer emailAddress={props.footerProps.emailAddress} emailMessage={props.footerProps.emailMessage} socialMessage={props.footerProps.socialMessage} copyrightContent={props.footerProps.copyrightContent}/>

@@ -10,7 +10,6 @@ export const StyleMobileNavWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     min-height: ${space.xl3};
-    width: 100vw;
 
     ${media.med `
         display: none;
