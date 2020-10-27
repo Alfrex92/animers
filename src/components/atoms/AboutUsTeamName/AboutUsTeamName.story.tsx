@@ -4,19 +4,12 @@ import { withKnobs, text } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
 import data from "../../../../config/translations/en.json"
 
-import AboutFeaturedQuote from "./index"
+import AboutUsTeamMemberName from "./index"
 
-const story = storiesOf("Atoms | AboutFeaturedQuote", module)
+const story = storiesOf("Atoms | AboutUsTeamMemberName", module)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-// Featured quote (pull quote) for About Us page
+// Name of member(s) of Animers team
 story.add("Component", () => (
-  <div>
-    <AboutFeaturedQuote
-      content={text(
-        "Quote content",
-        `${data.aboutUsStory[4].content}`
-      )}
-    />
-  </div>
+    <AboutUsTeamMemberName  memberName= {text("Title content", `${data.team[0].name}`)}/>
 ))

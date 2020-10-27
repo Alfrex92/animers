@@ -39,7 +39,6 @@ interface ListItemsInterface {
 const CoCContent: React.FC<CoCContentInterface> = (
   props: CoCContentInterface
 ) => {
-  console.log(props)
   return (
     <StyleCoCContentWrapper>
       <CoCDisclaimer disclaimerContent={props.disclaimer} />

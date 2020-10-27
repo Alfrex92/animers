@@ -1,6 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
-import { withKnobs } from "@storybook/addon-knobs"
+import { text, withKnobs } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
 import data from "../../../../config/translations/en.json"
 
@@ -18,6 +18,10 @@ story.add("Component", () => (
       aboutUsSections={sectionsArr}
       aboutUsStory={data.aboutUsStory}
       aboutUsStoryTitle={data.aboutUsStoryTitle}
+      memberProps={{
+        sectionTitle: text("Member section title", "Our Team"),
+        memberInfoArray: data.team
+      }}
     />
   </div>
 ))

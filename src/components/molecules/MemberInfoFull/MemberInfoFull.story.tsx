@@ -3,20 +3,18 @@ import { storiesOf } from "@storybook/react"
 import { withKnobs, text } from "@storybook/addon-knobs"
 import { withInfo } from "@storybook/addon-info"
 import data from "../../../../config/translations/en.json"
+import MemberInfoFull from "./index"
+import { domainUrl } from "../../../constants/others"
 
-import AboutFeaturedQuote from "./index"
+console.log(data.team)
 
-const story = storiesOf("Atoms | AboutFeaturedQuote", module)
+const story = storiesOf("Molecules | MemberInfoFull", module)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-// Featured quote (pull quote) for About Us page
+// imagesbutton
 story.add("Component", () => (
-  <div>
-    <AboutFeaturedQuote
-      content={text(
-        "Quote content",
-        `${data.aboutUsStory[4].content}`
-      )}
+    <MemberInfoFull 
+        sectionTitle={text("Member info section title", "Our Team")}
+        memberInfoArray={data.team}
     />
-  </div>
 ))

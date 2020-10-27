@@ -569,10 +569,12 @@
       "image": "https://eloquent-franklin-f9ee3f.netlify.app/yuka.jpg",
       "sns": [
         {
-          "instagram": "instagram.com/"
+          "service": "instagram",
+          "url": "instagram.com/"
         },
         {
-          "facebook": "facebook.com/"
+          "service": "facebook",
+          "url": "facebook.com/"
         }
       ],
       "description": "lorem ipsum"
@@ -584,7 +586,8 @@
       "image": "https://eloquent-franklin-f9ee3f.netlify.app/alfred.jpg",
       "sns": [
         {
-          "twitter": "https://twitter.com/alfred_toh_"
+          "service": "twitter",
+          "url": "https://twitter.com/alfred_toh_"
         }
       ],
       "description": "lorem ipsum"
