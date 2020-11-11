@@ -264,5 +264,10 @@
       "service": "Meetup",
       "link": "https://www.meetup.com"
     }
-  ]
+  ],
+   "upcomingEvent": {
+    "label": "Upcoming Event",
+    "linkContent": "See all",
+    "buttonContent": "Attend"
+  }
 }
