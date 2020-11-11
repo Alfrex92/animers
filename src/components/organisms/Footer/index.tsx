@@ -19,7 +19,7 @@ const Footer: React.FC<FooterInterface> = (
     return (
         <StyleFooterWrapper>
             <CTAEmail message={props.emailMessage} address={props.emailAddress} />
-            <div style={{ width: "150px" }}>
+            <div>
                 <CTASocial message={props.socialMessage} />
                 <FooterSNSIcons />
             </div>

@@ -24,6 +24,7 @@ interface FAQItemBlockInterface {
 interface FAQItemInterface {
     question: string;
     answer: string;
+    itemID: string;
 }
 
 
@@ -31,11 +32,11 @@ const FAQPage: React.FC<FAQPageInterface> = (
     props: FAQPageInterface
 ) => {
     return (
-        <div style={{ margin: 0 }}>
+        <div>
             <DesktopSectionTitle title={props.sectionTitle} />
             <StyleFAQSection>
                 {props.faqList.map((block) => (
-                    <FAQItemBlock section={block.section} sectionID={block.sectionID} questions={block.questions} />
+                    <FAQItemBlock section={block.section} sectionID={block.sectionID} questions={block.questions} key={block.sectionID}/>
                 ))}
             </StyleFAQSection>
             <Footer emailMessage={props.emailMessage} emailAddress={props.emailAddress} socialMessage={props.socialMessage} copyrightContent={props.copyrightContent} />

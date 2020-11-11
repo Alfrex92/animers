@@ -2,7 +2,7 @@ import React from "react"
 import { storiesOf } from "@storybook/react"
 import { withInfo } from "@storybook/addon-info"
 import data from "../../../../config/translations/en.json"
-import FAQBlock from "./index"
+import FAQItemBlock from "./index"
 
 const eventFAQs = data.faqs[0];
 const covidFAQs = data.faqs[1];
@@ -14,14 +14,14 @@ const story = storiesOf("Organisms | FAQBlock", module)
     .addDecorator(withInfo)
 // Blocks of FAQ items (separated by categories) for FAQ page
 story.add("Events", () => (
-    <FAQBlock section={eventFAQs.section} sectionID={eventFAQs.sectionID} questions={eventFAQs.questions} />
+    <FAQItemBlock section={eventFAQs.section} sectionID={eventFAQs.sectionID}  questions={eventFAQs.questions} />
 ))
 story.add("COVID-19", () => (
-    <FAQBlock section={covidFAQs.section} sectionID={covidFAQs.sectionID} questions={covidFAQs.questions} />
+    <FAQItemBlock section={covidFAQs.section} sectionID={covidFAQs.sectionID} questions={covidFAQs.questions} />
 ))
 story.add("Drinks", () => (
-    <FAQBlock section={drinkFAQs.section} sectionID={drinkFAQs.sectionID} questions={drinkFAQs.questions} />
+    <FAQItemBlock section={drinkFAQs.section} sectionID={drinkFAQs.sectionID} questions={drinkFAQs.questions} />
 ))
 story.add("HomepageBlock", () => (
-    <FAQBlock section={homepageBlock.section} sectionID={homepageBlock.sectionID} questions={homepageBlock.questions} />
+    <FAQItemBlock section={homepageBlock.section} sectionID={homepageBlock.sectionID} questions={homepageBlock.questions} />
 ))
