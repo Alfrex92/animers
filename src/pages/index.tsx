@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import LocalizedLink from "../components/localizedLink"
 import useTranslations from "../components/useTranslations"
 
@@ -7,7 +7,6 @@ const Index = ({ data: { allMdx } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
   const { hello, subline } = useTranslations()
-  console.log("allMdx", allMdx)
   return (
     <>
       <h1>{hello}</h1>
@@ -23,6 +22,8 @@ const Index = ({ data: { allMdx } }) => {
           </li>
         ))}
       </ul>
+      <Link to="/homepage">HOMEPAGE</Link>
+      <Link to="/faqPage">FAQS</Link>
     </>
   )
 }

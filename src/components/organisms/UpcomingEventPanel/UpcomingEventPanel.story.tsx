@@ -17,7 +17,7 @@ story.add("Component", () => (
             eventDateTime: {date: text("Date", `${data.events[0].date}`), time: text("Time", `${data.events[0].time}`), location: text("Location", `${data.events[0].location}`)},
             button: {buttonColor: color("Button color", "#ffffff"), textColor: color("Text color", "#f92b00"), children: text("Message", "Attend"), hasBorder: boolean("Border?", false)}
         }} 
-        desktopBlockTitle={text("Title content", "Upcoming Event")} desktopCountdownContent={text("Countdown content", "in 5 days and 6 hours")}
+        desktopBlockTitle={text("Title content", data.upcomingEvent.label)} desktopCountdownContent={text("Countdown content", "in 5 days and 6 hours")}
         />
     </div>
 ))

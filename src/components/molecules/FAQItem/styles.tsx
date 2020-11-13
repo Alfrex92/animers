@@ -24,10 +24,9 @@ export const StyleFAQItemWrapper = styled.div<{ open: boolean }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: ${props => props.open ? '25vh' : '8vh'};
     margin-bottom: ${space.s};
-    padding: ${props => props.open ? `${space.m} ${space.s}` : '0'};
+    max-height: ${props => props.open ? "100px" : "25px"};
+    padding: ${space.m} ${space.s};
     position: relative;
     text-align: center;
-    width: 100%;
 `;

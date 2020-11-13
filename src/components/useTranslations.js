@@ -34,6 +34,40 @@ const query = graphql`
             hello
             subline
             backToHome
+            contact {
+              id
+              type
+              address
+            }
+            copyrightContent
+            emailCTA
+            events {
+              eventID
+              time
+              title
+              date
+              location
+            }
+            faqs{
+              section
+              sectionID
+              questions {
+                id 
+                question
+                answer
+              }
+            }
+            social {
+              id
+              service
+              link
+            }
+            socialCTA
+            upcomingEvent {
+              label
+              linkContent
+              buttonContent
+            }
           }
         }
       }
