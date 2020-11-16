@@ -1,10 +1,25 @@
 import styled from "styled-components"
+import {space} from "../../../styles/vars"
+
+export const StyleGridUL = styled.ul`
+    display: grid;
+    grid-gap: ${space.s};
+    grid-template-columns:
+    10px
+    repeat(6, calc(50% - 40px))
+    10px;
+  grid-template-rows: minmax(150px, 1fr);
+    &::before,
+    &::after {
+        content: ‘’;
+    }
+`;
 
 export const StyleScrollingGridWrapper = styled.div`
     display: grid;
     grid-template-columns: 20px 1fr 20px;
 
-    & > * {
+    & > ${StyleGridUL} {
         grid-column: 2 / -2;
     }
 
@@ -26,28 +41,14 @@ export const StyleScrollingGridWrapper = styled.div`
       }
 `;
 
-export const StyleGridUL = styled.ul`
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns:
-    10px
-    repeat(6, calc(50% - 40px))
-    10px;
-  grid-template-rows: minmax(150px, 1fr);
-    &::before,
-    &::after {
-        content: ‘’;
-    }
-`;
-
 export const StyleGridLI = styled.li`
-      scroll-snap-align: center;
-  padding: calc(var(--gutter) / 2 * 1.5);
+  background: #fff;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fff;
-  border-radius: 8px;
+  padding: calc((${space.s}) / 2 * 1.5);
+  scroll-snap-align: center;
   transform: rotate(-90deg);
   transform-origin: right top;
 `;

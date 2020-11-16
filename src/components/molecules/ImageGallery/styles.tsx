@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { space } from "../../../styles/vars"
 
 export const StyleImageGallery = styled.div`
-    margin: 0 auto 0 150px;
+    margin: ${space.l} 0;
 `;
 
 export const StyleHorizontalScrollWrapper = styled.div`
