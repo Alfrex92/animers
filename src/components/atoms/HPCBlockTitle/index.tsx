@@ -8,7 +8,6 @@ interface HPCBlockTitleInterface {
 const HPCBlockTitle: React.FC<HPCBlockTitleInterface> = (
     props: HPCBlockTitleInterface
 ) => {
-    console.log(props.title)
     return (
         <StyleHPCBlockTitleWrapper>
             <StyleHPCBlockTitle>{props.title}</StyleHPCBlockTitle>

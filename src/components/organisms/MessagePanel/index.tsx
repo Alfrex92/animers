@@ -8,9 +8,14 @@ import { MessagePanelWrapper } from "./styles"
 interface MessagePanelInterface {
   blockTitle: string
   content: string
-  buttonColor: string
-  textColor: string
-  children: any
+  buttonProps: BasicButtonInterface;
+}
+
+interface BasicButtonInterface {
+  children: any;
+  buttonColor: string;
+  hasBorder: boolean;
+  textColor: string;
 }
 
 const MessagePanel: React.FC<MessagePanelInterface> = (
@@ -21,9 +26,10 @@ const MessagePanel: React.FC<MessagePanelInterface> = (
       <HPCBlockTitle title={props.blockTitle} />
       <PanelMessage content={props.content} />
       <BasicButton
-        buttonColor={props.buttonColor}
-        textColor={props.textColor}
-        children={props.children}
+        buttonColor={props.buttonProps.buttonColor}
+        textColor={props.buttonProps.textColor}
+        children={props.buttonProps.children}
+        hasBorder={props.buttonProps.hasBorder}
       />
     </MessagePanelWrapper>
   )

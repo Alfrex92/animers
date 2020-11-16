@@ -7,7 +7,6 @@ const Index = ({ data: { allMdx } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
   const { hello, subline } = useTranslations()
-  console.log("allMdx", allMdx)
   return (
     <>
       <h1>{hello}</h1>

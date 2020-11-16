@@ -1,16 +1,24 @@
 import * as React from 'react'
 import { StyleMenuLinkContainer } from "./styles"
-import data from "../../../../config/translations/en.json"
 
 import MenuLink from "../../atoms/MenuLink/index"
 
-const links = data.menu;
+interface NavMenuInterface {
+    links: LinkInterface[]
+}
 
-const NavMenu: React.FC = () => {
+interface LinkInterface {
+    title: string;
+    id: string;
+}
+
+const NavMenu: React.FC<NavMenuInterface> = (
+    props: NavMenuInterface
+) => {
     return (
         <StyleMenuLinkContainer>
-            {links.map((link) => (
-                <MenuLink linkName={link.title} key={link.id} />
+            {props.links.map((navLink) => (
+                <MenuLink linkName={navLink.title} key={navLink.id} />
             ))}
         </StyleMenuLinkContainer>
     )

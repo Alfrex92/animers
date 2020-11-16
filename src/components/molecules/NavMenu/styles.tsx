@@ -4,20 +4,21 @@ import { media } from "../../../styles/breakpoints"
 
 export const StyleMenuLinkContainer = styled.div`
     background: white;
-    padding-top: 10rem;
-    width: 100%;
 
     ${media.med`
         display: flex;
+        color: black;
         flex-direction: column;
-        height: 100%;
         justify-content: space-evenly;
-        min-height: 10vh;
+        max-height: 10vh;
         min-width: 40%;
     `};
 
     ${media.large`
-        display: none;
+        align-content: center;
+        flex-direction: row;
+        margin: 0;
+        min-height: 1vh;
     `}
 
 `;

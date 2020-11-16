@@ -1,14 +1,22 @@
 import * as React from 'react'
-import data from "../../../../config/translations/en.json"
 import { StyleBulletPointList } from "./styles"
 import BulletPoint from "../../atoms/BulletPoint"
 
-const listPoints = data.sellingPoints;
+interface BulletPointListInterface {
+    bulletPoints: BulletPointInterface[]
+}
 
-const BulletPointList: React.FC = () => {
+interface BulletPointInterface {
+    id: string;
+    content: string;
+}
+
+const BulletPointList: React.FC<BulletPointListInterface> = (
+    props: BulletPointListInterface
+) => {
     return (
         <StyleBulletPointList>
-            {listPoints.map(point => (
+            {props.bulletPoints.map(point => (
                 <BulletPoint content={point.content} key={point.id} />
             ))}
         </StyleBulletPointList>

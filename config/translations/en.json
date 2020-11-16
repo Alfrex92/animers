@@ -8,6 +8,19 @@
     "type": "email",
     "address": "hello@animers.io"
   },
+  "heroMessage": "Meet Anime and Manga Fans Like You in Tokyo",
+  "heroImages": [
+    {
+      "imageID": "heroImg001",
+      "src": "https://i.imgur.com/6owBhwk.jpeg",
+      "alt": "Animers"
+    },
+    {
+      "imageID": "heroImg002",
+      "src": "https://i.imgur.com/yws7WPc.jpeg",
+      "alt": "Animers"
+    }
+  ],
   "emailCTA": "Get in Touch",
   "events": [
     {
