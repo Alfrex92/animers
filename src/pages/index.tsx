@@ -1,60 +1,56 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import LocalizedLink from "../components/localizedLink"
-import useHurrDurr from "../components/useHurrDurr"
-import UpcomingEventPanel from "../components/organisms/UpcomingEventPanel"
+import useTranslations from "../components/useTranslations"
 
-// const query = graphql`
-//   query Index {
-//     allFile(filter: {sourceInstanceName: {eq: "translations"}}) {
-//     edges {
-//       node {
-//         id
-//       }
-//     }
-//   }
-//   translationsJson(upcomingEvent: {buttonContent: {}, label: {}, linkContent: {}}) {
-//     id
-//     emailCTA
-//     events {
-//       date
-//       eventID
-//       location
-//       time
-//       title
-//     }
-//     gallery {
-//       alt
-//       id
-//       url
-//     }
-//     upcomingEvent {
-//       buttonContent
-//       label
-//       linkContent
-//     }
-//   }
-//   }
-// `
-
-
-const Index = () => {
-    const { upcomingEvent, events } = useHurrDurr()
-    console.log(upcomingEvent)
-    return (
-        <div>
-            <UpcomingEventPanel upcomingEventBlock={{
-                upcomingEventContent: upcomingEvent.label, linkContent: upcomingEvent.linkContent, eventTitle: events[0].title,
-                 eventDateTime: {date: events[0].date, time: events[0].time, location: events[0].location},
-                 button: {buttonColor: "#ffffff", textColor: "#f92b00", hasBorder: false, children: upcomingEvent.buttonContent}}}
-                 desktopBlockTitle={upcomingEvent.label}
-                 desktopCountdownContent={`in ${Math.floor(Math.random()*10)} days and ${Math.floor(Math.random()*10)} hours`}
-            />
-            <Link to="/homepage">HOMEPAGE</Link>
-            <Link to="/faqPage">FAQS</Link>
-        </div>
-    )
+const Index = ({ data: { allMdx } }) => {
+  // useTranslations is aware of the global context (and therefore also "locale")
+  // so it'll automatically give back the right translations
+  const { hello, subline } = useTranslations()
+  console.log("allMdx", allMdx)
+  return (
+    <>
+      <h1>{hello}</h1>
+      <p>{subline}</p>
+      <hr style={{ margin: `2rem 0` }} />
+      <ul className="post-list">
+        {allMdx.edges.map(({ node: post }) => (
+          <li key={`${post.frontmatter.title}-${post.fields.locale}`}>
+            <LocalizedLink to={`/${post.parent.relativeDirectory}`}>
+              {post.frontmatter.title}
+            </LocalizedLink>
+            <div>{post.frontmatter.date}</div>
+          </li>
+        ))}
+      </ul>
+    </>
+  )
 }
 
 export default Index
 
+export const query = graphql`
+  query Index($locale: String!, $dateFormat: String!) {
+    allMdx(
+      filter: { fields: { locale: { eq: $locale } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: $dateFormat)
+          }
+          fields {
+            locale
+          }
+          parent {
+            ... on File {
+              relativeDirectory
+            }
+          }
+        }
+      }
+    }
+  }
+`

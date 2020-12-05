@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {colors, fsize, fweight, zindex, space} from "../../../styles/vars"
+import {colors, fsize, fweight, zindex} from "../../../styles/vars"
 
 export const StyleLinkWrapper = styled.div `
     align-content: flex-end;

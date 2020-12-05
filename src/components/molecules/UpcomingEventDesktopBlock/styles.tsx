@@ -10,6 +10,5 @@ export const StyleEventDesktopBlockWrapper = styled.div `
 
     ${media.med`
         display: flex;
-        margin-top: 20px;
     `}
 `;
