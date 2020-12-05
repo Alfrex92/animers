@@ -1,12 +1,12 @@
 import styled from "styled-components"
-import {colors} from "../../../styles/vars"
+import {colors, space} from "../../../styles/vars"
 
 export const StyleUpcomingEventWrapper = styled.div `
     background-color: ${colors.white.normal};
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 20px 0;
+    padding: ${space.m} 0;
     position: relative;
 `;
 
@@ -15,7 +15,7 @@ export const StyleUpcomingEventInner = styled.div `
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: ${space.s};
 `;
 
 export const StyleUpcomingEventInnerLeft = styled.div `

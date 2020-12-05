@@ -8,8 +8,8 @@ export const StyleBasicButton = styled.button<{ buttonColor: string, textColor: 
   color: ${props => props.textColor};
   font-size: ${fsize.big};
   font-weight: ${fweight.w7};
-  height: 40px;
+  min-height: 40px;
   margin-left: 5px;
-  width: 100px;
+  min-width: 100px;
 `
 

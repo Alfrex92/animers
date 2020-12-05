@@ -11,9 +11,8 @@ export const StyleBulletPointList = styled.ul`
     ${media.large`
         display: flex;
         flex-direction: column;
-        height: 100px;
+        max-height: 100px;
         justify-content: space-between;
-        width: 50%;
         flex-wrap: wrap;
     `} 
 `;

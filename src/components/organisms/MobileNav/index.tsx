@@ -11,7 +11,17 @@ interface MobileNavInterFace {
     emailAddress: string;
     socialCTA: string;
     copyrightContent: string;
+    navMenuProps: NavMenuInterface;
 
+}
+
+interface NavMenuInterface {
+    mobileNavLinks: LinkInterface[]
+}
+
+interface LinkInterface {
+    title: string;
+    id: string;
 }
 
 const MobileNav: React.FC<MobileNavInterFace> = (props) => {
@@ -23,7 +33,7 @@ const MobileNav: React.FC<MobileNavInterFace> = (props) => {
                 <LanguageOption language={props.language === "en" ? "English" : "日本語"} />
                 <BurgerIcon open={open} setOpen={() => setOpen((oldProps) => !oldProps)} />
             </StyleLanguageBurgerWrapper>
-            <MobileNavMenu open={open} emailMessage={props.emailCTA} emailAddress={props.emailAddress} socialMessage={props.socialCTA} copyrightContent={props.copyrightContent} />
+            <MobileNavMenu  navMenuProps={props.navMenuProps} open={open} emailMessage={props.emailCTA} emailAddress={props.emailAddress} socialMessage={props.socialCTA} copyrightContent={props.copyrightContent} />
         </StyleMobileNavWrapper>
     )
 }

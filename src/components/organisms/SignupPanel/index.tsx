@@ -1,5 +1,4 @@
 import React from "react"
-import data from "../../../../config/translations/en.json"
 import HPCBlockTitle from "../../atoms/HPCBlockTitle"
 import BasicButton from "../../molecules/BasicButton"
 import HPCNumberListItem from "../../molecules/HPCNumberListItem"
@@ -8,13 +7,16 @@ import { StyleSignupPanelWrapper, StyleContentWrapper } from "./styles"
 
 interface SignupPanelInterface {
   blockTitle: string
-  buttonColor: string
-  textColor: string
-  hasBorder: boolean
-  children: any
+  buttonProps: BasicButtonInterface
+  signUpSteps: SignupStepInterface[]
 }
 
-const listItems = data.signupSteps
+interface SignupStepInterface {
+  id: string;
+  stepNum: string;
+  title: string;
+  subtitle: string;
+}
 
 const SignupPanel: React.FC<SignupPanelInterface> = (
   props: SignupPanelInterface
@@ -23,7 +25,7 @@ const SignupPanel: React.FC<SignupPanelInterface> = (
     <StyleSignupPanelWrapper>
       <HPCBlockTitle title={props.blockTitle} />
       <StyleContentWrapper>
-        {listItems.map(item => (
+        {props.signUpSteps.map(item => (
           <HPCNumberListItem
             numContent={item.stepNum}
             liTitle={item.title}
@@ -33,10 +35,10 @@ const SignupPanel: React.FC<SignupPanelInterface> = (
         ))}
       </StyleContentWrapper>
       <BasicButton
-        buttonColor={props.buttonColor}
-        textColor={props.textColor}
-        children={props.children}
-        hasBorder={props.hasBorder}
+        buttonColor={props.buttonProps.buttonColor}
+        textColor={props.buttonProps.textColor}
+        children={props.buttonProps.children}
+        hasBorder={props.buttonProps.hasBorder}
       />
     </StyleSignupPanelWrapper>
   )
