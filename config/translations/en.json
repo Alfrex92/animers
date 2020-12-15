@@ -27,6 +27,7 @@
       "eventID": "event001",
       "title": "☆Anime Meetup in Tokyo☆ アニメマンガ好き集まれ！",
       "date": "Sun, July 5, 2020",
+      "dateNoDay": "July 5, 2020",
       "time": "8 p.m. (JST)",
       "location": "Shinjuku"
     }
@@ -277,5 +278,10 @@
       "service": "Meetup",
       "link": "https://www.meetup.com"
     }
-  ]
+  ],
+  "upcomingEvent": {
+    "buttonContent": "Attend",
+    "label": "Upcoming Event",
+    "linkContent": "See all"
+  }
 }
