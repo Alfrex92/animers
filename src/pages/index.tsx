@@ -6,6 +6,8 @@ import SignupPanel from "../components/organisms/SignupPanel"
 import SalesPointPanel from "../components/organisms/SellingPointPanel"
 import FAQCategoryLabel from "../components/atoms/FAQCategoryLabel"
 import FAQItemBlock from "../components/organisms/FAQItemBlock"
+import BasicButton from "../components/molecules/BasicButton"
+import Homepage from "../components/pages/Homepage"
 
 
 
@@ -18,6 +20,28 @@ const query = graphql`
           translations: childTranslationsJson {
             hello
             subline
+            contact {
+              id
+              type
+              address
+            }
+            copyrightContent
+            gallery {
+              id
+              url
+              alt
+            }
+            heroImages {
+              imageID
+              src
+              alt
+            }
+            language
+            menu {
+              id
+              title
+              slug
+            }
             backToHome
             faqs {
               section
@@ -43,6 +67,7 @@ const query = graphql`
               title
               subtitle
             }
+            emailCTA
             events {
                 date
                 dateNoDay
@@ -51,6 +76,7 @@ const query = graphql`
                 time
                 title
             }
+            socialCTA
           }
         }
       }
@@ -60,30 +86,26 @@ const query = graphql`
 const Index = () => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
-  const { upcomingEvent, events, faqs, sellingPoints, signupSteps } = useHomepageTL()
+  const { contact, copyrightContent, emailCTA, gallery, heroImages, language, menu, upcomingEvent, events, faqs, sellingPoints, signupSteps, socialCTA } = useHomepageTL()
   const homepageBlock = { section: "FAQs", sectionID: "sec000", questions: [faqs[0].questions[0], faqs[1].questions[0], faqs[2].questions[0]] };
+  console.log("MENU:", menu)
   return (
-    <>
-      <hr style={{ margin: `2rem 0` }} />
-      <UpcomingEventPanel upcomingEventBlock={{upcomingEventContent: upcomingEvent.buttonContent, linkContent: upcomingEvent.linkContent, 
-        button: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false},
-        eventDateTime: {date: events[0].date, time: events[0].time, location: events[0].location},
-        eventTitle: events[0].title}}
-        desktopBlockTitle={"Upcoming Event"}
-        desktopCountdownContent={"In 5 days and 2 hours"}
-        />
-        <SignupPanel 
-          blockTitle={"Your new adventure starts here!"}
-          signUpSteps={signupSteps}
-          buttonProps={{buttonColor: "#f92b00", textColor: "#fff", hasBorder: false, children: "Join Now"}}
-        />
-        <SalesPointPanel
-          blockTitle={"The best part of Animers"} 
-          bulletPoints={sellingPoints}
-          buttonProps={{buttonColor: "#f92b00", textColor: "#fff", hasBorder: false, children: "Join Now"}}
-        />
-        <FAQItemBlock section={homepageBlock.section} sectionID={homepageBlock.sectionID} questions={homepageBlock.questions}/>
-    </>
+    <Homepage 
+      bannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 
+      mobileNavProps={{language: language, emailCTA: emailCTA, emailAddress: contact.address, socialCTA: socialCTA, copyrightContent: copyrightContent, mobileNavLinks: menu}}
+      desktopNavProps={{languageOption: language, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
+      buttonProps={{buttonColor: "#f92b00", textColor: "#ffffff", hasBorder: false, children: "Join Now"}}
+      heroProps={{image: heroImages[1].src, alt: heroImages[1].alt, heroMessageProps: {textContent: "Meet Anime and Manga Fans Like You in Tokyo", buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}}}
+      upcomingEventBlock={{upcomingEventContent: "Upcoming Event", linkContent: "See all", eventTitle: `${events[0].title}`, eventDateTime: {date: `${events[0].date}`, time: `${events[0].time}`, location: `${events[0].location}`}, button: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}}
+      desktopBlockTitle={"Upcoming Event"}
+      desktopCountdownContent={"in 5 days and 6 hours"} // @@@ Make this dynamic
+      signupPanelProps={{blockTitle: "Your adventure starts here!", buttonProps: {buttonColor: "#f92b00", hasBorder: false, textColor: "#fff", children: "Join Us"}, signUpSteps:signupSteps}}
+      sellingPointPanelProps={{ blockTitle: "The Best Part of Animers", buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", hasBorder: false, children: "Join Now"}, bulletPoints: sellingPoints}}
+      faqProps={homepageBlock}
+      messagePanelProps={{blockTitle: "Make Friends!", buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, content: "Don't miss your chance to join the largest anime community in Tokyo"}}
+      imageGalleryProps={{images: gallery}}
+      footerProps={{emailMessage: "Get in Touch ", emailAddress: contact.address, socialMessage: "Follow Us", copyrightContent: copyrightContent}}
+    />
   )
 }
 

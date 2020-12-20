@@ -12,6 +12,28 @@ const query = graphql`
           translations: childTranslationsJson {
             hello
             subline
+            contact {
+              id
+              type
+              address
+            }
+            copyrightContent
+            gallery {
+              id
+              url
+              alt
+            }
+            heroImages {
+              imageID
+              src
+              alt
+            }
+            language
+            menu {
+              id
+              title
+              slug
+            }
             backToHome
             faqs {
               section
@@ -37,6 +59,7 @@ const query = graphql`
               title
               subtitle
             }
+            emailCTA
             events {
                 date
                 dateNoDay
@@ -45,6 +68,7 @@ const query = graphql`
                 time
                 title
             }
+            socialCTA
           }
         }
       }
