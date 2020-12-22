@@ -14,9 +14,6 @@ const Layout = ({ children, pageContext: { locale } }) => {
   return (
     <LocaleContext.Provider value={{ locale }}>
       <div className="global-wrapper">
-        <header className="global-header">
-          <MobileNav language={locale} />
-        </header>
         <MDXProvider components={{ a: MdxLink }}>
           <main>
             {children}

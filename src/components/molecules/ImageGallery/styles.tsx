@@ -3,6 +3,7 @@ import { space } from "../../../styles/vars"
 
 export const StyleImageGallery = styled.div`
     margin: ${space.l} 0;
+    overflow: hidden;
 `;
 
 export const StyleHorizontalScrollWrapper = styled.div`

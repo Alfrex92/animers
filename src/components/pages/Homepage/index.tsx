@@ -117,12 +117,13 @@ interface SellingPointPanelInterface {
 interface FAQItemBlockInterface {
     section: string;
     sectionID: string;
-    questions: FAQItemInterface[];
+    faqQuestions: FAQItemInterface[];
 }
 
 interface FAQItemInterface {
     question: string;
     answer: string;
+    itemID: string;
 }
 
 interface MessagePanelInterface {
@@ -170,7 +171,7 @@ const Homepage: React.FC<HomepageInterface> = (
             <SignupPanel blockTitle={props.signupPanelProps.blockTitle}  signUpSteps={props.signupPanelProps.signUpSteps} buttonProps={props.signupPanelProps.buttonProps}/>
             <SellingPointPanel blockTitle={props.sellingPointPanelProps.blockTitle}  buttonProps={props.sellingPointPanelProps.buttonProps} bulletPoints={props.sellingPointPanelProps.bulletPoints}/>
             <StyleFAQBlockWrapper>
-                <FAQItemBlock section={props.faqProps.section} sectionID={props.faqProps.sectionID} questions={props.faqProps.questions}/>
+                <FAQItemBlock section={props.faqProps.section} sectionID={props.faqProps.sectionID} faqQuestions={props.faqProps.faqQuestions}/>
             </StyleFAQBlockWrapper>
             <MessagePanel blockTitle={props.messagePanelProps.blockTitle} content={props.messagePanelProps.content} buttonProps={props.messagePanelProps.buttonProps}/>
             <ImageGallery images={props.imageGalleryProps.images}/>

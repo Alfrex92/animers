@@ -10,6 +10,11 @@ export const StyleUpcomingEventWrapper = styled.div `
     position: relative;
 `;
 
+export const StyleUpcomingEventTop = styled.div `
+    display: flex;
+    justify-content: space-between;
+`;
+
 export const StyleUpcomingEventInner = styled.div `
     background-color: ${colors.red.normal};
     display: flex;

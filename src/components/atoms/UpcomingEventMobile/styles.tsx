@@ -6,9 +6,6 @@ export const StyleTextWrapper = styled.div `
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index:n ${zindex.alpha};
 
     ${media.med`

@@ -88,7 +88,7 @@ const Index = () => {
   // so it'll automatically give back the right translations
   const { contact, copyrightContent, emailCTA, gallery, heroImages, language, menu, upcomingEvent, events, faqs, sellingPoints, signupSteps, socialCTA } = useHomepageTL()
   const homepageBlock = { section: "FAQs", sectionID: "sec000", questions: [faqs[0].questions[0], faqs[1].questions[0], faqs[2].questions[0]] };
-  console.log("MENU:", menu)
+  const questions = [faqs[0].questions[0], faqs[1].questions[0], faqs[2].questions[0]]
   return (
     <Homepage 
       bannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 
@@ -101,7 +101,7 @@ const Index = () => {
       desktopCountdownContent={"in 5 days and 6 hours"} // @@@ Make this dynamic
       signupPanelProps={{blockTitle: "Your adventure starts here!", buttonProps: {buttonColor: "#f92b00", hasBorder: false, textColor: "#fff", children: "Join Us"}, signUpSteps:signupSteps}}
       sellingPointPanelProps={{ blockTitle: "The Best Part of Animers", buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", hasBorder: false, children: "Join Now"}, bulletPoints: sellingPoints}}
-      faqProps={homepageBlock}
+      faqProps={{section: "FAQs", sectionID: "sec000", faqQuestions: questions}}
       messagePanelProps={{blockTitle: "Make Friends!", buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, content: "Don't miss your chance to join the largest anime community in Tokyo"}}
       imageGalleryProps={{images: gallery}}
       footerProps={{emailMessage: "Get in Touch ", emailAddress: contact.address, socialMessage: "Follow Us", copyrightContent: copyrightContent}}
