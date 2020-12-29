@@ -5,7 +5,7 @@ import { media } from "../../../styles/breakpoints"
 export const StyleBulletPointList = styled.ul`
     display: block;
     list-style: circle;
-    margin: ${space.s} auto;
+    margin: ${space.s} 0;
     padding: 0;
 
     ${media.large`

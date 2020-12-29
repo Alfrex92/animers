@@ -7,7 +7,7 @@ export const StyleHPCNumberLITitleWrapper = styled.div`
 `;
 export const StyleHPCNumberLITitle = styled.p`
     color: ${colors.red.normal};
-    font-size: ${fsize.big};
-    font-weight: ${fweight.w4};
+    font-size: ${fsize.bigger2};
+    font-weight: ${fweight.w7};
     margin-left: ${space.xs};
 `;

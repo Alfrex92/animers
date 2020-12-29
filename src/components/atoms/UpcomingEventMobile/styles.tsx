@@ -15,6 +15,6 @@ export const StyleTextWrapper = styled.div `
 
 export const StyleText = styled.p `
     color: ${colors.blue.light};
-    font-size: ${fsize.normal};
-    font-weight: ${fweight.w6};
+    font-size: ${fsize.big};
+    font-weight: ${fweight.w9};
 `;

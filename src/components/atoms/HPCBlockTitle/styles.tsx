@@ -7,6 +7,6 @@ export const StyleHPCBlockTitleWrapper = styled.div`
 `;
 export const StyleHPCBlockTitle = styled.p`
     color: ${colors.blue.light};
-    font-size: ${fsize.bigger};
-    font-weight: ${fweight.w5};    
+    font-size: ${fsize.bigger2};
+    font-weight: ${fweight.w9};    
 `;

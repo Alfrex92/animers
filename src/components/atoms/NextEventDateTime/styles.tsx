@@ -6,7 +6,7 @@ export const StyleDateTimeWrapper = styled.div `
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
 `;
 
 export const StyleDateTime = styled.p `
@@ -16,5 +16,6 @@ export const StyleDateTime = styled.p `
 `;
 
 export const StyleFAIcon = styled(FontAwesomeIcon)`
+    font-size: ${fsize.big};
     margin: 0 ${space.s}
 `;

@@ -11,7 +11,7 @@ export const StyleSignupPanelWrapper = styled.div`
 
 export const StyleContentWrapper = styled.div`
     margin-bottom: ${space.m};
-    padding-left: ${space.xl3};
+    padding: 0 ${space.xl} 0 ${space.l};
     text-align: center;
 
     ${media.large`

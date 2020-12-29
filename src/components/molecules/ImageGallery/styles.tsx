@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { space } from "../../../styles/vars"
 
 export const StyleImageGallery = styled.div`
-    margin: ${space.l} 0;
+    margin: ${space.m} 0;
     overflow: hidden;
 `;
 

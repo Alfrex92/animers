@@ -10,6 +10,6 @@ export const StyleEventTitleWrapper = styled.div `
 
 export const StyleEventTitle = styled.p `
     color: ${colors.white.normal};
-    font-size: ${fsize.normal};
-    font-weight: ${fweight.w3};
+    font-size: ${fsize.big};
+    font-weight: ${fweight.w9};
 `;

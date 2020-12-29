@@ -9,7 +9,7 @@ export const StyleHeroMessageWrapper = styled.div `
     flex-direction: column;
     justify-content: space-around;
     max-width: 100%;
-    padding: ${space.m};
+    padding: ${space.s} ${space.m} ${space.m} ${space.m};
     position: relative;
     text-align: center;
 
@@ -24,8 +24,8 @@ export const StyleHeroMessageWrapper = styled.div `
 `;
 
 export const StyleHeroMessage = styled.p `
-    font-size: ${fsize.big};
-    font-weight: ${fweight.w6};
+    font-size: ${fsize.bigger2};
+    font-weight: ${fweight.w9};
     margin: ${space.m} auto;
 
     ${media.med `

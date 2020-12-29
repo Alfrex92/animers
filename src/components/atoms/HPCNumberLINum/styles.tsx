@@ -9,7 +9,8 @@ export const StyleHPCNumberLINumWrapper = styled.div`
 `;
 export const StyleHPCNumberLINum = styled.p`
     color: ${colors.red.normal};
-    font-size: 40px;
+    font-size: ${fsize.biggest};
     font-weight: ${fweight.w8};
-    padding-top: ${space.xs};
+    margin: 0;
+    padding-top: ${space.m};
 `;

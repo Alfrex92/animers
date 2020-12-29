@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import { colors, fsize } from "../../../styles/vars"
+import { colors, fsize, space } from "../../../styles/vars"
 
 export const StyleCopyrightWrapper = styled.div`
     display: block;
     height: 1.5rem;
-    margin: 0.25rem auto;
+    padding: 0 ${space.xs};
     width: 100%;
     color: ${colors.red.normal};
     font-size: ${fsize.normal};

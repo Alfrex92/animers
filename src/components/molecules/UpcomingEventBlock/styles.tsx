@@ -6,7 +6,7 @@ export const StyleUpcomingEventWrapper = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: ${space.m} 0;
+    padding: ${space.s} ${space.xs};
     position: relative;
 `;
 
@@ -37,5 +37,6 @@ export const StyleUpcomingEventInnerRight = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-bottom: ${space.m};
 `;
 
