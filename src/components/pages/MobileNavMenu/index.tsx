@@ -26,7 +26,7 @@ const MobileNavMenu: React.FC<MobileNavMenuInterface> = (
 ) => {
     return (
         <StyleMobileNavMenuWrapper open={props.open}>
-            
+            <NavMenuMobile menuLinks={props.navMenuProps.mobileNavLinks}/>
             <Footer emailMessage={props.emailMessage} emailAddress={props.emailAddress} socialMessage={props.socialMessage} copyrightContent={props.copyrightContent} />
         </StyleMobileNavMenuWrapper>
     )

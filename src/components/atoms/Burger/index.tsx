@@ -7,7 +7,6 @@ interface BurgerInterface {
 }
 
 const BurgerIcon: React.FC<BurgerInterface> = (props: BurgerInterface) => {
-    console.log(props.open)
     return (
         <StyleBurger open={props.open} onClick={props.setOpen}>
             <StyleDiv open={props.open} />

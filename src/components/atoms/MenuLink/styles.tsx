@@ -7,7 +7,6 @@ export const StyleNavMenuLink = styled.div`
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
-    min-height: 100px;
     text-align: center;
 
     &:active {

@@ -1,12 +1,6 @@
 import React from "react"
 import useHomepageTL from "../components/useHomepageTL"
 import { graphql } from 'gatsby';
-import UpcomingEventPanel from "../components/organisms/UpcomingEventPanel"
-import SignupPanel from "../components/organisms/SignupPanel"
-import SalesPointPanel from "../components/organisms/SellingPointPanel"
-import FAQCategoryLabel from "../components/atoms/FAQCategoryLabel"
-import FAQItemBlock from "../components/organisms/FAQItemBlock"
-import BasicButton from "../components/molecules/BasicButton"
 import Homepage from "../components/pages/Homepage"
 
 

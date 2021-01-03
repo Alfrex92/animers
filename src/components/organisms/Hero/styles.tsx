@@ -11,5 +11,6 @@ export const StyleHeroWrapper = styled.div`
 
     ${media.med `
         display: block;
+        position: relative;
     `}
 `;

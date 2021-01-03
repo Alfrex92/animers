@@ -1,9 +1,16 @@
-import styled from "styled-components"
-import { space } from "../../../styles/vars"
+import styled from "styled-components";
+import { space } from "../../../styles/vars";
+import {media} from "../../../styles/breakpoints";
 
 export const StyleImageGallery = styled.div`
     margin: ${space.m} 0;
+    max-width: 100%;
     overflow: hidden;
+
+    ${media.med `
+        margin: 0;
+        width: 100%;
+    `}
 `;
 
 export const StyleHorizontalScrollWrapper = styled.div`
@@ -29,5 +36,9 @@ export const StyleHorizontalScrollWrapper = styled.div`
     }
     ::-webkit-scrollbar-thumb {
         background-color: transparent;
-      }
+    }
+
+    ${media.med `
+    margin-left: 20%;
+    `}
 `;

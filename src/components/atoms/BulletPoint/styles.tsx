@@ -11,9 +11,9 @@ export const StyleBulletPoint = styled.li`
     text-align: left;
     width: 95%;
 
-    ${media.large`
-        font-size: ${fsize.small};
-        margin: 0 ${space.m};
-        width: 33%;
+    ${media.med`
+        font-size: ${fsize.bigger};
+        margin: ${space.s} 0;
+        width: 75%;
     `}
 `;
