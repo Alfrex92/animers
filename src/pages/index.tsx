@@ -31,6 +31,7 @@ const query = graphql`
               alt
             }
             language
+            logoUrl
             menu {
               id
               title
@@ -80,14 +81,14 @@ const query = graphql`
 const Index = () => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
-  const { contact, copyrightContent, emailCTA, gallery, heroImages, language, menu, upcomingEvent, events, faqs, sellingPoints, signupSteps, socialCTA } = useHomepageTL()
+  const { contact, copyrightContent, emailCTA, gallery, heroImages, language, menu, upcomingEvent, logoUrl, events, faqs, sellingPoints, signupSteps, socialCTA } = useHomepageTL()
   const homepageBlock = { section: "FAQs", sectionID: "sec000", questions: [faqs[0].questions[0], faqs[1].questions[0], faqs[2].questions[0]] };
   const questions = [faqs[0].questions[0], faqs[1].questions[0], faqs[2].questions[0]]
   return (
     <Homepage 
       bannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 
-      mobileNavProps={{language: language, emailCTA: emailCTA, emailAddress: contact.address, socialCTA: socialCTA, copyrightContent: copyrightContent, mobileNavLinks: menu}}
-      desktopNavProps={{languageOption: language, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
+      mobileNavProps={{language: language, logoProps: logoUrl, emailCTA: emailCTA, emailAddress: contact.address, socialCTA: socialCTA, copyrightContent: copyrightContent, mobileNavLinks: menu}}
+      desktopNavProps={{languageOption: language, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
       buttonProps={{buttonColor: "#f92b00", textColor: "#ffffff", hasBorder: false, children: "Join Now"}}
       heroProps={{image: heroImages[1].src, alt: heroImages[1].alt, heroMessageProps: {textContent: "Meet Anime and Manga Fans Like You in Tokyo", buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Join Now", hasBorder: false}}}}
       upcomingEventBlock={{upcomingEventContent: "Upcoming Event", linkContent: "See all", eventTitle: `${events[0].title}`, eventDateTime: {date: `${events[0].date}`, time: `${events[0].time}`, location: `${events[0].location}`}, button: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}}

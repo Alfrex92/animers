@@ -24,7 +24,7 @@ export const StyleBurger = styled.button<{ open: boolean }>`
   `}
 `;
 
-export const StyleDiv = styled.div<{ open: boolean }> `
+export const StyleIconBar = styled.div<{ open: boolean }> `
     background: ${colors.red.normal};
     border-radius: 10px;
     height: ${space.xs};

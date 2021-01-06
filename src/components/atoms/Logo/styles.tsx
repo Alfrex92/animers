@@ -5,7 +5,7 @@ import { media } from "../../../styles/breakpoints";
 
 export const StyleLogoContainer = styled.div``;
 
-export const StyleLogo = styled.p`
+export const StyleLogo = styled.a`
     color: ${colors.red.normal};
     font-family: "Social Gothic";
     font-size: ${fsize.bigger};

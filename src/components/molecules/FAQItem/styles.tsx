@@ -13,7 +13,7 @@ export const StyleFAQQuestion = styled.p`
 export const StyleFAQAnswer = styled(StyleFAQQuestion) <{ open: boolean }>`
     color: red;
     display: block;
-    height: ${props => props.open ? '25px' : '0px'};
+    height: ${props => props.open ? '25px' : '0'};
     opacity: ${props => props.open ? '1' : '0'};
     transform: ${props => props.open ? 'translateY(10px)' : 'translateY(0)'};
     transition: height 0.75s ease-in-out, transform 0.75s ease-in-out;

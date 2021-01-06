@@ -1,10 +1,16 @@
 import * as React from 'react'
 import { StyleLogoContainer, StyleLogo } from "./styles"
 
-const Logo: React.FC = () => {
+interface LogoLinkInterface {
+    logoUrl: string,
+}
+
+const Logo: React.FC<LogoLinkInterface> = (
+    props: LogoLinkInterface
+) => {
     return (
         <StyleLogoContainer>
-            <StyleLogo>animers</StyleLogo>
+            <StyleLogo href={props.logoUrl}>animers</StyleLogo>
         </StyleLogoContainer>
     )
 }

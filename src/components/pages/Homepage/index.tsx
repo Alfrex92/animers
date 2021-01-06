@@ -39,6 +39,7 @@ interface DesktopNavInterface {
     languageOption: string;
     buttonProps: BasicButtonInterface;
     navMenuProps: NavMenuInterface;
+    logoProps: LogoLinkInterface;
 }
 interface NavMenuInterface {
     links: LinkInterface[]
@@ -55,7 +56,8 @@ interface MobileNavInterFace {
     emailAddress: string;
     socialCTA: string;
     copyrightContent: string;
-    mobileNavLinks: LinkInterface[]
+    mobileNavLinks: LinkInterface[];
+    logoProps: LogoLinkInterface;
 
 }
 
@@ -149,14 +151,18 @@ interface FooterInterface {
     copyrightContent: string
 }
 
+interface LogoLinkInterface {
+    logoUrl: string,
+}
+
 const Homepage: React.FC<HomepageInterface> = (
     props: HomepageInterface
 ) => {
     return (
         <StyleHomepageWrapper>
             <NextEventBanner textContent={props.bannerProps.textContent} dateContent={props.bannerProps.dateContent} buttonProps={props.bannerProps.buttonProps}/>
-            <MobileNav navMenuProps={{mobileNavLinks: props.mobileNavProps.mobileNavLinks}} language={props.mobileNavProps.language} emailAddress={props.mobileNavProps.emailAddress} emailCTA={props.mobileNavProps.emailCTA} socialCTA={props.mobileNavProps.socialCTA} copyrightContent={props.mobileNavProps.copyrightContent}/>
-            <DesktopNav languageOption={props.desktopNavProps.languageOption}  buttonProps={props.desktopNavProps.buttonProps} navMenuProps={{links: props.desktopNavProps.navMenuProps.links}}/>
+            <MobileNav logoProps={props.mobileNavProps.logoProps} navMenuProps={{mobileNavLinks: props.mobileNavProps.mobileNavLinks}} language={props.mobileNavProps.language} emailAddress={props.mobileNavProps.emailAddress} emailCTA={props.mobileNavProps.emailCTA} socialCTA={props.mobileNavProps.socialCTA} copyrightContent={props.mobileNavProps.copyrightContent}/>
+            <DesktopNav logoProps={props.desktopNavProps.logoProps} languageOption={props.desktopNavProps.languageOption}  buttonProps={props.desktopNavProps.buttonProps} navMenuProps={{links: props.desktopNavProps.navMenuProps.links}}/>
             <Hero image={props.heroProps.image} alt={props.heroProps.alt} heroMessageProps={props.heroProps.heroMessageProps}/>
             <UpcomingEventPanel 
             desktopCountdownContent={props.desktopCountdownContent}

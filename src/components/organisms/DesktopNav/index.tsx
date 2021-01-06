@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleDesktopNavWrapper, StyleLanguageAndButton } from "./styles"
 
-import AnimersLogo from "../../atoms/Logo"
+import Logo from "../../atoms/Logo"
 import NavMenu from "../../molecules/NavMenu"
 import BasicButton from "../../molecules/BasicButton"
 import LanguageOption from "../../atoms/LanguageOption"
@@ -10,7 +10,8 @@ import LanguageOption from "../../atoms/LanguageOption"
 interface DesktopNavInterface {
     languageOption: string,
     buttonProps: BasicButtonInterface,
-    navMenuProps: NavMenuInterface
+    navMenuProps: NavMenuInterface,
+    logoProps: LogoLinkInterface
 }
 
 interface BasicButtonInterface {
@@ -29,12 +30,16 @@ interface LinkInterface {
     id: string;
 }
 
+interface LogoLinkInterface {
+    logoUrl: string,
+}
+
 const DesktopNav: React.FC<DesktopNavInterface> = (
     props: DesktopNavInterface
 ) => {
     return (
         <StyleDesktopNavWrapper>
-            <AnimersLogo />
+            <Logo logoUrl={props.logoProps.logoUrl} />
                 <NavMenu links={props.navMenuProps.links}/>
                 <StyleLanguageAndButton>
                 <LanguageOption language={props.languageOption} />

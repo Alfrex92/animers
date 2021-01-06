@@ -9,7 +9,7 @@ export const StyleHeroMessageWrapper = styled.div `
     flex-direction: column;
     justify-content: space-around;
     max-width: 100%;
-    padding: ${space.s} ${space.m} ${space.m} ${space.m};
+    padding: ${space.s} ${space.m} ${space.m};
     text-align: center;
 
     ${media.med `

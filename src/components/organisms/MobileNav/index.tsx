@@ -12,6 +12,7 @@ interface MobileNavInterFace {
     socialCTA: string;
     copyrightContent: string;
     navMenuProps: NavMenuInterface;
+    logoProps: LogoLinkInterface
 
 }
 
@@ -24,11 +25,16 @@ interface LinkInterface {
     id: string;
 }
 
-const MobileNav: React.FC<MobileNavInterFace> = (props) => {
+interface LogoLinkInterface {
+    logoUrl: string,
+}
+
+const MobileNav: React.FC<MobileNavInterFace> = (props: MobileNavInterFace) => {
+    console.log(props)
     const [open, setOpen] = React.useState(false);
     return (
         <StyleMobileNavWrapper>
-            <Logo />
+            <Logo logoUrl={props.logoProps.logoUrl}/>
             <StyleLanguageBurgerWrapper>
                 <LanguageOption language={props.language === "en" ? "English" : "日本語"} />
                 <BurgerIcon open={open} setOpen={() => setOpen((oldProps) => !oldProps)} />

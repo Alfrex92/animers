@@ -28,6 +28,7 @@ const query = graphql`
               src
               alt
             }
+            logoUrl
             language
             menu {
               id

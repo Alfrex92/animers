@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleBurger, StyleDiv } from "./styles"
+import { StyleBurger, StyleIconBar } from "./styles"
 
 interface BurgerInterface {
     open: boolean;
@@ -9,9 +9,9 @@ interface BurgerInterface {
 const BurgerIcon: React.FC<BurgerInterface> = (props: BurgerInterface) => {
     return (
         <StyleBurger open={props.open} onClick={props.setOpen}>
-            <StyleDiv open={props.open} />
-            <StyleDiv open={props.open} />
-            <StyleDiv open={props.open} />
+            <StyleIconBar open={props.open} />
+            <StyleIconBar open={props.open} />
+            <StyleIconBar open={props.open} />
         </StyleBurger>
     )
 }
