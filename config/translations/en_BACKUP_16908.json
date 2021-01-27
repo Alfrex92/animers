@@ -590,6 +590,7 @@
       "service": "Meetup",
       "link": "https://www.meetup.com"
     }
+<<<<<<< HEAD
   ],
   "upcomingEvent": {
     "buttonContent": "Attend",
@@ -597,3 +598,7 @@
     "linkContent": "See all"
   }
 }
+=======
+  ]
+}
+>>>>>>> karl/CodeOfConduct

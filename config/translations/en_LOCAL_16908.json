@@ -1,0 +1,289 @@
+{
+  "language": "en",
+  "hello": "Hello and welcome to this i18n example site!",
+  "subline": "You can read some of my cool articles I wrote!",
+  "backToHome": "Back to home",
+  "copyrightContent": "Animers © 2020. Built by Karl Bruder &amp; Mipon",
+  "contact": {
+    "id": "001email",
+    "type": "email",
+    "address": "hello@animers.io"
+  },
+  "heroMessage": "Meet Anime and Manga Fans Like You in Tokyo",
+  "heroImages": [
+    {
+      "imageID": "heroImg001",
+      "src": "https://i.imgur.com/6owBhwk.jpeg",
+      "alt": "Animers"
+    },
+    {
+      "imageID": "heroImg002",
+      "src": "https://i.imgur.com/yws7WPc.jpeg",
+      "alt": "Animers"
+    }
+  ],
+  "logoUrl": "/",
+  "emailCTA": "Get in Touch",
+  "events": [
+    {
+      "eventID": "event001",
+      "title": "☆Anime Meetup in Tokyo☆ アニメマンガ好き集まれ！",
+      "date": "Sun, July 5, 2020",
+      "dateNoDay": "July 5, 2020",
+      "time": "8 p.m. (JST)",
+      "location": "Shinjuku"
+    }
+  ],
+  "menu": [
+    {
+      "id": "heocp3j",
+      "title": "Events",
+      "slug": "events"
+    },
+    {
+      "id": "hslkfdj",
+      "title": "About Us",
+      "slug": "about"
+    },
+    {
+      "id": "asdsadd",
+      "title": "FAQ's",
+      "slug": "faq"
+    },
+    {
+      "id": "sdasddasdas2",
+      "title": "Code of Conduct",
+      "slug": "code-of-conduct"
+    }
+  ],
+  "faqs": [
+    {
+      "section": "About Events",
+      "sectionID": "sec001",
+      "questions": [
+        {
+          "id": "e001",
+          "question": "When's the next event?",
+          "answer": "The next event is on MM/DD at TT:TT"
+        },
+        {
+          "id": "e002",
+          "question": "Where is the next event being held?",
+          "answer": "The next event will be held at @@@"
+        },
+        {
+          "id": "e003",
+          "question": "How do I register for events?",
+          "answer": "You can sign up on our Meetup page: www.aaa.com"
+        },
+        {
+          "id": "e004",
+          "question": "I can't speak Japanese/English. Can I still join?",
+          "answer": "Sure! Many members can speak both, so you'll be able to enjoy the event."
+        },
+        {
+          "id": "e005",
+          "question": "Can I show up without registering?",
+          "answer": "Sorry, but please register in advance, as there is limited space."
+        },
+        {
+          "id": "e006",
+          "question": "Is this event exclusive to Tokyo residents?",
+          "answer": "No. Anyone is free to join."
+        }
+      ]
+    },
+    {
+      "section": "About COVID-19",
+      "sectionID": "sec002",
+      "questions": [
+        {
+          "id": "cov001",
+          "question": "Are you holding events during the pandemic?",
+          "answer": "Not currently, but we are planning safe, outdoor events. Stay tuned!"
+        },
+        {
+          "id": "cov002",
+          "question": "How many people do you allow at events?",
+          "answer": "Right now, we limit events to 8 people."
+        }
+      ]
+    },
+    {
+      "section": "About Drinks",
+      "sectionID": "sec003",
+      "questions": [
+        {
+          "id": "drink001",
+          "category": "drinks",
+          "question": "I don't drink alcohol. Can I still join?",
+          "answer": "Sure! The all-you-can-drink service is optional."
+        },
+        {
+          "id": "drink002",
+          "category": "drinks",
+          "question": "Do I have to pay full price if I don't drink alcohol?",
+          "answer": "No, we will deduct @@@ yen from your admission price."
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "id": "1213dad",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-0.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "vcjdjk",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-1.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "skfkl",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-2.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "masdallsa",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-3.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "jaksdjklkj",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-4.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    },
+    {
+      "id": "zcxzcjcz.,",
+      "url": "https://eloquent-franklin-f9ee3f.netlify.app/gallery-animers-5.jpg",
+      "alt": "Anime Meetup Japan Animers"
+    }
+  ],
+  "project": {
+    "advantages": [
+      {
+        "id": "asdasd333",
+        "title": "People that work in the anime industry usually come to the event"
+      },
+      {
+        "id": "asdasdddas2",
+        "title": "Meet Other Anime & Manga Fans"
+      },
+      {
+        "id": "sadasd",
+        "title": "Practice your English and/or Japanese skills"
+      },
+      {
+        "id": "fgfgggll",
+        "title": " Everyone in the Community is Very Welcoming"
+      },
+      {
+        "id": "ascvcvvvbvbv",
+        "title": "Make Japanese or Foreign Friends"
+      }
+    ],
+    "about": {
+      "title": "About Animers",
+      "description": "Animers is a bi-monthly, bilingual (English & Japanese) event for anime & manga fans in Tokyo. Our creed is to create community where everyone can have a sense of belonging and respected."
+    },
+    "creed": {
+      "title": "Animers Creed",
+      "description": "A community where everyone can have a sense of belonging and respected."
+    }
+  },
+  "sellingPoints": [
+    {
+      "id": "point001",
+      "content": "Regularly attended by anime industry insiders"
+    },
+    {
+      "id": "point002",
+      "content": "Meet other anime and manga fans"
+    },
+    {
+      "id": "point003",
+      "content": "Practicte your English and/or Japanese skills"
+    },
+    {
+      "id": "point004",
+      "content": "A friendly and welcoming community"
+    },
+    {
+      "id": "point005",
+      "content": "Make friends from around the world"
+    }
+  ],
+  "signupSteps": [
+    {
+      "id": "step001",
+      "stepNum": "1",
+      "title": "Register on Meetup",
+      "subtitle": "And join our community"
+    },
+    {
+      "id": "step002",
+      "stepNum": "2",
+      "title": "Sign up for an upcoming event",
+      "subtitle": "We hold events twice a month (biweekly)"
+    },
+    {
+      "id": "step003",
+      "stepNum": "3",
+      "title": "Attend and have fun!",
+      "subtitle": "Hang out and make new friends"
+    }
+  ],
+  "socialCTA": "Follow Us",
+  "team": [
+    {
+      "id": "member1yuka12pi3",
+      "name": "Yuka",
+      "role": "Founder & Co-organizer",
+      "image": "https://eloquent-franklin-f9ee3f.netlify.app/yuka.jpg",
+      "sns": [
+        {
+          "instagram": "instagram.com/"
+        },
+        {
+          "facebook": "facebook.com/"
+        }
+      ],
+      "description": "lorem ipsum"
+    },
+    {
+      "id": "member2alfred1231",
+      "name": "Alfred",
+      "role": "Co-organizer",
+      "image": "https://eloquent-franklin-f9ee3f.netlify.app/alfred.jpg",
+      "sns": [
+        {
+          "twitter": "https://twitter.com/alfred_toh_"
+        }
+      ],
+      "description": "lorem ipsum"
+    }
+  ],
+  "social": [
+    {
+      "id": "001facebook",
+      "service": "Facebook",
+      "link": "https://www.facebook.com"
+    },
+    {
+      "id": "002instagram",
+      "service": "Instagram",
+      "link": "https://www.instagram.com"
+    },
+    {
+      "id": "003meetup",
+      "service": "Meetup",
+      "link": "https://www.meetup.com"
+    }
+  ],
+  "upcomingEvent": {
+    "buttonContent": "Attend",
+    "label": "Upcoming Event",
+    "linkContent": "See all"
+  }
+}
