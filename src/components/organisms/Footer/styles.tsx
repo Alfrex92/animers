@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { zindex } from "../../../styles/vars"
 
 export const StyleFooterWrapper = styled.div`
+<<<<<<< HEAD
     align-items: center;
     align-self: flex-end;
     background-color: white;
@@ -13,3 +14,12 @@ export const StyleFooterWrapper = styled.div`
     text-align: center;
     z-index: ${zindex.modal}
 `;
+=======
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+`
+>>>>>>> karl/CodeOfConduct

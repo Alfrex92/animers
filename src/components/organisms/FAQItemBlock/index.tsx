@@ -20,8 +20,8 @@ const FAQItemBlock: React.FC<FAQItemBlockInterface> = (props: FAQItemBlockInterf
     return (
         <StyleFAQBlock>
             <FAQCategoryLabel content={props.section} />
-            {props.faqQuestions.map((item) => (
-                <FAQItem question={item.question} answer={item.answer} itemID={item.itemID} key={`${item.itemID}` + Math.random()}/>
+            {props.questions.map(item => (
+                <FAQItem question={item.question} answer={item.answer} key={item.id} />
             ))}
         </StyleFAQBlock>
     )
