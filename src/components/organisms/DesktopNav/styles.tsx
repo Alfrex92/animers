@@ -10,7 +10,6 @@ export const StyleDesktopNavWrapper = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 100vw;
     `}
 `;
 

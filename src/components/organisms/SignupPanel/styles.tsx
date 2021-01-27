@@ -11,12 +11,14 @@ export const StyleSignupPanelWrapper = styled.div`
 
 export const StyleContentWrapper = styled.div`
     margin-bottom: ${space.m};
-    padding-left: ${space.xl3};
+    padding: 0 ${space.xl} 0 ${space.l};
     text-align: center;
 
-    ${media.large`
+    ${media.med`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 0;
+        min-width: 90%;
     `} 
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, fsize } from "../../../styles/vars"
+import { colors, fsize, space } from "../../../styles/vars"
 
 export const StyleSocialIconCircle = styled.div`
     align-items: center;
@@ -8,6 +8,7 @@ export const StyleSocialIconCircle = styled.div`
     display: flex;
     height: 26px;
     justify-content: center;
+    margin: 0 ${space.s};
     width: 26px;
 
     &:active, &:hover {

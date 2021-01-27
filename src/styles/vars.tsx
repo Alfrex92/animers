@@ -2,6 +2,9 @@ export const colors = {
   black: {
     normal: '#000000'
   },
+  offWhite: {
+    normal: '#FBF5F5'
+  },
   white: {
     normal: '#ffffff'
   },
@@ -31,7 +34,7 @@ export const colors = {
   },
   red: {
     light: '#ff5745',
-    normal: '#f92b00',
+    normal: '#E10600',
     dark: '#b21100'
   },
   green: {
@@ -61,6 +64,7 @@ export const fsize = {
   normal: '16px',
   big: '18px',
   bigger: '20px',
+  bigger2: '30px',
   biggest: '65.5px'
 }
 

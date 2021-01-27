@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { LocaleContext } from "./layout"
 
-const useTranslations = () => {
+const useFaq = () => {
   // Grab the locale (passed through context) from the Context Provider
   const { locale } = React.useContext(LocaleContext)
   // Query the JSON files in <rootDir>/i18n/translations
@@ -22,10 +22,10 @@ const useTranslations = () => {
   return translations
 }
 
-export default useTranslations
+export default useFaq
 
 const query = graphql`
-  query useTranslations {
+  query Index {
     rawData: allFile(filter: { sourceInstanceName: { eq: "translations" } }) {
       edges {
         node {
@@ -34,6 +34,31 @@ const query = graphql`
             hello
             subline
             backToHome
+            contact {
+              id
+              type
+              address
+            }
+            copyrightContent
+            emailCTA
+            events {
+              eventID
+              time
+              title
+              date
+              location
+            }
+            social {
+              id
+              service
+              link
+            }
+            socialCTA
+            upcomingEvent {
+              label
+              linkContent
+              buttonContent
+            }
           }
         }
       }

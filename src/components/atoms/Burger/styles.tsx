@@ -10,7 +10,7 @@ export const StyleBurger = styled.button<{ open: boolean }>`
   flex-direction: column;
   height: ${space.xl};
   justify-content: space-around;
-  margin: 0 ${space.xl3} 0 ${space.m};
+  margin: 0 0 0 ${space.m};
   padding: 0;
   width: ${space.xl3};
   z-index: ${zindex.menuclose};
@@ -24,7 +24,7 @@ export const StyleBurger = styled.button<{ open: boolean }>`
   `}
 `;
 
-export const StyleDiv = styled.div<{ open: boolean }> `
+export const StyleIconBar = styled.div<{ open: boolean }> `
     background: ${colors.red.normal};
     border-radius: 10px;
     height: ${space.xs};

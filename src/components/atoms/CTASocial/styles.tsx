@@ -8,6 +8,6 @@ export const StyleCTASocialWrapper = styled.div`
 
 export const StyleCTASocialMessage = styled.span`
     color: ${colors.red.normal};
-    font-size: ${fsize.normal};
+    font-size: ${fsize.big};
     font-weight: ${fweight.w7};
 `;

@@ -9,27 +9,26 @@ export const StyleHeroMessageWrapper = styled.div `
     flex-direction: column;
     justify-content: space-around;
     max-width: 100%;
-    padding: ${space.m};
-    position: relative;
+    padding: ${space.s} ${space.m} ${space.m};
     text-align: center;
 
     ${media.med `
         position: absolute;
-        left: 0;
+        left: 10%;
         min-height: 200px;
         max-width: 350px;
-        top: 10%;
+        top: 15%;
         z-index: 999;
     `}
 `;
 
 export const StyleHeroMessage = styled.p `
-    font-size: ${fsize.big};
-    font-weight: ${fweight.w6};
+    font-size: ${fsize.bigger2};
+    font-weight: ${fweight.w9};
     margin: ${space.m} auto;
 
     ${media.med `
-    font-size: ${fsize.bigger};
+    font-size: ${fsize.bigger2};
     font-weight: ${fweight.w8};
     `}
 `;

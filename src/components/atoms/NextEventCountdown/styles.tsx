@@ -14,6 +14,6 @@ export const StyleCountdownWrapper = styled.div `
 
 export const StyleCountdown = styled.p `
     color: ${colors.black.normal};
-    font-size: ${fsize.normal};
+    font-size: ${fsize.bigger};
     font-weight: ${fweight.w1};
 `;

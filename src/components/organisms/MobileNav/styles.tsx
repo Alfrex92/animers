@@ -20,6 +20,4 @@ export const StyleLanguageBurgerWrapper = styled.div`
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 25%;
 `;

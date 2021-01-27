@@ -15,7 +15,7 @@ export const StyleBannerWrapper = styled.div `
 
 export const StyleBannerNotification = styled.span `
     font-size: ${fsize.normal};
-    font-weight: ${fweight.w5};
+    font-weight: ${fweight.w9};
     margin: 0 ${space.s};
 `;
 

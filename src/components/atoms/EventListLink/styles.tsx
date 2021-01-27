@@ -7,9 +7,6 @@ export const StyleLinkWrapper = styled.div `
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    right: 0;
 `;
 
 export const StyleLink = styled.p `

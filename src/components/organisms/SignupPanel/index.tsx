@@ -7,7 +7,7 @@ import { StyleSignupPanelWrapper, StyleContentWrapper } from "./styles"
 
 interface SignupPanelInterface {
   blockTitle: string
-  buttonProps: BasicButtonInterface
+  buttonProps: ButtonInterface
   signUpSteps: SignupStepInterface[]
 }
 
@@ -16,6 +16,13 @@ interface SignupStepInterface {
   stepNum: string;
   title: string;
   subtitle: string;
+}
+
+interface ButtonInterface {
+  buttonColor: string;
+  textColor: string;
+  hasBorder: boolean;
+  children: any;
 }
 
 const SignupPanel: React.FC<SignupPanelInterface> = (

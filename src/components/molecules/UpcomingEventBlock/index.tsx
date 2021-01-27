@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleUpcomingEventWrapper, StyleUpcomingEventInner, StyleUpcomingEventInnerLeft, StyleUpcomingEventInnerRight} from "./styles"
+import { StyleUpcomingEventWrapper, StyleUpcomingEventTop, StyleUpcomingEventInner, StyleUpcomingEventInnerLeft, StyleUpcomingEventInnerRight} from "./styles"
 import UpcomingEventMobile from "../../atoms/UpcomingEventMobile"
 import EventListLink from "../../atoms/EventListLink"
 import EventTitle from "../../atoms/EventTitle"
@@ -32,8 +32,10 @@ const UpcomingEventBlock: React.FC<UpcomingEventBlockInterface> = (
 ) => {
     return (
         <StyleUpcomingEventWrapper>
+            <StyleUpcomingEventTop>
                 <UpcomingEventMobile textContent={props.upcomingEventContent}/>
                 <EventListLink linkContent={props.linkContent}/>
+            </StyleUpcomingEventTop>
             <StyleUpcomingEventInner>
                 <StyleUpcomingEventInnerLeft>
                     <EventTitle eventTitle={props.eventTitle}/>
