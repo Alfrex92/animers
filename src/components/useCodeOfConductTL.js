@@ -1,7 +1,7 @@
-import React from 'react';
-import useCodeOfConductTL from "../components/useCodeOfConductTL"
-import { graphql } from 'gatsby';
-import CodeOfConductPage from "../components/pages/CoCPage"
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { LocaleContext } from "./layout"
+
 
 const query = graphql`
   query useCodeOfConductTL {
@@ -61,19 +61,24 @@ const query = graphql`
 }
 `
 
+const useCodeOfConductTL = () => {
+  // Grab the locale (passed through context) from the Context Provider
+  const { locale } = React.useContext(LocaleContext)
+  // Query the JSON files in <rootDir>/i18n/translations
+  const { rawData } = useStaticQuery(query)
 
-const CodeOfConduct = () => {
-    const { codeOfConduct, contact, copyrightContent, events, language, logoUrl, menu, emailCTA, socialCTA } = useCodeOfConductTL();
-    return (
-        <CodeOfConductPage 
-            nextEventBannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 
-            desktopNavProps={{languageOption: language, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
-            disclaimer={codeOfConduct.disclaimer} greeting={codeOfConduct.greeting} introduction={codeOfConduct.introduction} sections={codeOfConduct.sections} 
-            emailAddress={contact.address} emailMessage={emailCTA} socialMessage={socialCTA} copyrightContent={copyrightContent}
-            mobileHeaderProps={{pageTitle: menu[3].title}}
-        />
-    )
+  // Simplify the response from GraphQL
+  const simplified = rawData.edges.map(item => {
+    return {
+      name: item.node.name,
+      translations: item.node.translations,
+    }
+  })
 
+  // Only return translations for the current locale
+  const { translations } = simplified.filter(lang => lang.name === locale)[0]
+
+  return translations
 }
 
-export default CodeOfConduct
+export default useCodeOfConductTL

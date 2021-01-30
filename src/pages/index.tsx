@@ -82,7 +82,7 @@ const Index = () => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
   const { contact, copyrightContent, emailCTA, gallery, heroImages, language, menu, upcomingEvent, logoUrl, events, faqs, sellingPoints, signupSteps, socialCTA } = useHomepageTL()
-  const homepageBlock = { section: "FAQs", sectionID: "sec000", questions: [faqs[0].questions[0], faqs[1].questions[0], faqs[2].questions[0]] };
+  
   const questions = [faqs[0].questions[0], faqs[1].questions[0], faqs[2].questions[0]]
   return (
     <Homepage 
