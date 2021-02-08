@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleDesktopNavWrapper, StyleLanguageAndButton } from "./styles"
-
+import { animersLogoSvg } from "../../../Svgs";
 import Logo from "../../atoms/Logo"
 import NavMenu from "../../molecules/NavMenu"
 import BasicButton from "../../molecules/BasicButton"
@@ -28,6 +28,7 @@ interface NavMenuInterface {
 interface LinkInterface {
     title: string;
     id: string;
+    slug: string;
 }
 
 interface LogoLinkInterface {
@@ -39,7 +40,7 @@ const DesktopNav: React.FC<DesktopNavInterface> = (
 ) => {
     return (
         <StyleDesktopNavWrapper>
-            <Logo logoUrl={props.logoProps.logoUrl} />
+            <Logo children={animersLogoSvg}/>
                 <NavMenu links={props.navMenuProps.links}/>
                 <StyleLanguageAndButton>
                 <LanguageOption language={props.languageOption} />

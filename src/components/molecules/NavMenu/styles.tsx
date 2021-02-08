@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { space } from "../../../styles/vars"
 import { media } from "../../../styles/breakpoints"
 
 export const StyleMenuLinkContainer = styled.div`

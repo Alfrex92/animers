@@ -30,11 +30,10 @@ interface LogoLinkInterface {
 }
 
 const MobileNav: React.FC<MobileNavInterFace> = (props: MobileNavInterFace) => {
-    console.log(props)
     const [open, setOpen] = React.useState(false);
     return (
         <StyleMobileNavWrapper>
-            <Logo logoUrl={props.logoProps.logoUrl}/>
+            <Logo/>
             <StyleLanguageBurgerWrapper>
                 <LanguageOption language={props.language === "en" ? "English" : "日本語"} />
                 <BurgerIcon open={open} setOpen={() => setOpen((oldProps) => !oldProps)} />

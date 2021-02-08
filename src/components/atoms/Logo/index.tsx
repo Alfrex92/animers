@@ -1,16 +1,16 @@
 import * as React from 'react'
-import { StyleLogoContainer, StyleLogo } from "./styles"
+import { StyleLogoContainer, StyleLogo, StyleLinkName } from "./styles"
 
-interface LogoLinkInterface {
-    logoUrl: string,
+export interface LogoInterface {
+    children: React.ReactNode;
 }
 
-const Logo: React.FC<LogoLinkInterface> = (
-    props: LogoLinkInterface
-) => {
+const Logo: React.FC<LogoInterface> = (
+    props: LogoInterface
+    ) => {
     return (
         <StyleLogoContainer>
-            <StyleLogo href={props.logoUrl}>animers</StyleLogo>
+            <StyleLogo to={"/"}><StyleLinkName>{props.children}</StyleLinkName></StyleLogo>
         </StyleLogoContainer>
     )
 }

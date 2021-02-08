@@ -4,7 +4,7 @@
   "subline": "You can read some of my cool articles I wrote!",
   "backToHome": "Back to home",
   "codeOfConduct": {
-    "disclaimer": "Animers reserves the right to modify and/or update this policy at any time in their sole discretion and without prior notice.",
+    "disclaimer": "Animers reserve the right to modify and/or update this policy at any time in their sole discretion and without prior notice.",
     "greeting": "Hey everybody!",
     "introduction": [
       {
@@ -65,13 +65,13 @@
             ]
           },
           {
-            "subsectionID": "coc-sec-001-004",
+            "subsectionID": "coc-sec-001-003",
             "type": "COCBoldSubtitle",
             "content": "Examples of unacceptable behavior by participants include:",
             "listItems": null
           },
           {
-            "subsectionID": "coc-sec-001-005",
+            "subsectionID": "coc-sec-001-004",
             "type": "ul",
             "content": null,
             "listItems": [
@@ -590,6 +590,7 @@
       "service": "Meetup",
       "link": "https://www.meetup.com"
     }
+<<<<<<< HEAD
   ],
   "upcomingEvent": {
     "buttonContent": "Attend",
@@ -597,3 +598,7 @@
     "linkContent": "See all"
   }
 }
+=======
+  ]
+}
+>>>>>>> karl/CodeOfConduct
