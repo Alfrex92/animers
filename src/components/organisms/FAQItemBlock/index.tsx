@@ -5,6 +5,7 @@ import FAQCategoryLabel from "../../atoms/FAQCategoryLabel"
 
 
 interface FAQItemBlockInterface {
+    sectionTitle: string;
     section: string;
     sectionID: string;
     faqQuestions: FAQItemInterface[];
@@ -16,10 +17,11 @@ interface FAQItemInterface {
     itemID: string;
 }
 
+
 const FAQItemBlock: React.FC<FAQItemBlockInterface> = (props: FAQItemBlockInterface) => {
     return (
         <StyleFAQBlock>
-            <FAQCategoryLabel content={props.section} />
+            <FAQCategoryLabel content={props.sectionTitle}/>
             {props.faqQuestions.map(item => (
                 <FAQItem question={item.question} answer={item.answer} key={item.itemID} itemID={item.itemID}/>
             ))}
