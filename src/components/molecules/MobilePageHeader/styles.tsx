@@ -5,7 +5,6 @@ import { media } from "../../../styles/breakpoints";
 export const StyledMobileHeaderWrapper = styled.div `
     align-items: center;
     display: flex;
-    justify-content: center;
     max-height: 10vh;
     min-height: 5vh;
     width: 100%;
@@ -15,10 +14,13 @@ export const StyledMobileHeaderWrapper = styled.div `
     `}
 `;
 
-export const StyledMobileHeaderPageTitle = styled.div`
+export const StyledMobileHeaderPageTitleWrapper = styled.div`
     color: ${colors.red.normal};
-    flex-grow: 3;
     font-size: ${fsize.big};
     font-weight: ${fweight.w4};
+    text-align: left;
     text-transform: uppercase;
+    width: 50%;
 `;
+
+export const StyledMobileHeaderPageTitle = styled.span``;

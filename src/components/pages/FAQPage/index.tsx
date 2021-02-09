@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleFAQSection } from "./styles"
+import { StyleFAQPageWrapper, StyleFAQSection } from "./styles"
 
 import NavMenu from "../../molecules/NavMenu"
 import DesktopNav from "../../organisms/DesktopNav";
@@ -29,11 +29,7 @@ interface FAQItemBlockInterface {
 interface FAQItemInterface {
     question: string;
     answer: string;
-    itemID: string;
-}
-
-interface FAQCategoryLabelInterface {
-    content: string;
+    id: string;
 }
 
 interface MobilePageHeaderInterface {
@@ -75,9 +71,8 @@ interface BasicButtonInterface {
 const FAQPage: React.FC<FAQPageInterface> = (
     props: FAQPageInterface
 ) => {
-    console.log("FAQ LIST: ", props.faqList)
     return (
-        <div style={{ margin: 0 }}>
+        <StyleFAQPageWrapper>
             <NextEventBanner textContent={props.nextEventBannerProps.textContent} dateContent={props.nextEventBannerProps.dateContent} buttonProps={props.nextEventBannerProps.buttonProps}/>
             <DesktopNav languageOption={props.desktopNavProps.languageOption} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
                 buttonProps={props.desktopNavProps.buttonProps}
@@ -89,7 +84,7 @@ const FAQPage: React.FC<FAQPageInterface> = (
             ))}
             </StyleFAQSection>
             <Footer emailMessage={props.emailMessage} emailAddress={props.emailAddress} socialMessage={props.socialMessage} copyrightContent={props.copyrightContent} />
-        </div>
+        </StyleFAQPageWrapper>
     )
 }
 
