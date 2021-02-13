@@ -7,7 +7,7 @@ export const StyleBackArrowContainer = styled.div`
     width: 50%;
 `;
 
-export const StyleBackArrowIcon = styled.p`
+export const StyleBackArrowIcon = styled.a`
     color: ${colors.red.normal};
     font-size: ${fsize.normal};
 `;

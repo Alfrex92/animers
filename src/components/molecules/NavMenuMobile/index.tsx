@@ -10,6 +10,7 @@ interface NavMenuInterface {
 interface LinkInterface {
     title: string;
     id: string;
+    slug: string;
 }
 
 const NavMenuMobile: React.FC<NavMenuInterface> = (
@@ -18,7 +19,7 @@ const NavMenuMobile: React.FC<NavMenuInterface> = (
     return (
         <StyleMenuLinkContainer>
             {props.menuLinks.map((navLink) => (
-                <MenuLink linkName={navLink.title} key={navLink.id} />
+                <MenuLink linkName={navLink.title} key={navLink.id} slug={navLink.slug}/>
             ))}
         </StyleMenuLinkContainer>
     )
