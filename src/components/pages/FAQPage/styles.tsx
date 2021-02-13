@@ -3,6 +3,10 @@ import { space } from "../../../styles/vars"
 import { media } from "../../../styles/breakpoints"
 
 
+export const StyleFAQPageWrapper = styled.div`
+    margin: 0;
+`;
+
 export const StyleFAQSection = styled.div`
     display: flex;
     flex-direction: column;

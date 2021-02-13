@@ -1,6 +1,6 @@
 import React from 'react';
 import BackArrow from "../../atoms/BackArrow";
-import { StyledMobileHeaderWrapper, StyledMobileHeaderPageTitle } from "./styles";
+import { StyledMobileHeaderWrapper, StyledMobileHeaderPageTitleWrapper, StyledMobileHeaderPageTitle } from "./styles";
 
 export interface MobilePageHeaderInterface {
     pageTitle: string
@@ -12,7 +12,7 @@ const MobilePageHeader: React.FC<MobilePageHeaderInterface> = (
     return (
         <StyledMobileHeaderWrapper>
             <BackArrow />
-            <StyledMobileHeaderPageTitle><span>{props.pageTitle}</span></StyledMobileHeaderPageTitle>
+            <StyledMobileHeaderPageTitleWrapper><StyledMobileHeaderPageTitle>{props.pageTitle}</StyledMobileHeaderPageTitle></StyledMobileHeaderPageTitleWrapper>
         </StyledMobileHeaderWrapper>
     )
 }
