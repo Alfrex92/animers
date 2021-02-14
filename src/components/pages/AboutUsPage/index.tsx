@@ -1,5 +1,5 @@
 import React from 'react'
-import {AboutUsPageWrapper} from "./styles"
+import {StyledAboutUsPageWrapper, StyledAboutUsPageInner} from "./styles"
 import AboutUs from "../../organisms/AboutUs"
 import BasicButton from "../../molecules/BasicButton"
 import MobilePageHeader from "../../molecules/MobilePageHeader";
@@ -100,18 +100,18 @@ const AboutUsPage: React.FC<AboutUsPageInterface> = (
     props: AboutUsPageInterface
 ) => {
     return (
-        <AboutUsPageWrapper>
+        <StyledAboutUsPageWrapper>
             <NextEventBanner textContent={props.nextEventBannerProps.textContent} dateContent={props.nextEventBannerProps.dateContent} buttonProps={props.nextEventBannerProps.buttonProps}/>
             <DesktopNav languageOption={props.desktopNavProps.languageOption} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
             buttonProps={props.desktopNavProps.buttonProps}
             />
             <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle}/>
-            <div>
+            <StyledAboutUsPageInner>
                 <AboutUs aboutUsSections={props.aboutUsContent.aboutUsSections} aboutUsStory={props.aboutUsContent.aboutUsStory} aboutUsStoryTitle={props.aboutUsContent.aboutUsStoryTitle} memberProps={props.aboutUsContent.memberProps}/>
                 <BasicButton buttonColor={props.buttonProps.buttonColor} textColor={props.buttonProps.textColor} hasBorder={props.buttonProps.hasBorder} children={props.buttonProps.children}/>
-            </div>
+            </StyledAboutUsPageInner>
             <Footer  emailAddress={props.footerProps.emailAddress} emailMessage={props.footerProps.emailMessage} copyrightContent={props.footerProps.copyrightContent} socialMessage={props.footerProps.socialMessage}/>
-        </AboutUsPageWrapper>
+        </StyledAboutUsPageWrapper>
     )
 }
 

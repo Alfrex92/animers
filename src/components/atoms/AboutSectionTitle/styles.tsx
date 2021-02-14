@@ -15,4 +15,8 @@ export const StyleSectionContent = styled.p`
   color: ${colors.black.normal};
   font-size: ${fsize.bigger};
   font-weight: ${fweight.w8};
+
+  ${media.large`
+    font-size: ${fsize.bigger2};
+  `}
 `
