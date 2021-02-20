@@ -19,6 +19,7 @@ interface NavMenuInterface {
 interface LinkInterface {
     title: string;
     id: string;
+    slug: string;
 }
 
 const MobileNavMenu: React.FC<MobileNavMenuInterface> = (

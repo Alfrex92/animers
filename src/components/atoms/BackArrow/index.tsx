@@ -6,7 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 const BackArrow: React.FC = () => {
     return (
         <StyleBackArrowContainer>
-            <StyleBackArrowIcon><FontAwesomeIcon icon={faArrowLeft} /></StyleBackArrowIcon>
+            <StyleBackArrowIcon href="/"><FontAwesomeIcon icon={faArrowLeft} /></StyleBackArrowIcon>
         </StyleBackArrowContainer>
     )
 }

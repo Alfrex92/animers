@@ -1,13 +1,15 @@
 import styled from "styled-components"
-import { colors, fsize } from "../../../styles/vars"
+import { colors, fsize, space } from "../../../styles/vars"
 
 
 export const StyleBackArrowContainer = styled.div`
+    display: flex;
     justify-content: left;
-    width: 50%;
+    padding-left: ${space.m};
+    width: 25%;
 `;
 
-export const StyleBackArrowIcon = styled.p`
+export const StyleBackArrowIcon = styled.a`
     color: ${colors.red.normal};
     font-size: ${fsize.normal};
 `;

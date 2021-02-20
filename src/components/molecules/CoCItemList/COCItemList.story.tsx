@@ -8,7 +8,7 @@ const itemLists = data.codeOfConduct.sections[0].subsections.filter(
   subSection => subSection.type === "ul"
 )
 const sample = itemLists[0].listItems
-console.log(sample)
+
 
 const story = storiesOf("Molecules | COCItemList", module).addDecorator(
   withInfo

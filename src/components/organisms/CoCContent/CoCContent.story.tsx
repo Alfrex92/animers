@@ -3,8 +3,7 @@ import { storiesOf } from "@storybook/react"
 import { withInfo } from "@storybook/addon-info"
 import data from "../../../../config/translations/en.json"
 import CoCContent from "./index"
-const aaaa = data.codeOfConduct.sections
-console.log(aaaa)
+
 const story = storiesOf("Organisms | CoCContent", module).addDecorator(withInfo)
 
 // Blocks of FAQ items (separated by categories) for FAQ page

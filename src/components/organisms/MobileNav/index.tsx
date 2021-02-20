@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Logo from "../../atoms/Logo"
 import LanguageOption from "../../atoms/LanguageOption"
 import BurgerIcon from "../../atoms/Burger"
 import MobileNavMenu from "../../pages/MobileNavMenu"
@@ -23,6 +22,7 @@ interface NavMenuInterface {
 interface LinkInterface {
     title: string;
     id: string;
+    slug: string;
 }
 
 interface LogoLinkInterface {
@@ -33,7 +33,6 @@ const MobileNav: React.FC<MobileNavInterFace> = (props: MobileNavInterFace) => {
     const [open, setOpen] = React.useState(false);
     return (
         <StyleMobileNavWrapper>
-            <Logo/>
             <StyleLanguageBurgerWrapper>
                 <LanguageOption language={props.language === "en" ? "English" : "日本語"} />
                 <BurgerIcon open={open} setOpen={() => setOpen((oldProps) => !oldProps)} />
