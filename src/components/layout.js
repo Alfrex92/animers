@@ -1,9 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import { MDXProvider } from "@mdx-js/react"
-import MobileNavMenu from "../components/pages/MobileNavMenu"
 import MdxLink from "./mdxLink"
-import BurgerIcon from "../components/atoms/Burger"
-import MobileNav from "../components/organisms/MobileNav"
 const LocaleContext = React.createContext()
 
 // Use the built-in Context API to make the "locale" available to every component in the tree

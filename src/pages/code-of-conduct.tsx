@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useCodeOfConductTL from "../components/useCodeOfConductTL"
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import CodeOfConductPage from "../components/pages/CoCPage"
+
 
 const query = graphql`
   query useCodeOfConductTL {
@@ -62,7 +63,7 @@ const query = graphql`
 `
 
 
-const CodeOfConduct = () => {
+const CodeOfConduct = () => {   
     const { codeOfConduct, contact, copyrightContent, events, language, logoUrl, menu, emailCTA, socialCTA } = useCodeOfConductTL();
     return (
         <CodeOfConductPage 
