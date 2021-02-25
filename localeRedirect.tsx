@@ -4,7 +4,7 @@ export const useGetRedirectLanguage = () => {
           }
         
           const lang = navigator && navigator.language && navigator.language.split("-")[0];
-          console.log("LANG :", lang)
+          
           if (!lang) return "en";
         
           switch (lang) {
