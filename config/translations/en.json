@@ -1,8 +1,441 @@
 {
+  "language": "en",
   "hello": "Hello and welcome to this i18n example site!",
   "subline": "You can read some of my cool articles I wrote!",
   "backToHome": "Back to home",
+  "aboutUs": [
+    {
+      "sectionID": "about-001",
+      "sectionTitle": "About Animers",
+      "content": "Animers is a bi-monthly, bilingual (English & Japanese) event for anime & manga fans in Tokyo. Our creed is to create community where everyone can have a sense of belonging and respected."
+    },
+    {
+      "sectionID": "about-002",
+      "sectionTitle": "Animers Creed",
+      "content": "A community where everyone can have a sense of belonging and is respected."
+    }
+  ],
+  "aboutUsTeamTitle": "The Team",
+  "aboutUsStoryTitle": "Our Story",
+  "aboutUsStory": [
+    {
+      "parID": "about-003-par-001",
+      "content": "It all began on May 25, 2018. Animers held its very first event. At the start, the group only had a handful of members, and when I held the first official group event, only one other person showed up! But even having that one person come to the event made me incredibly happy. On the day of the event, I was super nervous, and I kept wondering “Would anyone really come all the way out to this bar in Ikebukuro?” Even today, I still remember how anxious I felt! But once she finally arrived, I was absolutely ecstatic.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-002",
+      "content": "Ever since I was a child, I’ve loved manga and anime, and I’ve also enjoyed meeting people from different countries and cultures. Once I became a working adult, my job gave me many chances to work with people from all over the world. Through these interactions, I realized that there were a lot of people outside Japan who also loved anime and manga.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-003",
+      "content": "Many of the people I met would often ask me “How do I make friends with Japanese people? I’ve tried going to ‘international exchange’ events, but I don’t really feel comfortable with that kind of thing.” I could only imagine how difficult a dilemma it must have been for them. After all, there are lots of Japanese people who want to make international friends too!",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-004",
+      "content": "These feelings became my inspiration to create this group.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-005",
+      "content": "I imagined how wonderful it would be to have a community where Japanese people and people from around the world could be brought together through a shared love of anime and manga! My motivation came from this simple but sincere wish.",
+      "isFeaturedQuote": true
+    },
+    {
+      "parID": "about-003-par-006",
+      "content": "When I set about starting the group, there were plenty of anime fan communities among Japanese people, but I couldn’t find any international groups for fans from other countries. So I decided right then and there to start such a group myself that very day.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-007",
+      "content": "Now, of course, I’m always excited to meet and chat with people of all kinds; not just anime and manga fans. Still, I’m filled with an incredible joy when I see how our group members have so much fun talking to one another.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-008",
+      "content": "From just a few members, we’ve now grown to more than 800! If there’s one thing I can say for sure, it’s that Animers is full of absolutely wonderful people. Just join us for one of our events and you’ll see what I mean!",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-009",
+      "content": " Everyone is super friendly and welcoming. For that reason, I consider Animers to be a very fortunate group.",
+      "isFeaturedQuote": true
+    },
+    {
+      "parID": "about-003-par-010",
+      "content": "One of the best parts of Animers is that we’re completely “borderless.” The age range of our members range from teenagers to people in their 60’s (even my own mom has joined an event or two! LOL), and of course, we come from countries all over the world. Everyone has their own interests and tastes in anime, manga and games, but no matter what, we take care to respect each other’s opinions and points of view.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-012",
+      "content": "Our common interests bring us together and form friendships.",
+      "isFeaturedQuote": true
+    },
+    {
+      "parID": "about-003-par-013",
+      "content": "I truly love the Animers community, and I hope you do too. Even if you consider it something like your friendly local cafe where you can pop in anytime you feel like it. As we continue to gain more members, I think there is lots more we can do to make the group even better, and make sure it stays a pleasant and relaxing community. I hope that you, our members and Alfredo, my talented and tireless co-organizer, can help support Animers for a long time to come.",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-014",
+      "content": "Yuuka",
+      "isFeaturedQuote": false
+    },
+    {
+      "parID": "about-003-par-015",
+      "content": "Founder and Organizer",
+      "isFeaturedQuote": false
+    }
+  ],
+  "codeOfConduct": {
+    "disclaimer": "Animers reserves the right to modify and/or update this policy at any time in their sole discretion and without prior notice.",
+    "greeting": "Hey everybody!",
+    "introduction": [
+      {
+        "parID": "coc-intro-1",
+        "content": "Animers is a public community in the form of offline & online events, forums, online chats, and anything else that comes up where we all interact with each other. Everyone is welcome to participate here regardless of race, religion, gender, sexual orientation, appearance, age, or anything else that makes up a person. Not only is everyone welcome, but we also want everyone to feel comfortable and feel safe."
+      },
+      {
+        "parID": "coc-intro-2",
+        "content": "Everyone who participates in an Animers event (online and offline) must adhere to the following Code of Conduct. Organizers monitor members’ comments and behavior, and those who violate the code of conduct may be asked to leave the group."
+      }
+    ],
+    "sections": [
+      {
+        "sectionID": "coc-sec-001",
+        "sectionTitle": "Age Restrictions",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-001-001",
+            "type": "p",
+            "content": "Some content at Animers may not be suitable for children & teenagers. In addition, events are often held at locations serving alcohol. Therefore, members must be at least 20 years or older.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-001-002",
+            "type": "COCBoldSubtitle",
+            "content": "Examples of behavior that contributes to creating a positive environment include:",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-001-003",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-001-003-001",
+                "content": "Behaving professionally"
+              },
+              {
+                "listItemID": "coc-sec-001-003-002",
+                "content": "Using welcoming and inclusive language"
+              },
+              {
+                "listItemID": "coc-sec-001-003-003",
+                "content": "Being respectful of differing viewpoints and experiences"
+              },
+              {
+                "listItemID": "coc-sec-001-003-004",
+                "content": "Accepting constructive criticism graciously"
+              },
+              {
+                "listItemID": "coc-sec-001-003-005",
+                "content": "Being kind to others"
+              },
+              {
+                "listItemID": "coc-sec-001-003-006",
+                "content": "Respect anyone's taste in Anime, Manga, Video Games, etc."
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-001-004",
+            "type": "COCBoldSubtitle",
+            "content": "Examples of unacceptable behavior by participants include:",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-001-005",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-001-004-001",
+                "content": "Sexual language and imagery in any event venue, including online chat"
+              },
+              {
+                "listItemID": "coc-sec-001-004-002",
+                "content": "Promoting your own business or service"
+              },
+              {
+                "listItemID": "coc-sec-001-004-003",
+                "content": "Contact directly any of the members of the community and promote your business or service"
+              },
+              {
+                "listItemID": "coc-sec-001-004-004",
+                "content": "Wearing inappropriate clothing (determined by the sole discretion of Animers)."
+              },
+              {
+                "listItemID": "coc-sec-001-004-005",
+                "content": "Violent threats or language directed against another person"
+              },
+              {
+                "listItemID": "coc-sec-001-004-006",
+                "content": "Deliberate intimidation, stalking or following"
+              },
+              {
+                "listItemID": "coc-sec-001-004-007",
+                "content": "Insults or put-downs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-002",
+        "sectionTitle": "Self Promotion",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-002-001",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-002-001-001",
+                "content": "Self-promotion is not allowed. If you run a website, YouTube channel, SNS page, publication, blog, app, or other project and would like to promote it on Animers, please ask an organizer beforehand."
+              },
+              {
+                "listItemID": "coc-sec-002-001-002",
+                "content": "You should never ask any of the members of Animers to promote your service or product inside the community."
+              },
+              {
+                "listItemID": "coc-sec-002-001-003",
+                "content": "You should not spam in any way, especially through private messages. You should not hide your affiliation to your project or site, or lie about who you are or why you’re promoting something."
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-002-002",
+            "type": "p",
+            "content": "Why? Because Animers is a community, not a platform for self-promotion.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-002-003",
+            "type": "p-centered",
+            "content": "Note: If you have a product, service, event, etc. that you would like to promote, please contact any of the organizers. We are more than happy to conduct a cross-promotion.",
+            "listItems": null
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-003",
+        "sectionTitle": "Online Community",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-003-001",
+            "type": "p",
+            "content": "Besides our offline meetup, Animers also has an online community.  Keep the following rules in mind while participating in our online chat:",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-003-002",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-003-002-001",
+                "content": "Manga, web novel, and light novel spoilers are prohibited."
+              },
+              {
+                "listItemID": "coc-sec-003-002-002",
+                "content": "At the moment Hentai/explicit sexual content is not allowed but we’re planning to create a channel called “nsfw” where hentai or ecchi content will be allowed."
+              },
+              {
+                "listItemID": "coc-sec-003-002-003",
+                "content": "Any content that promotes hate is not allowed."
+              },
+              {
+                "listItemID": "coc-sec-003-002-004",
+                "content": "Self-promotion is prohibited unless with the prior authorization of any of the organizers."
+              },
+              {
+                "listItemID": "coc-sec-003-002-005",
+                "content": "We generally  prefer to only add people to the chat who have already participated in an offline event at least one time."
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-003-003",
+            "type": "p",
+            "content": "If you violate the code of conduct we’ll ask you first to erase your comment. If you don’t erase the message in less than 30 minutes you’ll be removed from the community. Depending on the nature of the violation, you might also be banned from offline events.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-003-004",
+            "type": "p",
+            "content": "The bans from the online and offline community will be at least 6 months. The duration of the ban may be longer depending on the organizers’ criteria.",
+            "listItems": null
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-004",
+        "sectionTitle": "Prohibited Items",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-004-001",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-004-001-001",
+                "content": "Firearms, fireworks, flammable liquids or aerosol products, knives, daggers, swords, katana, clubs, maces, other crushing or edged weapons, projectiles, air guns, longbows, crossbows are strictly prohibited. Or, any other weapon-related item."
+              },
+              {
+                "listItemID": "coc-sec-004-001-002",
+                "content": "Stilts"
+              },
+              {
+                "listItemID": "coc-sec-004-001-003",
+                "content": "Illegal Substances like drugs"
+              },
+              {
+                "listItemID": "coc-sec-004-001-004",
+                "content": "Animals – we might make an exception for a living Dinosaur."
+              },
+              {
+                "listItemID": "coc-sec-004-001-005",
+                "content": " Lasers or similar items"
+              },
+              {
+                "listItemID": "coc-sec-004-001-006",
+                "content": "Flammable Liquids"
+              },
+              {
+                "listItemID": "coc-sec-004-001-007",
+                "content": "Fire, lighters (used at the meetup) or open flames"
+              },
+              {
+                "listItemID": "coc-sec-004-001-008",
+                "content": "Any other item that may put someone in danger"
+              }
+            ]
+          },
+          {
+            "subsectionID": "coc-sec-004-002",
+            "type": "p",
+            "content": "This Code of Conduct isn’t a complete list. It’s so you understand the vibe here. You know what being a jerk is; don’t be one. The community we’re going for here is helpful, accepting, friendly, accommodating, and aware of the fact that the web, and the world, is a big place with room for all of us.",
+            "listItems": null
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-005",
+        "sectionTitle": "Agreement",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-005-001",
+            "type": "p",
+            "content": "You must comply with this Code of Conduct in order to attend to any of our events and/or be of our community.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-005-002",
+            "type": "p",
+            "content": "If a participant engages in behavior that violates this Code of Conduct, the meetup organizers will take appropriate action. This may include:",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-005-003",
+            "type": "ul",
+            "content": null,
+            "listItems": [
+              {
+                "listItemID": "coc-sec-005-003-001",
+                "content": "Verbal warning"
+              },
+              {
+                "listItemID": "coc-sec-005-003-002",
+                "content": "Removal from the event"
+              },
+              {
+                "listItemID": "coc-sec-005-003-003",
+                "content": "Disinvitation from future events"
+              },
+              {
+                "listItemID": "coc-sec-005-003-004",
+                "content": "Banning from the online community"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionID": "coc-sec-006",
+        "sectionTitle": "Contact Information",
+        "subsections": [
+          {
+            "subsectionID": "coc-sec-006-001",
+            "type": "p",
+            "content": "If you witness or experience any activity that puts someone's safety or enjoyment of the group at risk, or if you notice anything else concerning or suspicious, please inform the Animers organizers.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-006-002",
+            "type": "p",
+            "content": "Also, If you believe that someone is violating the Code of Conduct, or have any other concerns, please contact an organizer immediately.",
+            "listItems": null
+          },
+          {
+            "subsectionID": "coc-sec-006-003",
+            "type": "p",
+            "content": "We have escalation procedures in place to handle these kinds of situations, and we can take the appropriate action from there in order to ensure the event provides a safe, enjoyable, and welcoming environment for everyone.",
+            "listItems": null
+          }
+        ]
+      }
+    ]
+  },
+  "copyrightContent": "Animers © 2020. Built by Karl Bruder &amp; Mipon",
+  "contact": {
+    "id": "001email",
+    "type": "email",
+    "address": "hello@animers.io"
+  },
+  "heroMessage": "Meet Anime and Manga Fans Like You in Tokyo",
+  "heroImages": [
+    {
+      "imageID": "heroImg001",
+      "src": "https://i.imgur.com/6owBhwk.jpeg",
+      "alt": "Animers"
+    },
+    {
+      "imageID": "heroImg002",
+      "src": "https://i.imgur.com/yws7WPc.jpeg",
+      "alt": "Animers"
+    }
+  ],
+  "logoUrl": "/",
+  "emailCTA": "Get in Touch",
+  "events": [
+    {
+      "eventID": "event001",
+      "title": "☆Anime Meetup in Tokyo☆ アニメマンガ好き集まれ！",
+      "date": "Sun, July 5, 2020",
+      "dateNoDay": "July 5, 2020",
+      "time": "8 p.m. (JST)",
+      "location": "Shinjuku"
+    }
+  ],
   "menu": [
+    {
+      "id": "heocp3j",
+      "title": "Events",
+      "slug": "events"
+    },
     {
       "id": "hslkfdj",
       "title": "About Us",
@@ -17,6 +450,78 @@
       "id": "sdasddasdas2",
       "title": "Code of Conduct",
       "slug": "code-of-conduct"
+    }
+  ],
+  "faqs": [
+    {
+      "section": "About Events",
+      "sectionID": "sec001",
+      "questions": [
+        {
+          "id": "e001",
+          "question": "When's the next event?",
+          "answer": "The next event is on MM/DD at TT:TT"
+        },
+        {
+          "id": "e002",
+          "question": "Where is the next event being held?",
+          "answer": "The next event will be held at @@@"
+        },
+        {
+          "id": "e003",
+          "question": "How do I register for events?",
+          "answer": "You can sign up on our Meetup page: www.aaa.com"
+        },
+        {
+          "id": "e004",
+          "question": "I can't speak Japanese/English. Can I still join?",
+          "answer": "Sure! Many members can speak both, so you'll be able to enjoy the event."
+        },
+        {
+          "id": "e005",
+          "question": "Can I show up without registering?",
+          "answer": "Sorry, but please register in advance, as there is limited space."
+        },
+        {
+          "id": "e006",
+          "question": "Is this event exclusive to Tokyo residents?",
+          "answer": "No. Anyone is free to join."
+        }
+      ]
+    },
+    {
+      "section": "About COVID-19",
+      "sectionID": "sec002",
+      "questions": [
+        {
+          "id": "cov001",
+          "question": "Are you holding events during the pandemic?",
+          "answer": "Not currently, but we are planning safe, outdoor events. Stay tuned!"
+        },
+        {
+          "id": "cov002",
+          "question": "How many people do you allow at events?",
+          "answer": "Right now, we limit events to 8 people."
+        }
+      ]
+    },
+    {
+      "section": "About Drinks",
+      "sectionID": "sec003",
+      "questions": [
+        {
+          "id": "drink001",
+          "category": "drinks",
+          "question": "I don't drink alcohol. Can I still join?",
+          "answer": "Sure! The all-you-can-drink service is optional."
+        },
+        {
+          "id": "drink002",
+          "category": "drinks",
+          "question": "Do I have to pay full price if I don't drink alcohol?",
+          "answer": "No, we will deduct @@@ yen from your admission price."
+        }
+      ]
     }
   ],
   "gallery": [
@@ -83,14 +588,63 @@
       "description": "A community where everyone can have a sense of belonging and respected."
     }
   },
+  "sellingPoints": [
+    {
+      "id": "point001",
+      "content": "Regularly attended by anime industry insiders"
+    },
+    {
+      "id": "point002",
+      "content": "Meet other anime and manga fans"
+    },
+    {
+      "id": "point003",
+      "content": "Practicte your English and/or Japanese skills"
+    },
+    {
+      "id": "point004",
+      "content": "A friendly and welcoming community"
+    },
+    {
+      "id": "point005",
+      "content": "Make friends from around the world"
+    }
+  ],
+  "signupSteps": [
+    {
+      "id": "step001",
+      "stepNum": "1",
+      "title": "Register on Meetup",
+      "subtitle": "And join our community"
+    },
+    {
+      "id": "step002",
+      "stepNum": "2",
+      "title": "Sign up for an upcoming event",
+      "subtitle": "We hold events twice a month (biweekly)"
+    },
+    {
+      "id": "step003",
+      "stepNum": "3",
+      "title": "Attend and have fun!",
+      "subtitle": "Hang out and make new friends"
+    }
+  ],
+  "socialCTA": "Follow Us",
   "team": [
     {
       "id": "member1yuka12pi3",
       "name": "Yuka",
       "role": "Founder & Co-organizer",
+      "image": "https://eloquent-franklin-f9ee3f.netlify.app/yuka.jpg",
       "sns": [
         {
-          "instagram": "instagram.com/"
+          "service": "instagram",
+          "url": "instagram.com/"
+        },
+        {
+          "service": "facebook",
+          "url": "facebook.com/"
         }
       ],
       "description": "lorem ipsum"
@@ -99,12 +653,36 @@
       "id": "member2alfred1231",
       "name": "Alfred",
       "role": "Co-organizer",
+      "image": "https://eloquent-franklin-f9ee3f.netlify.app/alfred.jpg",
       "sns": [
         {
-          "twitter": "https://twitter.com/alfred_toh_"
+          "service": "twitter",
+          "url": "https://twitter.com/alfred_toh_"
         }
       ],
       "description": "lorem ipsum"
     }
-  ]
+  ],
+  "social": [
+    {
+      "id": "001facebook",
+      "service": "Facebook",
+      "link": "https://www.facebook.com"
+    },
+    {
+      "id": "002instagram",
+      "service": "Instagram",
+      "link": "https://www.instagram.com"
+    },
+    {
+      "id": "003meetup",
+      "service": "Meetup",
+      "link": "https://www.meetup.com"
+    }
+  ],
+  "upcomingEvent": {
+    "buttonContent": "Attend",
+    "label": "Upcoming Event",
+    "linkContent": "See all"
+  }
 }
