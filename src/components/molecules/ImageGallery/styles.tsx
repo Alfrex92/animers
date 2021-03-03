@@ -4,24 +4,26 @@ import {media} from "../../../styles/breakpoints";
 
 export const StyleImageGallery = styled.div`
     margin: ${space.m} 0;
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
 
     ${media.med `
-        margin: 0;
-        width: 100%;
+    margin: 0 ${space.m};
     `}
 `;
 
 export const StyleHorizontalScrollWrapper = styled.div`
-    height: 800px;
-    margin: ${space.l} auto -350px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1000%;
+    margin: ${space.l} 0 -350px ;
     padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
     transform:rotate(-90deg) translateY(-400px);
     transform-origin: right top;
-    width: 400px;
+    max-width: 50%;
 
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
@@ -38,7 +40,5 @@ export const StyleHorizontalScrollWrapper = styled.div`
         background-color: transparent;
     }
 
-    ${media.med `
-    margin-left: 20%;
-    `}
+
 `;

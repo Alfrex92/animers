@@ -18,9 +18,9 @@ export const StyleGalleryImage = styled.img`
     min-width: 1000%;
     min-height: 1000%;
     -webkit-transform: scale(.1);
-    transform: scale(.1);
+    transform: scale(.08);
     -o-object-fit: cover;
-    object-fit: cover;
+    object-fit: contain;
 `;
 
 export const StyleHorizontalScrollChild = styled.div`
