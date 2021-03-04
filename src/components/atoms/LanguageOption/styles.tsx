@@ -19,7 +19,7 @@ export const StyleLanguageOption = styled.p`
 
     ${media.med`
         font-size: ${fsize.bigger};
-        margin-right: ${space.m};
+        margin: 0 ${space.m} ${space.xs} 0;
         text-transform: uppercase;
     `}
 `;
