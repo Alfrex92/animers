@@ -9,8 +9,6 @@ const copyrightContent = data.copyrightContent;
 
 import MobileNavMenu from "./index"
 
-console.log(data.menu)
-
 const story = storiesOf("Pages | MobileNavMenu", module)
     .addDecorator(withInfo)
     .addDecorator(withKnobs)

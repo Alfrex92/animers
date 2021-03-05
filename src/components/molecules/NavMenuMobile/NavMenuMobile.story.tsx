@@ -6,8 +6,6 @@ import data from "../../../../config/translations/en.json"
 
 import NavMenuMobile from "./index"
 
-console.log(data.menu)
-
 const story = storiesOf("Molecules | NavMenu", module)
     .addDecorator(withInfo)
     .addDecorator(withKnobs)

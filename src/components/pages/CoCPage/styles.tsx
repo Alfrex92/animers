@@ -10,8 +10,8 @@ export const StyledCoCPageWrapperInner = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 0 1rem;
   text-align: center;
-  max-width: 95vw;
 
   ${media.large `
       max-width: 70vw;

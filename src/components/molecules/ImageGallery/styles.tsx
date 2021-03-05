@@ -36,6 +36,6 @@ export const StyleHorizontalScrollWrapper = styled.div`
         background-color: transparent;
     }
     ${media.med `
-    margin-left: 20%;
+    margin-left: 18rem;
     `}
 `;
