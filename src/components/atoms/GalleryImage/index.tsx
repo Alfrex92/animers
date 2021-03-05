@@ -1,6 +1,5 @@
 import React from 'react'
-import { SimpleImg } from 'react-simple-img'
-import { StyleGalleryImageContainer, StyleGalleryImage, StyleHorizontalScrollChild } from "./styles"
+import { StyleGalleryImage, StyleHorizontalScrollChild } from "./styles"
 
 interface GalleryImageInterface {
     image: string
@@ -12,9 +11,10 @@ const HorizontalScrollChild: React.FC<GalleryImageInterface> = (
 ) => {
     return (
         <StyleHorizontalScrollChild>
-            <StyleGalleryImage width={400} height={400} applyAspectRatio src={props.image} />
-        </StyleHorizontalScrollChild>
+            <StyleGalleryImage  src={props.image} alt={props.alt}/>
+       </StyleHorizontalScrollChild>
     )
 }
 
 export default HorizontalScrollChild
+

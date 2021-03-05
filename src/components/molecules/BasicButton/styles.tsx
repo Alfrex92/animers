@@ -6,6 +6,7 @@ export const StyleBasicButton = styled.button<{ buttonColor: string, textColor: 
   border: 2px solid ${props => props.hasBorder === true ? props.textColor : "transparent"};
   border-radius: 50px;
   color: ${props => props.textColor};
+  cursor: pointer;
   font-size: ${fsize.big};
   font-weight: ${fweight.w7};
   min-height: 40px;

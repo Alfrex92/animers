@@ -1,5 +1,6 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
+import { GlobalStyle } from "../styles/globalStyle"
 import MdxLink from "./mdxLink"
 const LocaleContext = React.createContext()
 
@@ -10,6 +11,7 @@ const LocaleContext = React.createContext()
 const Layout = ({ children, pageContext: { locale } }) => {
   return (
     <LocaleContext.Provider value={{ locale }}>
+    <GlobalStyle/>
       <div className="global-wrapper">
         <MDXProvider components={{ a: MdxLink }}>
           <main>

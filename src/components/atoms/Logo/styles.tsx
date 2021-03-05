@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { colors, fsize, fweight } from "../../../styles/vars";
-import { media } from "../../../styles/breakpoints";
+import { colors } from "../../../styles/vars";
 import { Link } from "gatsby";
 
 

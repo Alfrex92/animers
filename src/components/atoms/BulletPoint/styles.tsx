@@ -9,11 +9,14 @@ export const StyleBulletPoint = styled.li`
     list-style-type: disc;
     margin: ${space.s} auto;
     text-align: left;
-    width: 95%;
 
     ${media.med`
         font-size: ${fsize.bigger};
-        margin: ${space.s} 0;
-        width: 75%;
+        margin: ${space.s} ${space.s};
+    `}
+
+    ${media.large`
+        font-size: ${fsize.bigger};
+        margin: ${space.s} ${space.m};
     `}
 `;
