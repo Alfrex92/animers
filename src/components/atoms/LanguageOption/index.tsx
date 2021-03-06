@@ -23,7 +23,6 @@ const setLangVer = (props) => {
 const LanguageOption: React.FC<LanguageOptionInterface> = (
     props: LanguageOptionInterface
 ) => {
-    console.log("HURRRR: ", props.language)
     return (
         <StyleLanguageOptionContainer>
             {/* <StyleLanguageOption>{props.language}</StyleLanguageOption> */}
