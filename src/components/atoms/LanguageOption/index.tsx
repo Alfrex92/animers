@@ -4,6 +4,7 @@ import { americanFlagSvg, japanFlagSvg } from "../../../Svgs"
 
 interface LanguageOptionInterface {
     language: string
+    urlSlug: string
 }
 
 const setLangVer = (props) => {
@@ -23,11 +24,14 @@ const setLangVer = (props) => {
 const LanguageOption: React.FC<LanguageOptionInterface> = (
     props: LanguageOptionInterface
 ) => {
+    console.log("HEEE: ", props.language)
     return (
         <StyleLanguageOptionContainer>
-            {/* <StyleLanguageOption>{props.language}</StyleLanguageOption> */}
-            {props.language === "en" || props.language === "English" && <StyleLanguageLink to={"/ja"} onClick={setLangVer}>{japanFlagSvg}</StyleLanguageLink>}
-            {props.language === "ja" || props.language === "日本語" && <StyleLanguageLink to={"/"} onClick={setLangVer}>{americanFlagSvg}</StyleLanguageLink>}
+            {props.language === "en" || props.language === "English" ? 
+                <StyleLanguageLink to={`/ja${location.pathname}`} onClick={setLangVer}>{japanFlagSvg}</StyleLanguageLink>
+             :
+                <StyleLanguageLink to={`/${props.urlSlug}`} onClick={setLangVer}>{americanFlagSvg}</StyleLanguageLink>
+            }
         </StyleLanguageOptionContainer>
     )
 }

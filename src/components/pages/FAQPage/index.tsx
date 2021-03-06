@@ -36,10 +36,15 @@ interface MobilePageHeaderInterface {
     pageTitle: string
 } 
 interface DesktopNavInterface {
-    languageOption: string,
+    languageProps: LanguageOptionInterface,
     buttonProps: BasicButtonInterface,
     navMenuProps: NavMenuInterface,
     logoProps: LogoLinkInterface
+}
+  
+  interface LanguageOptionInterface {
+    language: string
+    urlSlug: string
 }
 
 interface NavMenuInterface {
@@ -74,7 +79,7 @@ const FAQPage: React.FC<FAQPageInterface> = (
     return (
         <StyleFAQPageWrapper>
             <NextEventBanner textContent={props.nextEventBannerProps.textContent} dateContent={props.nextEventBannerProps.dateContent} buttonProps={props.nextEventBannerProps.buttonProps}/>
-            <DesktopNav languageOption={props.desktopNavProps.languageOption} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
+            <DesktopNav languageProps={props.desktopNavProps.languageProps} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
                 buttonProps={props.desktopNavProps.buttonProps}
             />
             <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle}/>

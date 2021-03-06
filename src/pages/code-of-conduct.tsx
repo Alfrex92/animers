@@ -65,10 +65,11 @@ const query = graphql`
 
 const CodeOfConduct = () => {   
     const { codeOfConduct, contact, copyrightContent, events, language, logoUrl, menu, emailCTA, socialCTA } = useCodeOfConductTL();
+    console.log("SLUG: ", menu[3].slug)
     return (
         <CodeOfConductPage 
             nextEventBannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 
-            desktopNavProps={{languageOption: language, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
+            desktopNavProps={{languageProps: {language: language, urlSlug: menu[3].slug}, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
             disclaimer={codeOfConduct.disclaimer} greeting={codeOfConduct.greeting} introduction={codeOfConduct.introduction} sections={codeOfConduct.sections} 
             emailAddress={contact.address} emailMessage={emailCTA} socialMessage={socialCTA} copyrightContent={copyrightContent}
             mobileHeaderProps={{pageTitle: menu[3].title}}
