@@ -9,4 +9,5 @@ export const StyleFooterWrapper = styled.div`
   justify-content: space-around;
   margin: auto;
   text-align: center;
+  width: 100vw;
 `

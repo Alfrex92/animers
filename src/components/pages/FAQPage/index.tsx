@@ -82,7 +82,7 @@ const FAQPage: React.FC<FAQPageInterface> = (
             <DesktopNav languageProps={props.desktopNavProps.languageProps} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
                 buttonProps={props.desktopNavProps.buttonProps}
             />
-            <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle}/>
+            <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle} languageProps={props.desktopNavProps.languageProps}/>
             <StyleFAQSection>
             {props.faqList.map(block => (
                     <FAQItemBlock section={block.section} sectionID={block.sectionID} faqQuestions={block.questions} key={block.sectionID} sectionTitle={block.section} />

@@ -110,7 +110,7 @@ const AboutUsPage: React.FC<AboutUsPageInterface> = (
             <DesktopNav languageProps={props.desktopNavProps.languageProps} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
             buttonProps={props.desktopNavProps.buttonProps}
             />
-            <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle}/>
+            <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle} languageProps={props.desktopNavProps.languageProps}/>
             <StyledAboutUsPageInner>
                 <AboutUs aboutUsSections={props.aboutUsContent.aboutUsSections} aboutUsStory={props.aboutUsContent.aboutUsStory} aboutUsStoryTitle={props.aboutUsContent.aboutUsStoryTitle} memberProps={props.aboutUsContent.memberProps}/>
                 <BasicButton buttonColor={props.buttonProps.buttonColor} textColor={props.buttonProps.textColor} hasBorder={props.buttonProps.hasBorder} children={props.buttonProps.children}/>

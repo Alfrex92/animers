@@ -91,7 +91,7 @@ const CoCPage: React.FC<CoCPageInterface> = (props: CoCPageInterface) => {
         buttonProps={props.desktopNavProps.buttonProps}
       />
       <StyledCoCPageWrapperInner>      
-      <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle}/>
+      <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle} languageProps={props.desktopNavProps.languageProps}/>
       <CoCContent
         disclaimer={props.disclaimer}
         greeting={props.greeting}

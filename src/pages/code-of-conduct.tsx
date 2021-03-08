@@ -65,7 +65,7 @@ const query = graphql`
 
 const CodeOfConduct = () => {   
     const { codeOfConduct, contact, copyrightContent, events, language, logoUrl, menu, emailCTA, socialCTA } = useCodeOfConductTL();
-    console.log("SLUG: ", menu[3].slug)
+
     return (
         <CodeOfConductPage 
             nextEventBannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleLanguageOptionContainer, StyleLanguageOption, StyleLanguageLink } from "./styles"
+import { StyleLanguageOptionContainer, StyleLanguageLink } from "./styles"
 import { americanFlagSvg, japanFlagSvg } from "../../../Svgs"
 
 interface LanguageOptionInterface {
@@ -24,13 +24,16 @@ const setLangVer = (props) => {
 const LanguageOption: React.FC<LanguageOptionInterface> = (
     props: LanguageOptionInterface
 ) => {
-    console.log("HEEE: ", props.language)
     return (
         <StyleLanguageOptionContainer>
             {props.language === "en" || props.language === "English" ? 
                 <StyleLanguageLink to={`/ja${location.pathname}`} onClick={setLangVer}>{japanFlagSvg}</StyleLanguageLink>
              :
+             props.urlSlug === "/ja" 
+                ? 
                 <StyleLanguageLink to={`/${props.urlSlug}`} onClick={setLangVer}>{americanFlagSvg}</StyleLanguageLink>
+                :
+                <StyleLanguageLink to={`/`} onClick={setLangVer}>{americanFlagSvg}</StyleLanguageLink>
             }
         </StyleLanguageOptionContainer>
     )

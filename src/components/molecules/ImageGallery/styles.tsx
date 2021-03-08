@@ -6,7 +6,9 @@ export const StyleImageGallery = styled.div`
     margin: ${space.m} 0;
     max-width: 100%;
     overflow: hidden;
+
     ${media.med `
+        padding-left: 3%;
         margin: 0;
         width: 100%;
     `}
@@ -20,7 +22,7 @@ export const StyleHorizontalScrollWrapper = styled.div`
     overflow-x: hidden;
     transform:rotate(-90deg) translateY(-400px);
     transform-origin: right top;
-    width: 400px;
+    width: 375px;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
     ::-webkit-scrollbar-track {
