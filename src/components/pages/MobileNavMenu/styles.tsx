@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, zindex, space } from "../../../styles/vars"
+import { colors, zindex } from "../../../styles/vars"
 
 export const StyleMobileNavMenuWrapper = styled.div<{ open: boolean }>`
     background-color: ${colors.white};

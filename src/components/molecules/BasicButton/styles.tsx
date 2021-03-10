@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { colors, fsize, fweight } from "../../../styles/vars"
+import { fsize, fweight } from "../../../styles/vars"
+import { media } from "../../../styles/breakpoints"
 
 export const StyleBasicButton = styled.button<{ buttonColor: string, textColor: string, hasBorder: boolean }>`
   background-color: ${props => props.buttonColor};
@@ -11,5 +12,9 @@ export const StyleBasicButton = styled.button<{ buttonColor: string, textColor: 
   min-height: 40px;
   margin-left: 5px;
   min-width: 100px;
+
+  ${media.large`
+    cursor: pointer;
+  `}
 `
 

@@ -36,11 +36,21 @@ interface BannerInterface {
 }
 
 interface DesktopNavInterface {
-    languageOption: string;
-    buttonProps: BasicButtonInterface;
-    navMenuProps: NavMenuInterface;
-    logoProps: LogoLinkInterface;
+    languageProps: LanguageOptionInterface,
+    buttonProps: BasicButtonInterface,
+    navMenuProps: NavMenuInterface,
+    logoProps: LogoLinkInterface
 }
+  
+  interface LanguageOptionInterface {
+    language: string
+    urlSlug: string
+}
+
+interface LogoLinkInterface {
+    logoUrl: string,
+}
+
 interface NavMenuInterface {
     links: LinkInterface[]
 }
@@ -162,7 +172,7 @@ const Homepage: React.FC<HomepageInterface> = (
         <StyleHomepageWrapper>
             <NextEventBanner textContent={props.bannerProps.textContent} dateContent={props.bannerProps.dateContent} buttonProps={props.bannerProps.buttonProps}/>
             <MobileNav logoProps={props.mobileNavProps.logoProps} navMenuProps={{mobileNavLinks: props.mobileNavProps.mobileNavLinks}} language={props.mobileNavProps.language} emailAddress={props.mobileNavProps.emailAddress} emailCTA={props.mobileNavProps.emailCTA} socialCTA={props.mobileNavProps.socialCTA} copyrightContent={props.mobileNavProps.copyrightContent}/>
-            <DesktopNav logoProps={props.desktopNavProps.logoProps} languageOption={props.desktopNavProps.languageOption}  buttonProps={props.desktopNavProps.buttonProps} navMenuProps={{links: props.desktopNavProps.navMenuProps.links}}/>
+            <DesktopNav logoProps={props.desktopNavProps.logoProps} languageProps={props.desktopNavProps.languageProps}  buttonProps={props.desktopNavProps.buttonProps} navMenuProps={{links: props.desktopNavProps.navMenuProps.links}}/>
             <Hero image={props.heroProps.image} alt={props.heroProps.alt} heroMessageProps={props.heroProps.heroMessageProps}/>
             <UpcomingEventPanel 
             desktopCountdownContent={props.desktopCountdownContent}

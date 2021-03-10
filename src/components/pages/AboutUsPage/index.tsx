@@ -28,11 +28,16 @@ interface MobilePageHeaderInterface {
 }
 
 interface DesktopNavInterface {
-    languageOption: string,
+    languageProps: LanguageOptionInterface,
     buttonProps: BasicButtonInterface,
     navMenuProps: NavMenuInterface,
     logoProps: LogoLinkInterface
-}
+  }
+  
+  interface LanguageOptionInterface {
+    language: string
+    urlSlug: string
+  }
 
 interface LogoLinkInterface {
     logoUrl: string,
@@ -102,10 +107,10 @@ const AboutUsPage: React.FC<AboutUsPageInterface> = (
     return (
         <StyledAboutUsPageWrapper>
             <NextEventBanner textContent={props.nextEventBannerProps.textContent} dateContent={props.nextEventBannerProps.dateContent} buttonProps={props.nextEventBannerProps.buttonProps}/>
-            <DesktopNav languageOption={props.desktopNavProps.languageOption} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
+            <DesktopNav languageProps={props.desktopNavProps.languageProps} navMenuProps={props.desktopNavProps.navMenuProps} logoProps={props.desktopNavProps.logoProps}
             buttonProps={props.desktopNavProps.buttonProps}
             />
-            <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle}/>
+            <MobilePageHeader pageTitle={props.mobileHeaderProps.pageTitle} languageProps={props.desktopNavProps.languageProps}/>
             <StyledAboutUsPageInner>
                 <AboutUs aboutUsSections={props.aboutUsContent.aboutUsSections} aboutUsStory={props.aboutUsContent.aboutUsStory} aboutUsStoryTitle={props.aboutUsContent.aboutUsStoryTitle} memberProps={props.aboutUsContent.memberProps}/>
                 <BasicButton buttonColor={props.buttonProps.buttonColor} textColor={props.buttonProps.textColor} hasBorder={props.buttonProps.hasBorder} children={props.buttonProps.children}/>

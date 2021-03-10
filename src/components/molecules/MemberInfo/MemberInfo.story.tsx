@@ -8,9 +8,6 @@ import { domainUrl } from "../../../constants/others"
 
 const memberImg = `${domainUrl}alfred.jpg`
 
-console.log(data.team[0].sns)
-console.log(data.team[0].image)
-
 const story = storiesOf("Molecules|MemberInfo", module)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)

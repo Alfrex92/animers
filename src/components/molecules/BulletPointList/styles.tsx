@@ -13,7 +13,7 @@ export const StyleBulletPointList = styled.ul`
         flex-direction: column;
         font-size: ${fsize.big};
         flex-wrap: wrap;
-        max-height: 200px;
+        max-height: 175px;
         min-height: 75px;
         margin: 0;
     `} 

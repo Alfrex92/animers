@@ -79,8 +79,8 @@ const AboutUs = () => {
             buttonProps={{buttonColor: "#fff", textColor: "#0d89eb", children: "Participate", hasBorder: true}}
             footerProps={{emailMessage: "Get in Touch ", emailAddress: contact.address, socialMessage: "Follow Us", copyrightContent: copyrightContent}}
             nextEventBannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 
-            mobileHeaderProps={{pageTitle: menu[3].title}}
-            desktopNavProps={{languageOption: language, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
+            mobileHeaderProps={{pageTitle: menu[1].title}}
+            desktopNavProps={{languageProps: {language: language, urlSlug: menu[1].slug}, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
         />
     )
 }

@@ -8,10 +8,15 @@ import LanguageOption from "../../atoms/LanguageOption"
 
 
 interface DesktopNavInterface {
-    languageOption: string,
+    languageProps: LanguageOptionInterface,
     buttonProps: BasicButtonInterface,
     navMenuProps: NavMenuInterface,
     logoProps: LogoLinkInterface
+}
+
+interface LanguageOptionInterface {
+    language: string
+    urlSlug: string
 }
 
 interface BasicButtonInterface {
@@ -43,7 +48,7 @@ const DesktopNav: React.FC<DesktopNavInterface> = (
             <Logo children={animersLogoSvg}/>
                 <NavMenu links={props.navMenuProps.links}/>
                 <StyleLanguageAndButton>
-                <LanguageOption language={props.languageOption} />
+                <LanguageOption language={props.languageProps.language} urlSlug={props.languageProps.urlSlug} />
                 <BasicButton buttonColor={props.buttonProps.buttonColor} textColor={props.buttonProps.textColor} children={props.buttonProps.children} hasBorder={props.buttonProps.hasBorder}/>
                 </StyleLanguageAndButton>
         </StyleDesktopNavWrapper>

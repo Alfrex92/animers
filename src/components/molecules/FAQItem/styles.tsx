@@ -21,6 +21,7 @@ export const StyleFAQAnswer = styled(StyleFAQQuestion) <{ open: boolean }>`
 export const StyleFAQItemWrapper = styled.div<{ open: boolean }>`
     align-items: center;
     border: 1px solid ${colors.green.normal};
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;

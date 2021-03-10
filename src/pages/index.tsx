@@ -88,7 +88,7 @@ const Index = () => {
     <Homepage 
       bannerProps={{textContent: "Next Event", dateContent: `${events[0].date}`, buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}} 
       mobileNavProps={{language: language, logoProps: logoUrl, emailCTA: emailCTA, emailAddress: contact.address, socialCTA: socialCTA, copyrightContent: copyrightContent, mobileNavLinks: menu}}
-      desktopNavProps={{languageOption: language, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
+      desktopNavProps={{languageProps: {language: language, urlSlug: ""}, logoProps: logoUrl, buttonProps: {buttonColor: "#f92b00", textColor: "#ffffff", children: "Participate", hasBorder: false}, navMenuProps: {links: menu}}}
       buttonProps={{buttonColor: "#f92b00", textColor: "#ffffff", hasBorder: false, children: "Join Now"}}
       heroProps={{image: heroImages[1].src, alt: heroImages[1].alt, heroMessageProps: {textContent: "Meet Anime and Manga Fans Like You in Tokyo", buttonProps: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Join Now", hasBorder: false}}}}
       upcomingEventBlock={{upcomingEventContent: "Upcoming Event", linkContent: "See all", eventTitle: `${events[0].title}`, eventDateTime: {date: `${events[0].date}`, time: `${events[0].time}`, location: `${events[0].location}`}, button: {buttonColor: "#ffffff", textColor: "#f92b00", children: "Attend", hasBorder: false}}}

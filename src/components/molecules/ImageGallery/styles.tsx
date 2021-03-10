@@ -8,6 +8,7 @@ export const StyleImageGallery = styled.div`
     overflow: hidden;
 
     ${media.med `
+        padding-left: 3%;
         margin: 0;
         width: 100%;
     `}
@@ -15,14 +16,13 @@ export const StyleImageGallery = styled.div`
 
 export const StyleHorizontalScrollWrapper = styled.div`
     height: 800px;
-    margin: ${space.l} auto -350px 0;
+    margin: ${space.l} 0 -350px 0;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
     transform:rotate(-90deg) translateY(-400px);
     transform-origin: right top;
-    width: 400px;
-
+    width: 375px;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
     ::-webkit-scrollbar-track {
@@ -37,8 +37,7 @@ export const StyleHorizontalScrollWrapper = styled.div`
     ::-webkit-scrollbar-thumb {
         background-color: transparent;
     }
-
     ${media.med `
-    margin-left: 20%;
+    margin-left: 18rem;
     `}
 `;

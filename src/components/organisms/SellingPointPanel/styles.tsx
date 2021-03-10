@@ -17,7 +17,7 @@ export const StyleSellingPointPanelWrapper = styled.div`
 export const StyleSellingPointContentWrapper = styled.div`
     margin-bottom: ${space.m};
     text-align: center;
-    min-width: 60%; //@@@ I can't get it to center properly unless I define min-width. Is that OK, or is there a better way?
+    min-width: 50%;
 
     ${media.med `
         display: flex;
@@ -25,5 +25,15 @@ export const StyleSellingPointContentWrapper = styled.div`
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0;
+        min-width: 90%;
+    `}
+
+    ${media.large `
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: ${space.s};
+        min-width: 60%;
     `}
 `;
